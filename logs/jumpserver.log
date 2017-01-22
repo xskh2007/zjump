@@ -1,0 +1,14 @@
+2017-01-06 16:57:37,582 - perm_api.py - DEBUG - 生成res: []
+2017-01-06 16:57:37,609 - ansible_api.py - DEBUG - {'dark': {}, 'contacted': {}}
+2017-01-06 16:57:37,648 - views.py - DEBUG - {'failed': {}, 'ok': {}}
+2017-01-06 16:57:42,940 - perm_api.py - DEBUG - 生成res: []
+2017-01-06 16:57:42,944 - ansible_api.py - DEBUG - {'dark': {}, 'contacted': {}}
+2017-01-06 16:57:42,946 - views.py - DEBUG - {'failed': {}, 'ok': {}}
+2017-01-06 17:00:29,602 - run_server.py - DEBUG - Websocket: session_key: gt9tydv71cxtkd0w8hutgfpskkgwygwm
+2017-01-06 17:00:29,605 - run_server.py - DEBUG - Websocket: session: Session object
+2017-01-06 17:00:29,613 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-01-06 17:00:29,613 - run_server.py - DEBUG - Websocket: Open exec request
+2017-01-06 17:00:29,613 - run_server.py - DEBUG - Web执行命令: 请求系统用户 
+2017-01-06 17:00:29,644 - run_server.py - DEBUG - 关闭web_exec请求
+2017-01-09 10:46:05,825 - views.py - DEBUG - 获取授权系统用户: 
+2017-01-11 09:38:21,143 - user_api.py - DEBUG - 生成ssh key， 并设置authorized_keys

@@ -5,6 +5,35 @@
 
 
 
+<!--add by qiantu for databases list -->
+	<style type="text/css">
+		.item-img{
+			display:inline-block;
+			vertical-align:middle;
+			width:16px;
+			height:16px;
+		}
+		.item-text{
+			display:inline-block;
+			vertical-align:middle;
+			padding:3px 0 3px 3px;
+		}
+	</style>
+
+	<script type="text/javascript">
+		$(function(){
+			$('#database').combobox({
+				formatter:function(row){
+					var imageFile = '/static/images/' + row.icon;
+					return '<img class="item-img" src="'+imageFile+'"/><span class="item-text">'+row.text+'</span>';
+				}
+			});
+		});
+	</script>
+
+
+
+
 
 <div class="form-group">
     <label for="exampleInputPassword1">sql 语句</label>
@@ -15,6 +44,11 @@
 <div class="form-group" >
    <textarea  id="cmd" name="cmd" rows="10" cols="100"  style="font-size:20px;background:black;resize:both" ></textarea>
 </div>
+数据库:
+	<input id="database" name="database" style="width:100px"
+			url="http://127.0.0.1:8000/dbtool/dblistjson/"
+			valueField="id" textField="text">
+	</input>
 
 <button type="submit" onClick="check(cmd)" class="btn btn-primary block full-width">执行sql</button>
 </form>
@@ -66,7 +100,7 @@ document.getElementById('cmd').value=cmd;
 
 function check(cmd){
 alert(document.getElementById('cmd').value)
-document.cookie="cmd="+document.getElementById('cmd').value;
+document.cookie="cmd="+document.getElementById('cmd').value.replace(/(\n)+|(\r\n)+/g, "");
 }
 </script>
 

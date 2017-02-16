@@ -7,6 +7,8 @@ urlpatterns = patterns('',
     url(r'^$', index, name='dbtool'),
     url(r'^execute/$', dbtool_execute, name='dbtool_execute'),
     url(r'^myjson/$', dbtool_myjson, name='dbtool_myjson'),
+    url(r'^dblistjson/$', dbtool_dblistjson, name='dbtool_dblistjson'),
+    url(r'^dbimport/$', dbtool_dbimport, name='dbtool_dbimport'),
 
 
 )

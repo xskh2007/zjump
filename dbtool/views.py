@@ -24,12 +24,8 @@ def dbtool_execute(request):
         defend_attack(request)
         db = request.POST.get('database','')
         cmd = request.POST.get('cmd', '')
-        print db, 111111111111111111, cmd
-        json_name="data_list"
-        str_url = "http://127.0.0.1:8000/dbtool/myjson/?cmd=%s&db=%s&json_name=%s" %(cmd,db,json_name)
-        url = str_url.replace("\r\n"," ")
-        print url
-        print cmd
+        # str_url = "http://127.0.0.1:8000/dbtool/myjson/?cmd=%s&db=%s" %(cmd,db)
+        # url = str_url.replace("\r\n"," ")
         con = mdb.connect(db_host, db_user, db_password, db,charset='utf8')
         with con:
             # 获取普通的查询cursor
@@ -41,21 +37,18 @@ def dbtool_execute(request):
             for i in desc:
                 field_name.append(i[0])
 
-    users_list = User.objects.all().order_by('name')
-    print users_list
-    for i in users_list:
-        print i
-
-    #print cmd,fetchall
-    #print locals()
     return my_render('dbtool/dbtool.html', locals(), request)
     #return my_render('dbtool/dbtool.html', {"a":"aaa"}, request)
 
+
+#######return data
 @require_role(role='user')
 def dbtool_myjson(request):
     defend_attack(request)
-    db  = request.GET.get('db')
-    cmd = request.GET.get('cmd')
+    db  = request.POST.get('db')
+    cmd = request.POST.get('cmd')
+    cmd=cmd.replace("\r\n", " ")
+    print cmd,db,123456789
     con = mdb.connect(db_host, db_user, db_password, db,charset='utf8')
     with con:
         cur = con.cursor()
@@ -85,14 +78,45 @@ def dbtool_dblistjson(request):
     db_list = [{"id": 'zzjr_server', "text": "zzjr_server", "icon": "database.ico"}, {"id": 'zentao', "text": "zentao", "icon": "database.ico"},{"id": 'zzjr_bank', "text": "zzjr_bank", "icon": "database.ico", "selected": "true"}]
     return HttpResponse(json.dumps(db_list), content_type="application/json")
 
-#def index(request):
-#    #sers=serveices.objects.all().values('ser_name').order_by('datetime')
-#    sers = serveices.objects.raw("select * from serveices_serveices GROUP BY ser_name ORDER BY datetime")
-#    #sers=serveices.objects.all()
-#    #print sers.ser_name
-#
-#    return render(request,'index2.html',{'sers': sers})
-# Create your views here.
+@require_role(role='user')
+def dbtool_field_name(request):
+    defend_attack(request)
+    db  = request.POST.get('db')
+    cmd = request.POST.get('cmd')
+    cmd=cmd.replace("\r\n", " ")
+    con = mdb.connect(db_host, db_user, db_password, db,charset='utf8')
+    with con:
+        cur = con.cursor()
+        cur.execute(cmd)
+        rows = cur.fetchall()
+        mydisc = {}
+        desc = cur.description
+        for i in desc:
+            mydisc[desc[0]] = desc[0]
+
+    return HttpResponse("ok", content_type="application/json")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

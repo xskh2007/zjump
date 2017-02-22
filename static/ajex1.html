@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ajax</title>
+    <style>
+    *{margin:0;padding:0px;font-size: 12px;}
+    a{text-decoration: none;}
+    ul{list-style: none;}
+    #box{width:500px;margin:20px auto;}
+    .btn{display:block;width:50px;height:50px;margin:20px auto;line-height: 50px;text-align: center;border:1px #000 solid;color:#000;transition:.3s linear;}
+    .btn:hover{background: #000;color:#fff;font-weight: bold;}
+    #con{margin-top:20px;}
+    #con li{line-height: 30px;text-align: center;}
+    </style>
+    <script src="http://127.0.0.1:8000/static/js/jquery-2.1.1.js"></script>
+    <script>
+        $(function(){
+            $('.btn').on('click', function(){
+                $.ajax({
+                    type: "GET", //请求的方式，也有get请求
+                    url: "ajex1.json", //请求地址，后台提供的,这里我在本地自己建立了个json的文件做例子
+                    data: {name:name},//data是传给后台的字段，后台需要哪些就传入哪些
+                    dataType: "json", //json格式，后台返回的数据为json格式的。
+                    success: function(result){
+                        var dataObj = result, //返回的result为json格式的数据
+                        con = "";
+                        $.each(dataObj, function(index, item){
+                            con += "<li>姓名："+item.name+"</li>";
+                            con += "<li>性别："+item.sex+"</li>";
+                            con += "<li>现居地："+item.address+"</li>";
+                            con += "<li>岗位："+item.job+"</li>";
+                        });
+                        console.log(dataObj);    //可以在控制台打印一下看看，这是拼起来的标签和数据
+                        $("#con").html(dataObj); //把内容入到这个div中即完成
+                    }    
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+    <div id="box">
+        <a class="btn" href="javascript:;">点击</a>
+        <ul id="con"></ul>
+    </div>
+</body>
+</html>

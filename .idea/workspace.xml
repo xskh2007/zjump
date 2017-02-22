@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4654acab-1d1f-44b6-9201-0e96ff018219" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/dbtool/dbtool_import.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbtool/urls.py" afterPath="$PROJECT_DIR$/dbtool/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbtool/views.py" afterPath="$PROJECT_DIR$/dbtool/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/dbtool/dbtool.html" afterPath="$PROJECT_DIR$/templates/dbtool/dbtool.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/head_script.html" afterPath="$PROJECT_DIR$/templates/head_script.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/link_css.html" afterPath="$PROJECT_DIR$/templates/link_css.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/nav.html" afterPath="$PROJECT_DIR$/templates/nav.html" />
     </list>
     <ignored path="jumpserver-master.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,8 +28,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dbtool/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+            <state relative-caret-position="-660">
+              <caret line="28" column="59" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="59" />
               <folding>
                 <element signature="e#16#44#0" expanded="true" />
               </folding>
@@ -41,10 +37,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ajex1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/ajex1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="27" column="61" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jperm/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
+            <state relative-caret-position="195">
               <caret line="14" column="58" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="58" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
@@ -56,28 +62,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jperm/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
+            <state relative-caret-position="15">
               <caret line="132" column="27" selection-start-line="132" selection-start-column="12" selection-end-line="132" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user_detail.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/juser/user_detail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="119" column="26" selection-start-line="119" selection-start-column="26" selection-end-line="119" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nav.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/nav.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="88" column="13" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -86,8 +72,38 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dbtool/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="10" column="62" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="62" />
+            <state relative-caret-position="75">
+              <caret line="6" column="20" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="12" column="27" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="head_script.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/head_script.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dbtool_import.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/dbtool/dbtool_import.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="419">
+              <caret line="90" column="61" selection-start-line="90" selection-start-column="48" selection-end-line="90" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -96,32 +112,13 @@
       <file leaf-file-name="dbtool.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/dbtool/dbtool.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="184" column="34" selection-start-line="184" selection-start-column="34" selection-end-line="184" selection-end-column="34" />
+            <state relative-caret-position="-1290">
+              <caret line="54" column="33" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
               <folding>
                 <element signature="n#style#0;n#textarea#0;n#div#0;n#form#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#form#0;n#!!top" expanded="true" />
+                <marker date="1487759575596" expanded="false" signature="2786:2811" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dbtool_import.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/dbtool/dbtool_import.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="90" column="61" selection-start-line="90" selection-start-column="48" selection-end-line="90" selection-end-column="61" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="group_add.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/juser/group_add.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="846">
-              <caret line="112" column="8" selection-start-line="112" selection-start-column="8" selection-end-line="112" selection-end-column="8" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -136,20 +133,20 @@
       <list>
         <option value="$PROJECT_DIR$/static/data.html" />
         <option value="$PROJECT_DIR$/templates/head_script.html" />
-        <option value="$PROJECT_DIR$/templates/link_css.html" />
-        <option value="$PROJECT_DIR$/dbtool/urls.py" />
         <option value="$PROJECT_DIR$/templates/nav.html" />
         <option value="$PROJECT_DIR$/templates/jperm/perm_role_push.html" />
         <option value="$PROJECT_DIR$/templates/dbtool/dbtool_import.html" />
+        <option value="$PROJECT_DIR$/templates/link_css.html" />
+        <option value="$PROJECT_DIR$/static/ajex1.html" />
+        <option value="$PROJECT_DIR$/dbtool/urls.py" />
         <option value="$PROJECT_DIR$/dbtool/views.py" />
         <option value="$PROJECT_DIR$/templates/dbtool/dbtool.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2" />
     <option name="y" value="25" />
-    <option name="width" value="1364" />
+    <option name="width" value="1280" />
     <option name="height" value="718" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -361,16 +358,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2" y="25" width="1364" height="718" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="25" width="1280" height="718" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39285713" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19155844" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.375" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21915585" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -399,48 +396,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dbtool/views.py">
+    <entry file="file://$PROJECT_DIR$/templates/juser/group_add.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#16#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+        <state relative-caret-position="1680">
+          <caret line="112" column="8" selection-start-line="112" selection-start-column="8" selection-end-line="112" selection-end-column="8" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/head_script.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/link_css.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="4" selection-end-line="20" selection-end-column="106" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/dbtool/dbtool.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1740">
-          <caret line="116" column="75" selection-start-line="116" selection-start-column="72" selection-end-line="116" selection-end-column="75" />
-          <folding>
-            <element signature="n#style#0;n#textarea#0;n#div#0;n#form#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#form#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -451,68 +411,12 @@
           <folding>
             <element signature="e#16#44#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/head_script.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="107" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/link_css.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="4" selection-end-line="20" selection-end-column="106" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/data.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="14" selection-start-line="36" selection-start-column="0" selection-end-line="39" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jasset/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="59" column="6" selection-start-line="59" selection-start-column="6" selection-end-line="59" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbtool/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/juser/user_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="119" column="26" selection-start-line="119" selection-start-column="26" selection-end-line="119" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jperm/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
+        <state relative-caret-position="195">
           <caret line="14" column="58" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="58" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
@@ -522,7 +426,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jperm/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
+        <state relative-caret-position="1980">
           <caret line="132" column="27" selection-start-line="132" selection-start-column="12" selection-end-line="132" selection-end-column="27" />
           <folding />
         </state>
@@ -530,32 +434,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/nav.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
+        <state relative-caret-position="1320">
           <caret line="88" column="13" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/jperm/perm_role_push.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="56" column="103" selection-start-line="56" selection-start-column="103" selection-end-line="56" selection-end-column="103" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/jasset/group_add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="637">
-          <caret line="125" column="12" selection-start-line="125" selection-start-column="12" selection-end-line="125" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/juser/group_add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="846">
-          <caret line="112" column="8" selection-start-line="112" selection-start-column="8" selection-end-line="112" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -568,9 +448,364 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/dbtool/dbtool.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1995">
+          <caret line="133" column="16" selection-start-line="133" selection-start-column="16" selection-end-line="133" selection-end-column="16" />
+          <folding>
+            <element signature="n#style#0;n#textarea#0;n#div#0;n#form#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#form#0;n#!!top" expanded="true" />
+            <marker date="1487759575596" expanded="false" signature="2786:2811" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/dbtool/dbtool_import.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
+        <state relative-caret-position="1350">
+          <caret line="90" column="61" selection-start-line="90" selection-start-column="48" selection-end-line="90" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/juser/group_add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1680">
+          <caret line="112" column="8" selection-start-line="112" selection-start-column="8" selection-end-line="112" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbtool/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="57" column="22" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
+          <folding>
+            <element signature="e#16#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jperm/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="14" column="58" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jperm/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1980">
+          <caret line="132" column="27" selection-start-line="132" selection-start-column="12" selection-end-line="132" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/juser/user_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1785">
+          <caret line="119" column="26" selection-start-line="119" selection-start-column="26" selection-end-line="119" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="88" column="13" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbtool/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" column="62" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/dbtool/dbtool.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#textarea#0;n#div#0;n#form#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#form#0;n#!!top" expanded="true" />
+            <marker date="1487759575596" expanded="false" signature="2786:2811" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/dbtool/dbtool_import.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1350">
+          <caret line="90" column="61" selection-start-line="90" selection-start-column="48" selection-end-line="90" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/juser/group_add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1680">
+          <caret line="112" column="8" selection-start-line="112" selection-start-column="8" selection-end-line="112" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbtool/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+          <folding>
+            <element signature="e#16#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jperm/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="14" column="58" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jperm/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1980">
+          <caret line="132" column="27" selection-start-line="132" selection-start-column="12" selection-end-line="132" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/juser/user_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1785">
+          <caret line="119" column="26" selection-start-line="119" selection-start-column="26" selection-end-line="119" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="88" column="13" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbtool/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" column="62" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/dbtool/dbtool.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#textarea#0;n#div#0;n#form#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#form#0;n#!!top" expanded="true" />
+            <marker date="1487759575596" expanded="false" signature="2786:2811" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/dbtool/dbtool_import.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1350">
+          <caret line="90" column="61" selection-start-line="90" selection-start-column="48" selection-end-line="90" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/juser/group_add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1680">
+          <caret line="112" column="8" selection-start-line="112" selection-start-column="8" selection-end-line="112" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbtool/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#16#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/head_script.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/link_css.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="4" selection-end-line="20" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/dbtool/dbtool.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1740">
+          <caret line="116" column="75" selection-start-line="116" selection-start-column="72" selection-end-line="116" selection-end-column="75" />
+          <folding>
+            <element signature="n#style#0;n#textarea#0;n#div#0;n#form#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#form#0;n#!!top" expanded="true" />
+            <marker date="1487759575596" expanded="false" signature="2786:2811" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbtool/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#16#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/data.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="14" selection-start-line="36" selection-start-column="0" selection-end-line="39" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jasset/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="59" column="6" selection-start-line="59" selection-start-column="6" selection-end-line="59" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbtool/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/juser/user_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1785">
+          <caret line="119" column="26" selection-start-line="119" selection-start-column="26" selection-end-line="119" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jperm/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="14" column="58" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/jperm/perm_role_push.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="56" column="103" selection-start-line="56" selection-start-column="103" selection-end-line="56" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/jasset/group_add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="637">
+          <caret line="125" column="12" selection-start-line="125" selection-start-column="12" selection-end-line="125" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="88" column="13" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jperm/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="132" column="27" selection-start-line="132" selection-start-column="12" selection-end-line="132" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/link_css.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="72" selection-start-line="10" selection-start-column="72" selection-end-line="10" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/head_script.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/juser/group_add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="112" column="8" selection-start-line="112" selection-start-column="8" selection-end-line="112" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/ajex1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="27" column="61" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbtool/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/dbtool/dbtool_import.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
           <caret line="90" column="61" selection-start-line="90" selection-start-column="48" selection-end-line="90" selection-end-column="61" />
           <folding />
         </state>
@@ -578,8 +813,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dbtool/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+        <state relative-caret-position="-660">
+          <caret line="28" column="59" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="59" />
           <folding>
             <element signature="e#16#44#0" expanded="true" />
           </folding>
@@ -588,11 +823,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/dbtool/dbtool.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="184" column="34" selection-start-line="184" selection-start-column="34" selection-end-line="184" selection-end-column="34" />
+        <state relative-caret-position="-1290">
+          <caret line="54" column="33" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
           <folding>
             <element signature="n#style#0;n#textarea#0;n#div#0;n#form#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#form#0;n#!!top" expanded="true" />
+            <marker date="1487759575596" expanded="false" signature="2786:2811" ph="..." />
           </folding>
         </state>
       </provider>

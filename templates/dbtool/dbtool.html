@@ -47,10 +47,12 @@
 数据库:
 	<input id="database" name="database" style="width:100px"
 			url="http://127.0.0.1:8000/dbtool/dblistjson/"
-			valueField="id" textField="text">
+			valueField="id" textField="text" data-options="onChange:function(){database_onLoadSuccess()}">
+
 	</input>
 
 <button type="submit" onClick="check(cmd)" class="btn btn-primary block full-width">执行sql</button>
+	<!--<button type="button" onClick="database_onLoadSuccess()" class="btn btn-primary block full-width">执行sql</button>-->
 </form>
 
 
@@ -101,6 +103,7 @@ document.getElementById('cmd').value=cmd;
 function check(cmd){
 alert(document.getElementById('cmd').value)
 document.cookie="cmd="+document.getElementById('cmd').value.replace(/(\n)+|(\r\n)+/g, "");
+
 }
 </script>
 
@@ -119,20 +122,43 @@ document.cookie="cmd="+document.getElementById('cmd').value.replace(/(\n)+|(\r\n
 <!--</table>-->
 
 
+<!--yunnshifangshi-->
+    	<!--<div style="margin:20px 0;"></div>-->
 
-    	<div style="margin:20px 0;"></div>
+    	<!--<table class="easyui-datagrid" title="Basic DataGrid" style="width:1100px;height:500px"-->
+    			<!--data-options="singleSelect:true,collapsible:true,url:'{{url}}',method:'get'">-->
+    		<!--<thead>-->
+    			<!--<tr>-->
+                    <!--{% for i in field_name %}-->
+    				<!--<th data-options="field:'{{i}}',width:100">{{i}}</th>-->
+                    <!--{% endfor %}-->
+    			<!--</tr>-->
+    		<!--</thead>-->
+    	<!--</table>-->
 
-    	<table class="easyui-datagrid" title="Basic DataGrid" style="width:1100px;height:500px"
-    			data-options="singleSelect:true,collapsible:true,url:'{{url}}',method:'get'">
-    		<thead>
-    			<tr>
-                    {% for i in field_name %}
-    				<th data-options="field:'{{i}}',width:100">{{i}}</th>
-                    {% endfor %}
-    			</tr>
-    		</thead>
-    	</table>
 
+
+<!--apifangshi-->
+	<table id="dg"></table>
+	<script>
+	function database_onLoadSuccess() {
+	    $('#dg').datagrid({
+			//<!--url:'{{url}}',-->
+			url:'http://127.0.0.1:8000/dbtool/myjson/',
+			columns:[[
+				{% for i in field_name %}
+				{field:'{{i}}',title:'{{i}}',width:100},
+				{% endfor %}
+			]]
+		});
+		console.log(/ahahha/, $('#database').combobox('getValue'));
+    	$('#dg').datagrid('load', {
+        	cmd: $('#cmd').val(),
+        	db: $('#database').combobox('getValue')
+  		});
+    	$('#dg').datagrid('reload');
+	}
+	</script>
 
 
 

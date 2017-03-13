@@ -89,12 +89,22 @@ def dbtool_field_name(request):
         cur = con.cursor()
         cur.execute(cmd)
         rows = cur.fetchall()
-        mydisc = {}
-        desc = cur.description
-        for i in desc:
-            mydisc[desc[0]] = desc[0]
 
-    return HttpResponse("ok", content_type="application/json")
+        desc = cur.description
+        field_name=[]
+        for i in desc:
+            mydisc = {}
+            mydisc['field']=i[0]
+            mydisc['title'] = i[0]
+            mydisc['width'] = 100
+            field_name.append(mydisc)
+
+
+        print field_name
+
+
+    return HttpResponse(json.dumps(field_name), content_type="application/json")
+
 
 
 

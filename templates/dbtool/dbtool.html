@@ -45,14 +45,11 @@
    <textarea  id="cmd" name="cmd" rows="10" cols="100"  style="font-size:20px;background:black;resize:both" ></textarea>
 </div>
 数据库:
-	<input id="database" name="database" style="width:100px"
-			url="http://127.0.0.1:8000/dbtool/dblistjson/"
-			valueField="id" textField="text" data-options="onChange:function(){database_onLoadSuccess()}">
+	<input id="database" name="database" style="width:100px" url="http://127.0.0.1:8000/dbtool/dblistjson/"	valueField="id" textField="text" />
+	<!--data-options="onChange:function(){database_onLoadSuccess()}-->
 
-	</input>
-
-<button type="submit" onClick="check(cmd)" class="btn btn-primary block full-width">执行sql</button>
-	<!--<button type="button" onClick="database_onLoadSuccess()" class="btn btn-primary block full-width">执行sql</button>-->
+<!--<button type="submit" onClick="check(cmd)" class="btn btn-primary block full-width">执行sql</button>-->
+	<button type="button" onClick="database_onLoadSuccess()" class="btn btn-primary block full-width">执行sql</button>
 </form>
 
 
@@ -142,21 +139,32 @@ document.cookie="cmd="+document.getElementById('cmd').value.replace(/(\n)+|(\r\n
 	<table id="dg"></table>
 	<script>
 	function database_onLoadSuccess() {
-	    $('#dg').datagrid({
-			//<!--url:'{{url}}',-->
+
+		$.post('/dbtool/field_name/',{'db':$('#database').combobox('getValue'),'cmd':$('#cmd').val()}).done(function(data) {
+			//for (var i = data.length - 1; i >= 0; i--) {
+            //console.log(/hhhhh/,data[i]['field'])
+            //}
+            window.mydata=data
+            console.log(mydata)
+
+
+            $('#dg').datagrid({
 			url:'http://127.0.0.1:8000/dbtool/myjson/',
-			columns:[[
-				{% for i in field_name %}
-				{field:'{{i}}',title:'{{i}}',width:100},
-				{% endfor %}
-			]]
+			//columns:[[
+			//	{% for i in field_name %}
+			//	{field:'{{i}}',title:'{{i}}',width:100},
+			//	{% endfor %}
+			//]]
+			columns:[mydata]
 		});
 		console.log(/ahahha/, $('#database').combobox('getValue'));
     	$('#dg').datagrid('load', {
         	cmd: $('#cmd').val(),
         	db: $('#database').combobox('getValue')
   		});
-    	$('#dg').datagrid('reload');
+    	//$('#dg').datagrid('reload');
+		});
+
 	}
 	</script>
 

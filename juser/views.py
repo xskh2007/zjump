@@ -223,7 +223,7 @@ def user_list(request):
 
     users_list, p, users, page_range, current_page, show_first, show_end = pages(users_list, request)
     s=users_list[2].name
-    print unicode(s,'utf-8')
+    # print unicode(s,'utf-8')
 
 
     return my_render('juser/user_list.html', locals(), request)

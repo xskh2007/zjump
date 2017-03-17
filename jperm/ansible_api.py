@@ -504,7 +504,7 @@ if __name__ == "__main__":
 #                          },
 #                }
 
-    resource = [{"hostname": "127.0.0.1", "port": "22", "username": "yumaojun", "password": "yusky0902",
+    resource = [{"hostname": "127.0.0.1", "port": "22", "username": "qiantu", "password": "lht1111",
                  # "ansible_become": "yes",
                  # "ansible_become_method": "sudo",
                  # # "ansible_become_user": "root",

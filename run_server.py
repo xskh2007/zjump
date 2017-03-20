@@ -466,7 +466,7 @@ class Application(tornado.web.Application):
             (r'/monitor', MonitorHandler),
             (r'/terminal', WebTerminalHandler),
             (r'/kill', WebTerminalKillHandler),
-            (r'/exec', ExecHandler),
+            (r'/l', ExecHandler),
         ]
 
         setting = {

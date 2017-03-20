@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4654acab-1d1f-44b6-9201-0e96ff018219" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jumpserver-master.iml" afterPath="$PROJECT_DIR$/.idea/jumpserver-master.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jperm/ansible_api.py" afterPath="$PROJECT_DIR$/jperm/ansible_api.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/juser/views.py" afterPath="$PROJECT_DIR$/juser/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/jumpserver.log" afterPath="$PROJECT_DIR$/logs/jumpserver.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_server.py" afterPath="$PROJECT_DIR$/run_server.py" />
     </list>
     <ignored path="jumpserver-master.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,7 +27,7 @@
       <file leaf-file-name="ansible_api.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jperm/ansible_api.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
+            <state relative-caret-position="930">
               <caret line="68" column="13" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
               <folding>
                 <element signature="e#26#65#0" expanded="true" />
@@ -44,57 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/jumpserver_env/lib/python2.6/site-packages/ansible/inventory/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-              <folding>
-                <element signature="e#1176#1219#1" expanded="false" />
-                <element signature="e#1237#1499#0" expanded="false" />
-                <element signature="e#1586#6396#0" expanded="false" />
-                <element signature="e#6447#6734#0" expanded="false" />
-                <element signature="e#6802#7269#0" expanded="false" />
-                <element signature="e#7319#8186#0" expanded="false" />
-                <element signature="e#8232#9809#0" expanded="false" />
-                <element signature="e#9855#10328#0" expanded="false" />
-                <element signature="e#10380#11346#0" expanded="false" />
-                <element signature="e#11397#12328#0" expanded="false" />
-                <element signature="e#12389#12849#0" expanded="false" />
-                <element signature="e#12914#14132#0" expanded="false" />
-                <element signature="e#14177#14296#0" expanded="false" />
-                <element signature="e#14343#14464#0" expanded="false" />
-                <element signature="e#14501#14921#0" expanded="false" />
-                <element signature="e#14957#14975#0" expanded="false" />
-                <element signature="e#15019#15166#0" expanded="false" />
-                <element signature="e#15211#15665#0" expanded="false" />
-                <element signature="e#15711#15825#0" expanded="false" />
-                <element signature="e#15923#16142#0" expanded="false" />
-                <element signature="e#16221#16853#0" expanded="false" />
-                <element signature="e#16945#17103#0" expanded="false" />
-                <element signature="e#17200#17411#0" expanded="false" />
-                <element signature="e#17488#18708#0" expanded="false" />
-                <element signature="e#18750#18994#0" expanded="false" />
-                <element signature="e#19046#19280#0" expanded="false" />
-                <element signature="e#19317#19380#0" expanded="false" />
-                <element signature="e#19454#19478#0" expanded="false" />
-                <element signature="e#19528#19851#0" expanded="false" />
-                <element signature="e#19906#20180#0" expanded="false" />
-                <element signature="e#19906#20047#1" expanded="false" />
-                <element signature="e#20232#21134#0" expanded="false" />
-                <element signature="e#21176#21248#0" expanded="false" />
-                <element signature="e#21299#21372#0" expanded="false" />
-                <element signature="e#21405#21570#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jumpserver/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="10" column="50" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="50" />
+              <caret line="10" column="33" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -103,9 +54,21 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jumpserver/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5025">
-              <caret line="354" column="12" selection-start-line="354" selection-start-column="4" selection-end-line="354" selection-end-column="12" />
+            <state relative-caret-position="150">
+              <caret line="10" column="40" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="40" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="run_server.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/run_server.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="256" column="46" selection-start-line="256" selection-start-column="46" selection-end-line="256" selection-end-column="46" />
+              <folding>
+                <element signature="e#39#50#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -157,18 +120,18 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jasset/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6945">
+            <state relative-caret-position="3932">
               <caret line="469" column="28" selection-start-line="469" selection-start-column="8" selection-end-line="469" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="perm_api.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jperm/perm_api.py">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/juser/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="16" column="17" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="17" />
+            <state relative-caret-position="347">
+              <caret line="224" column="0" selection-start-line="224" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -192,9 +155,10 @@
         <option value="$PROJECT_DIR$/dbtool/views.py" />
         <option value="$PROJECT_DIR$/static/ajex1.html" />
         <option value="$PROJECT_DIR$/templates/dbtool/dbtool.html" />
-        <option value="$PROJECT_DIR$/juser/views.py" />
         <option value="$PROJECT_DIR$/jasset/asset_api.py" />
         <option value="$PROJECT_DIR$/jperm/ansible_api.py" />
+        <option value="$PROJECT_DIR$/run_server.py" />
+        <option value="$PROJECT_DIR$/juser/views.py" />
       </list>
     </option>
   </component>
@@ -278,7 +242,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="jumpserver" />
+              <option name="myItemId" value="juser" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -511,15 +475,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1280" height="718" extended-state="1" />
+    <frame x="0" y="25" width="1280" height="718" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11912226" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36363637" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5616883" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7418831" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -529,7 +494,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16558442" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -557,13 +521,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/dbtool/dbtool_import.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
-          <caret line="90" column="61" selection-start-line="90" selection-start-column="48" selection-end-line="90" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/juser/group_add.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1680">
@@ -788,13 +745,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/juser/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3285">
-          <caret line="226" column="0" selection-start-line="226" selection-start-column="0" selection-end-line="226" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jperm/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -809,26 +759,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jumpserver/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="50" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jperm/perm_api.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="16" column="17" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jasset/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6945">
-          <caret line="469" column="28" selection-start-line="469" selection-start-column="8" selection-end-line="469" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -851,6 +785,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
           <caret line="3706" column="8" selection-start-line="3706" selection-start-column="8" selection-end-line="3706" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -861,21 +796,6 @@
           <folding>
             <element signature="e#16#47#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run_server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jumpserver/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5025">
-          <caret line="354" column="12" selection-start-line="354" selection-start-column="4" selection-end-line="354" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -912,25 +832,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jperm/ansible_api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="68" column="13" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
-          <folding>
-            <element signature="e#26#65#0" expanded="true" />
-            <element signature="e#2087#3413#0" expanded="false" />
-            <element signature="e#5048#6047#0" expanded="false" />
-            <element signature="e#13979#15181#0" expanded="false" />
-            <element signature="e#15219#16250#0" expanded="false" />
-            <element signature="e#16280#16440#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/jumpserver_env/lib/python2.6/site-packages/ansible/inventory/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        <state relative-caret-position="197">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
           <folding>
             <element signature="e#1176#1219#1" expanded="false" />
             <element signature="e#1237#1499#0" expanded="false" />
@@ -968,6 +873,71 @@
             <element signature="e#21299#21372#0" expanded="false" />
             <element signature="e#21405#21570#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jperm/ansible_api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="68" column="13" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
+          <folding>
+            <element signature="e#26#65#0" expanded="true" />
+            <element signature="e#2087#3413#0" expanded="false" />
+            <element signature="e#5048#6047#0" expanded="false" />
+            <element signature="e#13979#15181#0" expanded="false" />
+            <element signature="e#15219#16250#0" expanded="false" />
+            <element signature="e#16280#16440#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jumpserver/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jumpserver/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="40" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/jumpserver_env/lib/python2.6/site-packages/tornado/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="256" column="46" selection-start-line="256" selection-start-column="46" selection-end-line="256" selection-end-column="46" />
+          <folding>
+            <element signature="e#39#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jasset/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3932">
+          <caret line="469" column="28" selection-start-line="469" selection-start-column="8" selection-end-line="469" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juser/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="224" column="0" selection-start-line="224" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

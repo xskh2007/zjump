@@ -441,6 +441,36 @@ class WebTerminalHandler(tornado.websocket.WebSocketHandler):
         except IndexError:
             pass
 
+class MyLogHandler(tornado.websocket.WebSocketHandler):
+
+    def open(self, *args):
+
+        pass
+
+    def on_message(self, message):
+
+
+        import time
+        from collections import deque
+
+        def tail(filename, n=10):
+            'Return the last n lines of a file'
+            while True:
+                lines = '<br>'.join(list(deque(open('/var/log/messages'), n)))
+                self.write_message(lines)
+                if lines:
+                    time.sleep(0.5)
+                    continue
+        # tail('ip.txt')
+        self.write_message(message)
+
+
+
+
+
+    def on_close(self):
+        print "Connection closed"
+
 
 # class MonitorHandler(WebTerminalHandler):
 #     @django_request_support
@@ -494,6 +524,7 @@ def main():
         [
             (r'/ws/monitor', MonitorHandler),
             (r'/ws/terminal', WebTerminalHandler),
+            (r'/ws/mylog', MyLogHandler),
             (r'/ws/kill', WebTerminalKillHandler),
             (r'/ws/exec', ExecHandler),
             (r"/static/(.*)", tornado.web.StaticFileHandler,

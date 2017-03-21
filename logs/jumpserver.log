@@ -156,3 +156,851 @@
 2017-03-20 10:54:42,048 - run_server.py - DEBUG - 系统用户: admin
 2017-03-20 10:54:42,048 - run_server.py - DEBUG - Websocket: request web terminal Host: 192.168.1.189 User: test Role: admin
 2017-03-20 10:54:42,098 - run_server.py - DEBUG - Websocket: Close request
+2017-03-20 16:34:06,845 - user_api.py - DEBUG - 生成ssh key， 并设置authorized_keys
+2017-03-20 16:35:44,849 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-20 16:35:45,768 - run_server.py - DEBUG - Websocket: session_key: a781i3ek52ea5qml8d7uqc8ntev5xke4
+2017-03-20 16:35:45,771 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-20 16:35:45,773 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-20 16:35:45,774 - run_server.py - DEBUG - Websocket: Open request
+2017-03-20 16:35:45,799 - run_server.py - DEBUG - set([<PermRole: admin>])
+2017-03-20 16:35:45,800 - run_server.py - DEBUG - 系统用户: admin
+2017-03-20 16:35:45,800 - run_server.py - DEBUG - Websocket: request web terminal Host: 192.168.2.125 User: test Role: admin
+2017-03-20 16:35:45,807 - api.py - DEBUG - 创建新的系统用户key /root/jumpserver-master/keys/user/test_admin.pem, Owner: test
+2017-03-20 16:35:45,808 - connect.py - DEBUG - {'ip': u'192.168.2.125', 'role_name': u'admin', 'role_key': u'/root/jumpserver-master/keys/user/test_admin.pem', 'user': <User: test>, 'role_pass': '\xf2\x03\xe0T\x1e\x16\x8f\x1d\rWNk#\x94\xb7\x9c\xac\xe9\xc5\xbe\xd8\xf5\xef\xb4g\xbb\x03\xe0i-\x05\x95', 'port': 22, 'asset': <Asset: 192.168.2.125>}
+2017-03-20 16:36:52,147 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-20 16:36:52,480 - run_server.py - DEBUG - Websocket: session_key: r07mjzgiz2egg29k4rjm6bk2csgqpqg9
+2017-03-20 16:36:52,492 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-20 16:36:52,496 - run_server.py - DEBUG - Websocket: user [ admin ] request websocket
+2017-03-20 16:36:52,496 - run_server.py - DEBUG - Websocket: Open request
+2017-03-20 16:36:52,519 - run_server.py - DEBUG - set([<PermRole: admin>])
+2017-03-20 16:36:52,519 - run_server.py - DEBUG - 系统用户: admin
+2017-03-20 16:36:52,519 - run_server.py - DEBUG - Websocket: request web terminal Host: 192.168.2.125 User: admin Role: admin
+2017-03-20 16:36:52,527 - api.py - DEBUG - 创建新的系统用户key /root/jumpserver-master/keys/user/admin_admin.pem, Owner: admin
+2017-03-20 16:36:52,528 - connect.py - DEBUG - {'ip': u'192.168.2.125', 'role_name': u'admin', 'role_key': u'/root/jumpserver-master/keys/user/admin_admin.pem', 'user': <User: admin>, 'role_pass': '\xf2\x03\xe0T\x1e\x16\x8f\x1d\rWNk#\x94\xb7\x9c\xac\xe9\xc5\xbe\xd8\xf5\xef\xb4g\xbb\x03\xe0i-\x05\x95', 'port': 22, 'asset': <Asset: 192.168.2.125>}
+2017-03-20 16:37:41,004 - run_server.py - DEBUG - Websocket: session_key: r07mjzgiz2egg29k4rjm6bk2csgqpqg9
+2017-03-20 16:37:41,008 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-20 16:37:41,011 - run_server.py - DEBUG - Websocket: user [ admin ] request websocket
+2017-03-20 16:37:41,012 - run_server.py - DEBUG - Websocket: Open exec request
+2017-03-20 16:37:41,012 - run_server.py - DEBUG - Web执行命令: 请求系统用户 admin
+2017-03-20 16:37:41,071 - perm_api.py - DEBUG - 生成res: [{'username': u'admin', 'ansible_ssh_private_key_file': u'/root/jumpserver-master/keys/user/admin_admin.pem', 'ip': u'192.168.2.125', 'hostname': u'192.168.2.125', 'ssh_key': u'/root/jumpserver-master/keys/user/admin_admin.pem', 'port': 22}]
+2017-03-20 16:37:53,670 - ansible_api.py - DEBUG - {'dark': {}, 'contacted': {u'192.168.2.125': {u'cmd': u'pwd', u'end': u'2017-03-20 16:37:55.920544', u'stdout': u'/home/admin', u'changed': True, u'start': u'2017-03-20 16:37:55.918409', u'delta': u'0:00:00.002135', u'stderr': u'', u'rc': 0, 'invocation': {'module_name': 'shell', 'module_complex_args': {}, 'module_args': u'pwd'}, u'warnings': []}}}
+2017-03-20 16:45:48,602 - run_server.py - DEBUG - Websocket: session_key: r07mjzgiz2egg29k4rjm6bk2csgqpqg9
+2017-03-20 16:45:48,607 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-20 16:45:48,611 - run_server.py - DEBUG - Websocket: user [ admin ] request websocket
+2017-03-20 16:45:48,611 - run_server.py - DEBUG - Websocket: Open exec request
+2017-03-20 16:45:48,612 - run_server.py - DEBUG - Web执行命令: 请求系统用户 admin
+2017-03-20 16:45:48,651 - perm_api.py - DEBUG - 生成res: [{'username': u'admin', 'ansible_ssh_private_key_file': u'/root/jumpserver-master/keys/user/admin_admin.pem', 'ip': u'192.168.2.125', 'hostname': u'192.168.2.125', 'ssh_key': u'/root/jumpserver-master/keys/user/admin_admin.pem', 'port': 22}]
+2017-03-20 16:45:56,176 - ansible_api.py - DEBUG - {'dark': {}, 'contacted': {u'192.168.2.125': {u'cmd': u'time', u'end': u'2017-03-20 16:45:58.359972', u'stdout': u'', u'changed': True, u'start': u'2017-03-20 16:45:58.357994', u'delta': u'0:00:00.001978', u'stderr': u'\nreal\t0m0.000s\nuser\t0m0.000s\nsys\t0m0.000s', u'rc': 0, 'invocation': {'module_name': 'shell', 'module_complex_args': {}, 'module_args': u'time'}, u'warnings': []}}}
+2017-03-20 16:48:49,251 - run_server.py - DEBUG - 关闭web_exec请求
+2017-03-20 16:48:51,632 - views.py - DEBUG - 获取授权系统用户: 
+2017-03-20 16:48:55,386 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-20 16:48:56,542 - run_server.py - DEBUG - Websocket: session_key: r07mjzgiz2egg29k4rjm6bk2csgqpqg9
+2017-03-20 16:48:56,548 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-20 16:48:56,551 - run_server.py - DEBUG - Websocket: user [ admin ] request websocket
+2017-03-20 16:48:56,551 - run_server.py - DEBUG - Websocket: Open request
+2017-03-20 16:48:56,578 - run_server.py - DEBUG - set([<PermRole: admin>])
+2017-03-20 16:48:56,579 - run_server.py - DEBUG - 系统用户: admin
+2017-03-20 16:48:56,580 - run_server.py - DEBUG - Websocket: request web terminal Host: 192.168.2.125 User: admin Role: admin
+2017-03-20 16:48:56,590 - connect.py - DEBUG - {'ip': u'192.168.2.125', 'role_name': u'admin', 'role_key': u'/root/jumpserver-master/keys/user/admin_admin.pem', 'user': <User: admin>, 'role_pass': '\xf2\x03\xe0T\x1e\x16\x8f\x1d\rWNk#\x94\xb7\x9c\xac\xe9\xc5\xbe\xd8\xf5\xef\xb4g\xbb\x03\xe0i-\x05\x95', 'port': 22, 'asset': <Asset: 192.168.2.125>}
+2017-03-20 17:09:28,647 - run_server.py - DEBUG - Websocket: Close request
+2017-03-20 20:22:31,246 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-20 20:22:31,911 - run_server.py - DEBUG - Websocket: session_key: gb4h3d69q8kgx64ojfgqa78c6ozmau5h
+2017-03-20 20:22:31,927 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-20 20:22:31,934 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-20 20:22:31,934 - run_server.py - DEBUG - Websocket: Open request
+2017-03-20 20:22:31,988 - run_server.py - DEBUG - set([<PermRole: admin>])
+2017-03-20 20:22:31,988 - run_server.py - DEBUG - 系统用户: admin
+2017-03-20 20:22:31,988 - run_server.py - DEBUG - Websocket: request web terminal Host: 192.168.2.125 User: test Role: admin
+2017-03-20 20:22:32,026 - connect.py - DEBUG - {'ip': u'192.168.2.125', 'role_name': u'admin', 'role_key': u'/root/jumpserver-master/keys/user/test_admin.pem', 'user': <User: test>, 'role_pass': '\xf2\x03\xe0T\x1e\x16\x8f\x1d\rWNk#\x94\xb7\x9c\xac\xe9\xc5\xbe\xd8\xf5\xef\xb4g\xbb\x03\xe0i-\x05\x95', 'port': 22, 'asset': <Asset: 192.168.2.125>}
+2017-03-20 20:22:34,827 - run_server.py - DEBUG - Websocket: Close request
+2017-03-20 20:29:13,860 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-20 20:29:14,460 - run_server.py - DEBUG - Websocket: session_key: gb4h3d69q8kgx64ojfgqa78c6ozmau5h
+2017-03-20 20:29:14,469 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-20 20:29:14,472 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-20 20:29:14,472 - run_server.py - DEBUG - Websocket: Open request
+2017-03-20 20:29:14,498 - run_server.py - DEBUG - set([<PermRole: admin>])
+2017-03-20 20:29:14,499 - run_server.py - DEBUG - 系统用户: admin
+2017-03-20 20:29:14,500 - run_server.py - DEBUG - Websocket: request web terminal Host: 192.168.2.125 User: test Role: admin
+2017-03-20 20:29:14,507 - connect.py - DEBUG - {'ip': u'192.168.2.125', 'role_name': u'admin', 'role_key': u'/root/jumpserver-master/keys/user/test_admin.pem', 'user': <User: test>, 'role_pass': '\xf2\x03\xe0T\x1e\x16\x8f\x1d\rWNk#\x94\xb7\x9c\xac\xe9\xc5\xbe\xd8\xf5\xef\xb4g\xbb\x03\xe0i-\x05\x95', 'port': 22, 'asset': <Asset: 192.168.2.125>}
+2017-03-20 20:29:16,657 - run_server.py - DEBUG - Websocket: Close request
+2017-03-20 20:42:04,666 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-20 20:42:05,289 - run_server.py - DEBUG - Websocket: session_key: gb4h3d69q8kgx64ojfgqa78c6ozmau5h
+2017-03-20 20:42:05,305 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-20 20:42:05,309 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-20 20:42:05,309 - run_server.py - DEBUG - Websocket: Open request
+2017-03-20 20:42:05,336 - run_server.py - DEBUG - set([<PermRole: admin>])
+2017-03-20 20:42:05,336 - run_server.py - DEBUG - 系统用户: admin
+2017-03-20 20:42:05,336 - run_server.py - DEBUG - Websocket: request web terminal Host: 192.168.2.125 User: test Role: admin
+2017-03-20 20:42:05,345 - connect.py - DEBUG - {'ip': u'192.168.2.125', 'role_name': u'admin', 'role_key': u'/root/jumpserver-master/keys/user/test_admin.pem', 'user': <User: test>, 'role_pass': '\xf2\x03\xe0T\x1e\x16\x8f\x1d\rWNk#\x94\xb7\x9c\xac\xe9\xc5\xbe\xd8\xf5\xef\xb4g\xbb\x03\xe0i-\x05\x95', 'port': 22, 'asset': <Asset: 192.168.2.125>}
+2017-03-20 20:42:47,028 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 10:46:17,371 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 10:46:17,994 - run_server.py - DEBUG - Websocket: session_key: udry4u88ya26pnmxfvdn34ef02oy36td
+2017-03-21 10:46:18,014 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 10:46:18,019 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 10:46:18,020 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 10:46:18,038 - run_server.py - DEBUG - set([<PermRole: admin>])
+2017-03-21 10:46:18,039 - run_server.py - DEBUG - 系统用户: admin
+2017-03-21 10:46:18,039 - run_server.py - DEBUG - Websocket: request web terminal Host: 192.168.2.125 User: test Role: admin
+2017-03-21 10:46:18,047 - connect.py - DEBUG - {'ip': u'192.168.2.125', 'role_name': u'admin', 'role_key': u'/root/jumpserver-master/keys/user/test_admin.pem', 'user': <User: test>, 'role_pass': '\xf2\x03\xe0T\x1e\x16\x8f\x1d\rWNk#\x94\xb7\x9c\xac\xe9\xc5\xbe\xd8\xf5\xef\xb4g\xbb\x03\xe0i-\x05\x95', 'port': 22, 'asset': <Asset: 192.168.2.125>}
+2017-03-21 10:46:38,474 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 10:49:21,112 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 10:49:29,783 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 10:49:29,982 - run_server.py - DEBUG - Websocket: session_key: 5um3c000v866u8zvz58ko4a8om223w1y
+2017-03-21 10:49:30,043 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 10:49:30,049 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 10:49:30,050 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 10:49:30,069 - run_server.py - DEBUG - set([<PermRole: admin>])
+2017-03-21 10:49:30,069 - run_server.py - DEBUG - 系统用户: admin
+2017-03-21 10:49:30,069 - run_server.py - DEBUG - Websocket: request web terminal Host: 192.168.2.125 User: test Role: admin
+2017-03-21 10:49:30,076 - connect.py - DEBUG - {'ip': u'192.168.2.125', 'role_name': u'admin', 'role_key': u'/root/jumpserver-master/keys/user/test_admin.pem', 'user': <User: test>, 'role_pass': '\xf2\x03\xe0T\x1e\x16\x8f\x1d\rWNk#\x94\xb7\x9c\xac\xe9\xc5\xbe\xd8\xf5\xef\xb4g\xbb\x03\xe0i-\x05\x95', 'port': 22, 'asset': <Asset: 192.168.2.125>}
+2017-03-21 10:49:31,300 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 10:49:41,382 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 10:49:41,500 - run_server.py - DEBUG - Websocket: session_key: 5um3c000v866u8zvz58ko4a8om223w1y
+2017-03-21 10:49:41,503 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 10:49:41,506 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 10:49:41,507 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 10:49:41,529 - run_server.py - DEBUG - set([<PermRole: admin>])
+2017-03-21 10:49:41,529 - run_server.py - DEBUG - 系统用户: admin
+2017-03-21 10:49:41,529 - run_server.py - DEBUG - Websocket: request web terminal Host: 192.168.2.125 User: test Role: admin
+2017-03-21 10:49:41,536 - connect.py - DEBUG - {'ip': u'192.168.2.125', 'role_name': u'admin', 'role_key': u'/root/jumpserver-master/keys/user/test_admin.pem', 'user': <User: test>, 'role_pass': '\xf2\x03\xe0T\x1e\x16\x8f\x1d\rWNk#\x94\xb7\x9c\xac\xe9\xc5\xbe\xd8\xf5\xef\xb4g\xbb\x03\xe0i-\x05\x95', 'port': 22, 'asset': <Asset: 192.168.2.125>}
+2017-03-21 10:49:43,444 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 10:50:43,732 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 10:50:55,050 - views.py - DEBUG - 获取授权系统用户: 
+2017-03-21 10:51:00,919 - views.py - DEBUG - 获取授权系统用户: 
+2017-03-21 10:51:04,045 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 10:54:26,189 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 10:54:26,336 - run_server.py - DEBUG - Websocket: session_key: 5um3c000v866u8zvz58ko4a8om223w1y
+2017-03-21 10:54:26,348 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 10:54:26,352 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 10:54:26,353 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 10:54:26,378 - run_server.py - DEBUG - set([<PermRole: admin>])
+2017-03-21 10:54:26,378 - run_server.py - DEBUG - 系统用户: admin
+2017-03-21 10:54:26,379 - run_server.py - DEBUG - Websocket: request web terminal Host: 192.168.2.125 User: test Role: admin
+2017-03-21 10:54:26,389 - connect.py - DEBUG - {'ip': u'192.168.2.125', 'role_name': u'admin', 'role_key': u'/root/jumpserver-master/keys/user/test_admin.pem', 'user': <User: test>, 'role_pass': '\xf2\x03\xe0T\x1e\x16\x8f\x1d\rWNk#\x94\xb7\x9c\xac\xe9\xc5\xbe\xd8\xf5\xef\xb4g\xbb\x03\xe0i-\x05\x95', 'port': 22, 'asset': <Asset: 192.168.2.125>}
+2017-03-21 10:54:30,220 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 10:55:54,472 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 10:55:54,637 - run_server.py - DEBUG - Websocket: session_key: 5um3c000v866u8zvz58ko4a8om223w1y
+2017-03-21 10:55:54,642 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 10:55:54,646 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 10:55:54,646 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 10:55:54,681 - run_server.py - DEBUG - set([<PermRole: admin>])
+2017-03-21 10:55:54,681 - run_server.py - DEBUG - 系统用户: admin
+2017-03-21 10:55:54,682 - run_server.py - DEBUG - Websocket: request web terminal Host: 192.168.2.125 User: test Role: admin
+2017-03-21 10:55:54,692 - connect.py - DEBUG - {'ip': u'192.168.2.125', 'role_name': u'admin', 'role_key': u'/root/jumpserver-master/keys/user/test_admin.pem', 'user': <User: test>, 'role_pass': '\xf2\x03\xe0T\x1e\x16\x8f\x1d\rWNk#\x94\xb7\x9c\xac\xe9\xc5\xbe\xd8\xf5\xef\xb4g\xbb\x03\xe0i-\x05\x95', 'port': 22, 'asset': <Asset: 192.168.2.125>}
+2017-03-21 10:55:56,765 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 10:56:43,166 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 10:56:43,313 - run_server.py - DEBUG - Websocket: session_key: 5um3c000v866u8zvz58ko4a8om223w1y
+2017-03-21 10:56:43,320 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 10:56:43,322 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 10:56:43,323 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 10:56:43,359 - run_server.py - DEBUG - set([<PermRole: admin>])
+2017-03-21 10:56:43,360 - run_server.py - DEBUG - 系统用户: admin
+2017-03-21 10:56:43,360 - run_server.py - DEBUG - Websocket: request web terminal Host: 192.168.2.125 User: test Role: admin
+2017-03-21 10:56:43,371 - connect.py - DEBUG - {'ip': u'192.168.2.125', 'role_name': u'admin', 'role_key': u'/root/jumpserver-master/keys/user/test_admin.pem', 'user': <User: test>, 'role_pass': '\xf2\x03\xe0T\x1e\x16\x8f\x1d\rWNk#\x94\xb7\x9c\xac\xe9\xc5\xbe\xd8\xf5\xef\xb4g\xbb\x03\xe0i-\x05\x95', 'port': 22, 'asset': <Asset: 192.168.2.125>}
+2017-03-21 10:56:44,690 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 10:57:24,874 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 10:57:25,053 - run_server.py - DEBUG - Websocket: session_key: 5um3c000v866u8zvz58ko4a8om223w1y
+2017-03-21 10:57:25,064 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 10:57:25,066 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 10:57:25,067 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 10:57:25,117 - run_server.py - DEBUG - set([<PermRole: admin>])
+2017-03-21 10:57:25,117 - run_server.py - DEBUG - 系统用户: admin
+2017-03-21 10:57:25,119 - run_server.py - DEBUG - Websocket: request web terminal Host: 192.168.2.125 User: test Role: admin
+2017-03-21 10:57:25,129 - connect.py - DEBUG - {'ip': u'192.168.2.125', 'role_name': u'admin', 'role_key': u'/root/jumpserver-master/keys/user/test_admin.pem', 'user': <User: test>, 'role_pass': '\xf2\x03\xe0T\x1e\x16\x8f\x1d\rWNk#\x94\xb7\x9c\xac\xe9\xc5\xbe\xd8\xf5\xef\xb4g\xbb\x03\xe0i-\x05\x95', 'port': 22, 'asset': <Asset: 192.168.2.125>}
+2017-03-21 10:57:27,109 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 10:59:09,758 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 10:59:09,902 - run_server.py - DEBUG - Websocket: session_key: 5um3c000v866u8zvz58ko4a8om223w1y
+2017-03-21 10:59:09,911 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 10:59:09,916 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 10:59:09,917 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 10:59:09,957 - run_server.py - DEBUG - set([<PermRole: admin>])
+2017-03-21 10:59:09,957 - run_server.py - DEBUG - 系统用户: admin
+2017-03-21 10:59:09,958 - run_server.py - DEBUG - Websocket: request web terminal Host: 192.168.2.125 User: test Role: admin
+2017-03-21 10:59:09,968 - connect.py - DEBUG - {'ip': u'192.168.2.125', 'role_name': u'admin', 'role_key': u'/root/jumpserver-master/keys/user/test_admin.pem', 'user': <User: test>, 'role_pass': '\xf2\x03\xe0T\x1e\x16\x8f\x1d\rWNk#\x94\xb7\x9c\xac\xe9\xc5\xbe\xd8\xf5\xef\xb4g\xbb\x03\xe0i-\x05\x95', 'port': 22, 'asset': <Asset: 192.168.2.125>}
+2017-03-21 11:09:11,579 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 11:09:11,771 - run_server.py - DEBUG - Websocket: session_key: 5um3c000v866u8zvz58ko4a8om223w1y
+2017-03-21 11:09:11,799 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 11:09:11,803 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 11:09:11,803 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 11:09:11,820 - run_server.py - DEBUG - set([<PermRole: admin>])
+2017-03-21 11:09:11,820 - run_server.py - DEBUG - 系统用户: admin
+2017-03-21 11:09:11,820 - run_server.py - DEBUG - Websocket: request web terminal Host: 192.168.2.125 User: test Role: admin
+2017-03-21 11:09:11,835 - connect.py - DEBUG - {'ip': u'192.168.2.125', 'role_name': u'admin', 'role_key': u'/root/jumpserver-master/keys/user/test_admin.pem', 'user': <User: test>, 'role_pass': '\xf2\x03\xe0T\x1e\x16\x8f\x1d\rWNk#\x94\xb7\x9c\xac\xe9\xc5\xbe\xd8\xf5\xef\xb4g\xbb\x03\xe0i-\x05\x95', 'port': 22, 'asset': <Asset: 192.168.2.125>}
+2017-03-21 11:09:17,173 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 11:09:19,015 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 11:09:19,124 - run_server.py - DEBUG - Websocket: session_key: 5um3c000v866u8zvz58ko4a8om223w1y
+2017-03-21 11:09:19,128 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 11:09:19,129 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 11:09:19,130 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 11:09:19,150 - run_server.py - DEBUG - set([<PermRole: admin>])
+2017-03-21 11:09:19,150 - run_server.py - DEBUG - 系统用户: admin
+2017-03-21 11:09:19,151 - run_server.py - DEBUG - Websocket: request web terminal Host: 192.168.2.125 User: test Role: admin
+2017-03-21 11:09:19,158 - connect.py - DEBUG - {'ip': u'192.168.2.125', 'role_name': u'admin', 'role_key': u'/root/jumpserver-master/keys/user/test_admin.pem', 'user': <User: test>, 'role_pass': '\xf2\x03\xe0T\x1e\x16\x8f\x1d\rWNk#\x94\xb7\x9c\xac\xe9\xc5\xbe\xd8\xf5\xef\xb4g\xbb\x03\xe0i-\x05\x95', 'port': 22, 'asset': <Asset: 192.168.2.125>}
+2017-03-21 11:09:20,662 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 11:09:21,718 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 11:09:21,819 - run_server.py - DEBUG - Websocket: session_key: 5um3c000v866u8zvz58ko4a8om223w1y
+2017-03-21 11:09:21,821 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 11:09:21,824 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 11:09:21,824 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 11:09:21,842 - run_server.py - DEBUG - set([<PermRole: admin>])
+2017-03-21 11:09:21,843 - run_server.py - DEBUG - 系统用户: admin
+2017-03-21 11:09:21,843 - run_server.py - DEBUG - Websocket: request web terminal Host: 192.168.2.125 User: test Role: admin
+2017-03-21 11:09:21,848 - connect.py - DEBUG - {'ip': u'192.168.2.125', 'role_name': u'admin', 'role_key': u'/root/jumpserver-master/keys/user/test_admin.pem', 'user': <User: test>, 'role_pass': '\xf2\x03\xe0T\x1e\x16\x8f\x1d\rWNk#\x94\xb7\x9c\xac\xe9\xc5\xbe\xd8\xf5\xef\xb4g\xbb\x03\xe0i-\x05\x95', 'port': 22, 'asset': <Asset: 192.168.2.125>}
+2017-03-21 11:09:23,190 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 11:10:13,996 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 11:10:14,143 - run_server.py - DEBUG - Websocket: session_key: 5um3c000v866u8zvz58ko4a8om223w1y
+2017-03-21 11:10:14,151 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 11:10:14,153 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 11:10:14,154 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 11:10:14,190 - run_server.py - DEBUG - set([<PermRole: admin>])
+2017-03-21 11:10:14,190 - run_server.py - DEBUG - 系统用户: admin
+2017-03-21 11:10:14,190 - run_server.py - DEBUG - Websocket: request web terminal Host: 192.168.2.125 User: test Role: admin
+2017-03-21 11:10:14,216 - connect.py - DEBUG - {'ip': u'192.168.2.125', 'role_name': u'admin', 'role_key': u'/root/jumpserver-master/keys/user/test_admin.pem', 'user': <User: test>, 'role_pass': '\xf2\x03\xe0T\x1e\x16\x8f\x1d\rWNk#\x94\xb7\x9c\xac\xe9\xc5\xbe\xd8\xf5\xef\xb4g\xbb\x03\xe0i-\x05\x95', 'port': 22, 'asset': <Asset: 192.168.2.125>}
+2017-03-21 11:10:17,221 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 11:10:18,285 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 11:10:18,379 - run_server.py - DEBUG - Websocket: session_key: 5um3c000v866u8zvz58ko4a8om223w1y
+2017-03-21 11:10:18,383 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 11:10:18,389 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 11:10:18,389 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 11:10:18,408 - run_server.py - DEBUG - set([<PermRole: admin>])
+2017-03-21 11:10:18,408 - run_server.py - DEBUG - 系统用户: admin
+2017-03-21 11:10:18,408 - run_server.py - DEBUG - Websocket: request web terminal Host: 192.168.2.125 User: test Role: admin
+2017-03-21 11:10:18,416 - connect.py - DEBUG - {'ip': u'192.168.2.125', 'role_name': u'admin', 'role_key': u'/root/jumpserver-master/keys/user/test_admin.pem', 'user': <User: test>, 'role_pass': '\xf2\x03\xe0T\x1e\x16\x8f\x1d\rWNk#\x94\xb7\x9c\xac\xe9\xc5\xbe\xd8\xf5\xef\xb4g\xbb\x03\xe0i-\x05\x95', 'port': 22, 'asset': <Asset: 192.168.2.125>}
+2017-03-21 11:15:54,567 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 11:35:42,942 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 11:35:43,079 - run_server.py - DEBUG - Websocket: session_key: 5um3c000v866u8zvz58ko4a8om223w1y
+2017-03-21 11:35:43,087 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 11:35:43,090 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 11:35:43,090 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 11:35:43,125 - run_server.py - DEBUG - set([<PermRole: admin>])
+2017-03-21 11:35:43,125 - run_server.py - DEBUG - 系统用户: admin
+2017-03-21 11:35:43,125 - run_server.py - DEBUG - Websocket: request web terminal Host: 192.168.2.125 User: test Role: admin
+2017-03-21 11:35:43,133 - connect.py - DEBUG - {'ip': u'192.168.2.125', 'role_name': u'admin', 'role_key': u'/root/jumpserver-master/keys/user/test_admin.pem', 'user': <User: test>, 'role_pass': '\xf2\x03\xe0T\x1e\x16\x8f\x1d\rWNk#\x94\xb7\x9c\xac\xe9\xc5\xbe\xd8\xf5\xef\xb4g\xbb\x03\xe0i-\x05\x95', 'port': 22, 'asset': <Asset: 192.168.2.125>}
+2017-03-21 11:35:48,234 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 11:35:50,666 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 11:35:50,753 - run_server.py - DEBUG - Websocket: session_key: 5um3c000v866u8zvz58ko4a8om223w1y
+2017-03-21 11:35:50,756 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 11:35:50,759 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 11:35:50,764 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 11:35:50,777 - run_server.py - DEBUG - set([<PermRole: admin>])
+2017-03-21 11:35:50,777 - run_server.py - DEBUG - 系统用户: admin
+2017-03-21 11:35:50,777 - run_server.py - DEBUG - Websocket: request web terminal Host: 192.168.2.125 User: test Role: admin
+2017-03-21 11:35:50,785 - connect.py - DEBUG - {'ip': u'192.168.2.125', 'role_name': u'admin', 'role_key': u'/root/jumpserver-master/keys/user/test_admin.pem', 'user': <User: test>, 'role_pass': '\xf2\x03\xe0T\x1e\x16\x8f\x1d\rWNk#\x94\xb7\x9c\xac\xe9\xc5\xbe\xd8\xf5\xef\xb4g\xbb\x03\xe0i-\x05\x95', 'port': 22, 'asset': <Asset: 192.168.2.125>}
+2017-03-21 13:53:43,843 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 13:53:44,482 - run_server.py - DEBUG - Websocket: session_key: 8uj52zo8idrs8avktb04maouaz569fu0
+2017-03-21 13:53:44,490 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 13:53:44,492 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 13:53:44,492 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 13:53:44,517 - run_server.py - DEBUG - set([<PermRole: admin>])
+2017-03-21 13:53:44,517 - run_server.py - DEBUG - 系统用户: admin
+2017-03-21 13:53:44,517 - run_server.py - DEBUG - Websocket: request web terminal Host: 192.168.2.125 User: test Role: admin
+2017-03-21 13:53:44,524 - connect.py - DEBUG - {'ip': u'192.168.2.125', 'role_name': u'admin', 'role_key': u'/root/jumpserver-master/keys/user/test_admin.pem', 'user': <User: test>, 'role_pass': '\xf2\x03\xe0T\x1e\x16\x8f\x1d\rWNk#\x94\xb7\x9c\xac\xe9\xc5\xbe\xd8\xf5\xef\xb4g\xbb\x03\xe0i-\x05\x95', 'port': 22, 'asset': <Asset: 192.168.2.125>}
+2017-03-21 13:53:50,145 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 13:59:58,220 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 13:59:58,846 - run_server.py - DEBUG - Websocket: session_key: 8uj52zo8idrs8avktb04maouaz569fu0
+2017-03-21 13:59:58,856 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 13:59:58,859 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 13:59:58,859 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 13:59:58,882 - run_server.py - DEBUG - set([<PermRole: admin>])
+2017-03-21 13:59:58,882 - run_server.py - DEBUG - 系统用户: admin
+2017-03-21 13:59:58,883 - run_server.py - DEBUG - Websocket: request web terminal Host: 192.168.2.125 User: test Role: admin
+2017-03-21 13:59:58,889 - connect.py - DEBUG - {'ip': u'192.168.2.125', 'role_name': u'admin', 'role_key': u'/root/jumpserver-master/keys/user/test_admin.pem', 'user': <User: test>, 'role_pass': '\xf2\x03\xe0T\x1e\x16\x8f\x1d\rWNk#\x94\xb7\x9c\xac\xe9\xc5\xbe\xd8\xf5\xef\xb4g\xbb\x03\xe0i-\x05\x95', 'port': 22, 'asset': <Asset: 192.168.2.125>}
+2017-03-21 14:00:00,449 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 14:26:49,156 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 14:26:57,801 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 14:26:57,917 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 14:26:57,929 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 14:26:57,932 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 14:26:57,932 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 14:26:57,953 - run_server.py - DEBUG - set([<PermRole: admin>])
+2017-03-21 14:26:57,954 - run_server.py - DEBUG - 系统用户: admin
+2017-03-21 14:26:57,954 - run_server.py - DEBUG - Websocket: request web terminal Host: 192.168.2.125 User: test Role: admin
+2017-03-21 14:26:57,963 - connect.py - DEBUG - {'ip': u'192.168.2.125', 'role_name': u'admin', 'role_key': u'/root/jumpserver-master/keys/user/test_admin.pem', 'user': <User: test>, 'role_pass': '\xf2\x03\xe0T\x1e\x16\x8f\x1d\rWNk#\x94\xb7\x9c\xac\xe9\xc5\xbe\xd8\xf5\xef\xb4g\xbb\x03\xe0i-\x05\x95', 'port': 22, 'asset': <Asset: 192.168.2.125>}
+2017-03-21 14:27:11,180 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 14:27:26,147 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 14:27:32,636 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 14:27:32,776 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 14:27:32,780 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 14:27:32,783 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 14:27:32,783 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 14:27:32,815 - run_server.py - DEBUG - set([<PermRole: admin>])
+2017-03-21 14:27:32,815 - run_server.py - DEBUG - 系统用户: admin
+2017-03-21 14:27:32,815 - run_server.py - DEBUG - Websocket: request web terminal Host: 192.168.2.125 User: test Role: admin
+2017-03-21 14:27:32,823 - connect.py - DEBUG - {'ip': u'192.168.2.125', 'role_name': u'admin', 'role_key': u'/root/jumpserver-master/keys/user/test_admin.pem', 'user': <User: test>, 'role_pass': '\xf2\x03\xe0T\x1e\x16\x8f\x1d\rWNk#\x94\xb7\x9c\xac\xe9\xc5\xbe\xd8\xf5\xef\xb4g\xbb\x03\xe0i-\x05\x95', 'port': 22, 'asset': <Asset: 192.168.2.125>}
+2017-03-21 14:34:27,605 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 14:34:34,249 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 14:35:51,049 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 14:35:51,193 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 14:35:51,203 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 14:35:51,205 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 14:35:51,206 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 14:35:51,241 - run_server.py - DEBUG - set([<PermRole: admin>])
+2017-03-21 14:35:51,241 - run_server.py - DEBUG - 系统用户: admin
+2017-03-21 14:35:51,242 - run_server.py - DEBUG - Websocket: request web terminal Host: 192.168.2.125 User: test Role: admin
+2017-03-21 14:35:51,249 - connect.py - DEBUG - {'ip': u'192.168.2.125', 'role_name': u'admin', 'role_key': u'/root/jumpserver-master/keys/user/test_admin.pem', 'user': <User: test>, 'role_pass': '\xf2\x03\xe0T\x1e\x16\x8f\x1d\rWNk#\x94\xb7\x9c\xac\xe9\xc5\xbe\xd8\xf5\xef\xb4g\xbb\x03\xe0i-\x05\x95', 'port': 22, 'asset': <Asset: 192.168.2.125>}
+2017-03-21 14:35:55,844 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 14:37:11,347 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 14:37:11,483 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 14:37:11,490 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 14:37:11,494 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 14:37:11,494 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 14:37:11,529 - run_server.py - DEBUG - set([<PermRole: admin>])
+2017-03-21 14:37:11,529 - run_server.py - DEBUG - 系统用户: admin
+2017-03-21 14:37:11,530 - run_server.py - DEBUG - Websocket: request web terminal Host: 192.168.2.125 User: test Role: admin
+2017-03-21 14:37:11,540 - connect.py - DEBUG - {'ip': u'192.168.2.125', 'role_name': u'admin', 'role_key': u'/root/jumpserver-master/keys/user/test_admin.pem', 'user': <User: test>, 'role_pass': '\xf2\x03\xe0T\x1e\x16\x8f\x1d\rWNk#\x94\xb7\x9c\xac\xe9\xc5\xbe\xd8\xf5\xef\xb4g\xbb\x03\xe0i-\x05\x95', 'port': 22, 'asset': <Asset: 192.168.2.125>}
+2017-03-21 14:37:19,156 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 14:38:14,198 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 14:38:27,204 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 14:38:31,914 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 14:41:07,365 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 14:41:07,438 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 14:41:07,443 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 14:41:07,447 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 14:41:07,447 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 14:41:07,455 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 14:41:07,510 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 14:41:09,697 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 14:41:09,703 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 14:41:09,706 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 14:41:09,706 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 14:41:09,710 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 14:41:09,713 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 14:41:10,910 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 14:41:10,914 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 14:41:10,916 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 14:41:10,916 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 14:41:10,920 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 14:41:10,923 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 14:41:11,492 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 14:41:11,496 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 14:41:11,498 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 14:41:11,498 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 14:41:11,503 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 14:41:11,505 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 14:41:11,746 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 14:41:11,750 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 14:41:11,754 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 14:41:11,754 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 14:41:11,757 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 14:41:11,759 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 14:41:11,960 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 14:41:11,966 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 14:41:11,971 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 14:41:11,971 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 14:41:11,975 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 14:41:11,978 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 14:41:12,170 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 14:41:12,177 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 14:41:12,180 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 14:41:12,180 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 14:41:12,186 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 14:41:12,191 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 14:41:54,970 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 14:41:54,973 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 14:41:54,975 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 14:41:54,976 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 14:41:54,979 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 14:41:54,981 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 14:41:56,008 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 14:41:56,012 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 14:41:56,014 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 14:41:56,014 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 14:41:56,018 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 14:41:56,020 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 14:42:12,068 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 14:42:12,074 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 14:42:12,076 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 14:42:12,077 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 14:42:12,083 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 14:42:12,085 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 14:42:53,359 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 14:42:53,365 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 14:42:53,367 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 14:42:53,367 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 14:42:53,370 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 14:42:53,372 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 14:42:54,073 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 14:42:54,078 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 14:42:54,081 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 14:42:54,081 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 14:42:54,084 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 14:42:54,086 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 14:42:54,371 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 14:42:54,375 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 14:42:54,377 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 14:42:54,377 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 14:42:54,382 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 14:42:54,384 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 14:42:54,635 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 14:42:54,638 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 14:42:54,640 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 14:42:54,641 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 14:42:54,644 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 14:42:54,647 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 14:42:54,822 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 14:42:54,826 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 14:42:54,828 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 14:42:54,828 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 14:42:54,832 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 14:42:54,834 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 14:45:36,122 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 14:45:36,196 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 14:45:36,204 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 14:45:36,206 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 14:45:36,207 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 14:45:36,212 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 14:45:36,219 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 14:45:44,920 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 14:45:44,925 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 14:45:44,926 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 14:45:44,927 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 14:45:44,929 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 14:45:44,932 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 14:46:00,562 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 14:46:00,706 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 14:46:00,712 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 14:46:00,715 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 14:46:00,715 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 14:46:00,748 - run_server.py - DEBUG - set([<PermRole: admin>])
+2017-03-21 14:46:00,748 - run_server.py - DEBUG - 系统用户: admin
+2017-03-21 14:46:00,748 - run_server.py - DEBUG - Websocket: request web terminal Host: 192.168.2.125 User: test Role: admin
+2017-03-21 14:46:00,755 - connect.py - DEBUG - {'ip': u'192.168.2.125', 'role_name': u'admin', 'role_key': u'/root/jumpserver-master/keys/user/test_admin.pem', 'user': <User: test>, 'role_pass': '\xf2\x03\xe0T\x1e\x16\x8f\x1d\rWNk#\x94\xb7\x9c\xac\xe9\xc5\xbe\xd8\xf5\xef\xb4g\xbb\x03\xe0i-\x05\x95', 'port': 22, 'asset': <Asset: 192.168.2.125>}
+2017-03-21 14:46:13,413 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 14:46:32,164 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 14:46:32,168 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 14:46:32,171 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 14:46:32,171 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 14:46:32,175 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 14:46:32,177 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 14:49:20,086 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 14:49:20,166 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 14:49:20,174 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 14:49:20,176 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 14:49:20,176 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 14:49:20,180 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 14:49:20,184 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 14:49:28,140 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 14:49:28,248 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 14:49:28,252 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 14:49:28,255 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 14:49:28,255 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 14:49:28,273 - run_server.py - DEBUG - set([<PermRole: admin>])
+2017-03-21 14:49:28,273 - run_server.py - DEBUG - 系统用户: admin
+2017-03-21 14:49:28,273 - run_server.py - DEBUG - Websocket: request web terminal Host: 192.168.2.125 User: test Role: admin
+2017-03-21 14:49:28,280 - connect.py - DEBUG - {'ip': u'192.168.2.125', 'role_name': u'admin', 'role_key': u'/root/jumpserver-master/keys/user/test_admin.pem', 'user': <User: test>, 'role_pass': '\xf2\x03\xe0T\x1e\x16\x8f\x1d\rWNk#\x94\xb7\x9c\xac\xe9\xc5\xbe\xd8\xf5\xef\xb4g\xbb\x03\xe0i-\x05\x95', 'port': 22, 'asset': <Asset: 192.168.2.125>}
+2017-03-21 14:49:39,534 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 14:56:41,525 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 14:56:41,531 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 14:56:41,536 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 14:56:41,536 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 14:56:41,541 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 14:56:41,543 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 14:56:42,908 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 14:56:42,912 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 14:56:42,915 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 14:56:42,915 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 14:56:42,921 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 14:56:42,924 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 14:56:45,637 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 14:56:45,642 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 14:56:45,644 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 14:56:45,645 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 14:56:45,649 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 14:56:45,653 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 14:56:46,491 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 14:56:46,496 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 14:56:46,499 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 14:56:46,499 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 14:56:46,504 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 14:56:46,508 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 14:56:46,711 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 14:56:46,729 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 14:56:46,731 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 14:56:46,731 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 14:56:46,736 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 14:56:46,739 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 14:56:46,896 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 14:56:46,906 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 14:56:46,909 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 14:56:46,909 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 14:56:46,914 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 14:56:46,916 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 14:56:47,064 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 14:56:47,074 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 14:56:47,076 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 14:56:47,076 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 14:56:47,080 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 14:56:47,082 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 14:56:47,259 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 14:56:47,266 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 14:56:47,269 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 14:56:47,269 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 14:56:47,278 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 14:56:47,281 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 14:56:47,459 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 14:56:47,463 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 14:56:47,470 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 14:56:47,471 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 14:56:47,476 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 14:56:47,479 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 14:56:47,708 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 14:56:47,713 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 14:56:47,721 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 14:56:47,722 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 14:56:47,726 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 14:56:47,729 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 14:56:49,243 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 14:56:49,247 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 14:56:49,251 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 14:56:49,251 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 14:56:49,257 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 14:56:49,259 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:02:20,118 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 15:02:20,191 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:02:20,196 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:02:20,199 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:02:20,200 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:02:20,206 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 15:02:20,210 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:02:25,245 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 15:02:25,308 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:02:25,313 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:02:25,315 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:02:25,315 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:02:25,318 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 15:02:25,323 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:02:27,325 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:02:27,329 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:02:27,331 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:02:27,331 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:02:27,335 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 15:02:27,337 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:02:28,466 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:02:28,470 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:02:28,472 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:02:28,473 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:02:28,476 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 15:02:28,478 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:02:28,953 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:02:28,957 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:02:28,959 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:02:28,959 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:02:28,962 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 15:02:28,965 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:02:29,153 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:02:29,157 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:02:29,159 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:02:29,160 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:02:29,165 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 15:02:29,169 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:02:29,329 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:02:29,333 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:02:29,336 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:02:29,336 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:02:29,339 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 15:02:29,341 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:02:29,511 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:02:29,514 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:02:29,516 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:02:29,516 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:02:29,520 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 15:02:29,522 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:02:36,458 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:02:36,464 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:02:36,466 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:02:36,466 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:02:36,469 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 15:02:36,471 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:02:37,344 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:02:37,348 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:02:37,350 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:02:37,350 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:02:37,353 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 15:02:37,355 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:02:38,725 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:02:38,729 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:02:38,731 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:02:38,731 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:02:38,734 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 15:02:38,737 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:02:41,523 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:02:41,546 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:02:41,548 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:02:41,548 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:02:41,552 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 15:02:41,554 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:02:41,897 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:02:41,900 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:02:41,904 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:02:41,905 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:02:41,908 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 15:02:41,910 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:02:42,127 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:02:42,132 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:02:42,133 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:02:42,134 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:02:42,138 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 15:02:42,140 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:02:42,357 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:02:42,360 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:02:42,366 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:02:42,366 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:02:42,371 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 15:02:42,373 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:02:42,557 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:02:42,561 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:02:42,564 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:02:42,564 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:02:42,571 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 15:02:42,574 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:04:03,247 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:04:03,261 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:04:03,263 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:04:03,263 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:04:03,268 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 15:04:03,271 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:04:50,926 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:04:50,934 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:04:50,937 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:04:50,937 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:04:50,942 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 15:04:50,946 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:04:52,173 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:04:52,177 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:04:52,180 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:04:52,180 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:04:52,187 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 15:04:52,189 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:05:25,343 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:05:25,354 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:05:25,359 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:05:25,360 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:05:25,367 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 15:05:25,370 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:05:26,916 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:05:26,921 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:05:26,923 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:05:26,923 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:05:26,927 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 15:05:26,931 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:05:27,784 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:05:27,789 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:05:27,792 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:05:27,792 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:05:27,796 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 15:05:27,800 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:05:29,091 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:05:29,098 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:05:29,101 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:05:29,101 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:05:29,105 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 15:05:29,107 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:08:56,692 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 15:08:56,762 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:08:56,774 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:08:56,776 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:08:56,776 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:08:56,779 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 15:08:56,782 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:08:59,748 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:08:59,752 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:08:59,755 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:08:59,755 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:08:59,758 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 15:08:59,760 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:09:00,859 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:09:00,864 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:09:00,867 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:09:00,867 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:09:00,872 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 15:09:00,874 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:09:01,347 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:09:01,351 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:09:01,353 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:09:01,353 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:09:01,358 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 15:09:01,360 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:09:01,595 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:09:01,599 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:09:01,601 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:09:01,601 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:09:01,605 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 15:09:01,608 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:09:01,831 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:09:01,836 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:09:01,840 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:09:01,840 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:09:01,843 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 15:09:01,846 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:09:19,913 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 15:09:19,976 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:09:19,983 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:09:19,986 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:09:19,986 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:09:19,989 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 15:09:19,991 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:09:22,308 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:09:22,312 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:09:22,313 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:09:22,314 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:09:22,317 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 15:09:22,318 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:09:23,194 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:09:23,198 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:09:23,200 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:09:23,200 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:09:23,205 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 15:09:23,207 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:09:23,554 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:09:23,559 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:09:23,560 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:09:23,561 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:09:23,564 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 15:09:23,566 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:09:23,751 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:09:23,756 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:09:23,758 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:09:23,758 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:09:23,762 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 15:09:23,766 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:09:23,912 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:09:23,916 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:09:23,918 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:09:23,918 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:09:23,922 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 15:09:23,925 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:09:24,059 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:09:24,063 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:09:24,065 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:09:24,066 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:09:24,068 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 15:09:24,071 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:09:24,261 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:09:24,266 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:09:24,269 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:09:24,270 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:09:24,282 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 15:09:24,287 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:09:24,433 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:09:24,437 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:09:24,440 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:09:24,440 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:09:24,445 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 15:09:24,446 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:09:25,538 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:09:25,543 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:09:25,545 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:09:25,545 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:09:25,547 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 15:09:25,549 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:09:26,079 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:09:26,082 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:09:26,084 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:09:26,085 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:09:26,088 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 15:09:26,090 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:09:26,340 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:09:26,345 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:09:26,346 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:09:26,346 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:09:26,356 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 15:09:26,359 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:09:26,561 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:09:26,566 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:09:26,568 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:09:26,568 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:09:26,572 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 15:09:26,574 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:09:26,789 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:09:26,811 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:09:26,814 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:09:26,814 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:09:26,817 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 15:09:26,820 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:09:27,346 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:09:27,350 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:09:27,353 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:09:27,353 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:09:27,357 - run_server.py - WARNING - Websocket: No that Host: 9999 User: test 
+2017-03-21 15:09:27,359 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:12:01,029 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 15:13:45,909 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 15:15:05,584 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 15:15:05,745 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:15:05,760 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:15:05,770 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:15:05,770 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:15:05,796 - run_server.py - DEBUG - set([<PermRole: admin>])
+2017-03-21 15:15:05,797 - run_server.py - DEBUG - 系统用户: admin
+2017-03-21 15:15:05,797 - run_server.py - DEBUG - Websocket: request web terminal Host: 192.168.2.125 User: test Role: admin
+2017-03-21 15:15:05,807 - connect.py - DEBUG - {'ip': u'192.168.2.125', 'role_name': u'admin', 'role_key': u'/root/jumpserver-master/keys/user/test_admin.pem', 'user': <User: test>, 'role_pass': '\xf2\x03\xe0T\x1e\x16\x8f\x1d\rWNk#\x94\xb7\x9c\xac\xe9\xc5\xbe\xd8\xf5\xef\xb4g\xbb\x03\xe0i-\x05\x95', 'port': 22, 'asset': <Asset: 192.168.2.125>}
+2017-03-21 15:15:15,538 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:16:13,038 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 15:16:14,113 - run_server.py - DEBUG - Websocket: session_key: 5edj9pujbg4r7p4v4aeq5m0bs7uiyhmv
+2017-03-21 15:16:14,116 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:16:14,118 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:16:14,118 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:16:14,132 - run_server.py - DEBUG - set([<PermRole: admin>])
+2017-03-21 15:16:14,133 - run_server.py - DEBUG - 系统用户: admin
+2017-03-21 15:16:14,133 - run_server.py - DEBUG - Websocket: request web terminal Host: 192.168.2.125 User: test Role: admin
+2017-03-21 15:16:14,142 - connect.py - DEBUG - {'ip': u'192.168.2.125', 'role_name': u'admin', 'role_key': u'/root/jumpserver-master/keys/user/test_admin.pem', 'user': <User: test>, 'role_pass': '\xf2\x03\xe0T\x1e\x16\x8f\x1d\rWNk#\x94\xb7\x9c\xac\xe9\xc5\xbe\xd8\xf5\xef\xb4g\xbb\x03\xe0i-\x05\x95', 'port': 22, 'asset': <Asset: 192.168.2.125>}
+2017-03-21 15:16:15,997 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:21:41,543 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 15:21:41,684 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:21:41,688 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:21:41,691 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:21:41,691 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:21:41,731 - run_server.py - DEBUG - set([<PermRole: admin>])
+2017-03-21 15:21:41,732 - run_server.py - DEBUG - 系统用户: admin
+2017-03-21 15:21:41,732 - run_server.py - DEBUG - Websocket: request web terminal Host: 192.168.2.125 User: test Role: admin
+2017-03-21 15:21:41,744 - connect.py - DEBUG - {'ip': u'192.168.2.125', 'role_name': u'admin', 'role_key': u'/root/jumpserver-master/keys/user/test_admin.pem', 'user': <User: test>, 'role_pass': '\xf2\x03\xe0T\x1e\x16\x8f\x1d\rWNk#\x94\xb7\x9c\xac\xe9\xc5\xbe\xd8\xf5\xef\xb4g\xbb\x03\xe0i-\x05\x95', 'port': 22, 'asset': <Asset: 192.168.2.125>}
+2017-03-21 15:21:43,237 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:22:21,496 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 15:22:32,998 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 15:22:33,117 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 15:22:33,121 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 15:22:33,123 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 15:22:33,123 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 15:22:33,141 - run_server.py - DEBUG - set([<PermRole: admin>])
+2017-03-21 15:22:33,141 - run_server.py - DEBUG - 系统用户: admin
+2017-03-21 15:22:33,141 - run_server.py - DEBUG - Websocket: request web terminal Host: 192.168.2.125 User: test Role: admin
+2017-03-21 15:22:33,232 - connect.py - DEBUG - {'ip': u'192.168.2.125', 'role_name': u'admin', 'role_key': u'/root/jumpserver-master/keys/user/test_admin.pem', 'user': <User: test>, 'role_pass': '\xf2\x03\xe0T\x1e\x16\x8f\x1d\rWNk#\x94\xb7\x9c\xac\xe9\xc5\xbe\xd8\xf5\xef\xb4g\xbb\x03\xe0i-\x05\x95', 'port': 22, 'asset': <Asset: 192.168.2.125>}
+2017-03-21 15:22:35,178 - run_server.py - DEBUG - Websocket: Close request
+2017-03-21 15:23:22,176 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 15:25:34,679 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 15:27:09,400 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 15:53:49,524 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 15:57:12,865 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 15:59:53,310 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 16:06:30,043 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 16:07:18,335 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 16:09:16,084 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 16:21:05,997 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 16:24:55,641 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 16:28:46,433 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 16:28:46,590 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 16:28:46,599 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 16:28:46,611 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 16:28:46,611 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 16:28:46,642 - run_server.py - DEBUG - set([<PermRole: admin>])
+2017-03-21 16:28:46,642 - run_server.py - DEBUG - 系统用户: admin
+2017-03-21 16:28:46,642 - run_server.py - DEBUG - Websocket: request web terminal Host: 192.168.2.125 User: test Role: admin
+2017-03-21 16:28:46,653 - connect.py - DEBUG - {'ip': u'192.168.2.125', 'role_name': u'admin', 'role_key': u'/root/jumpserver-master/keys/user/test_admin.pem', 'user': <User: test>, 'role_pass': '\xf2\x03\xe0T\x1e\x16\x8f\x1d\rWNk#\x94\xb7\x9c\xac\xe9\xc5\xbe\xd8\xf5\xef\xb4g\xbb\x03\xe0i-\x05\x95', 'port': 22, 'asset': <Asset: 192.168.2.125>}
+2017-03-21 16:33:20,808 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 17:16:13,778 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 17:16:36,766 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 17:16:42,411 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 17:22:48,077 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 17:22:48,232 - run_server.py - DEBUG - Websocket: session_key: z4jq24ew966zrezvq5gspoi7v9b807w2
+2017-03-21 17:22:48,237 - run_server.py - DEBUG - Websocket: session: Session object
+2017-03-21 17:22:48,239 - run_server.py - DEBUG - Websocket: user [ test ] request websocket
+2017-03-21 17:22:48,239 - run_server.py - DEBUG - Websocket: Open request
+2017-03-21 17:22:48,278 - run_server.py - DEBUG - set([<PermRole: admin>])
+2017-03-21 17:22:48,279 - run_server.py - DEBUG - 系统用户: admin
+2017-03-21 17:22:48,279 - run_server.py - DEBUG - Websocket: request web terminal Host: 192.168.2.125 User: test Role: admin
+2017-03-21 17:22:48,287 - connect.py - DEBUG - {'ip': u'192.168.2.125', 'role_name': u'admin', 'role_key': u'/root/jumpserver-master/keys/user/test_admin.pem', 'user': <User: test>, 'role_pass': '\xf2\x03\xe0T\x1e\x16\x8f\x1d\rWNk#\x94\xb7\x9c\xac\xe9\xc5\xbe\xd8\xf5\xef\xb4g\xbb\x03\xe0i-\x05\x95', 'port': 22, 'asset': <Asset: 192.168.2.125>}
+2017-03-21 17:24:43,701 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 17:25:17,793 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 17:25:20,771 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 17:25:23,461 - views.py - DEBUG - 获取授权系统用户: admin
+2017-03-21 17:26:58,695 - views.py - DEBUG - 获取授权系统用户: admin

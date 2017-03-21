@@ -368,4 +368,12 @@ def web_terminal(request):
         hostname = asset.hostname
     return render_to_response('jlog/web_terminal.html', locals())
 
+@require_role('user')
+def mylog(request):
+    asset_id = request.GET.get('id')
+    role_name = request.GET.get('role')
+    asset = get_object(Asset, id=asset_id)
+    if asset:
+        hostname = asset.hostname
+    return render_to_response('jlog/mylog.html', locals())
 

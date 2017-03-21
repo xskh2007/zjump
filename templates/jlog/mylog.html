@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WebSockets Demonstrator For LFY</title>
+</head>
+
+<body style="font-family: Lekton; font-size: 24pt">
+    <p style="width: 800px">日志测试数据</p>
+    <!-- <div id="textDiv"></div> -->
+
+    <form action="/ws/mylog">
+
+        <!--<input type="hidden" name="text1" value="logfile" />-->
+
+        <!--<input type="submit" value="点击" />-->
+
+    </form>
+
+
+
+    <div id="textDiv"></div>
+
+
+    <script type="text/javascript">
+        var ws = new WebSocket("ws://192.168.110.128:8000/ws/mylog");
+
+        ws.onopen = function() {
+            ws.send("Hello, world");
+        };
+        ws.onmessage = function(evt) {
+
+            console.log(evt.data)
+            document.getElementById('textDiv').innerHTML = evt.data;
+
+
+
+        };
+    </script>
+
+</body>
+
+
+</html>

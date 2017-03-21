@@ -2,9 +2,192 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4654acab-1d1f-44b6-9201-0e96ff018219" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/juser/views.py" afterPath="$PROJECT_DIR$/juser/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170320/25179d61-41ee-491e-8565-477a30f4e576.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170320/542754fc-8fac-4fcb-a4fb-5a028658bd34.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170320/b5f2364f-d5ef-4751-9cd5-3f3f397f3682.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170320/c068f4da-7bb2-4265-b791-0a389071b02b.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/0191cbde-b14f-4c64-8a92-84c64d7affcb.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/064db1af-a91e-4e8d-bb81-dde0eb69482e.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/06e933ba-d6c3-42c2-8f2d-2eb6d3b6867b.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/0c1ca9d5-1bd9-474c-a721-0a8136fc79ee.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/120ef356-fda3-4a35-b063-fb1c07821026.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/1418192b-fd52-4bac-b98f-0ca616e46be2.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/144f3f66-8a73-45d6-8d96-aa585237ba03.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/14637896-eae5-4dc8-978d-83e9240e3b08.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/15f4c7e1-381c-4f03-aee0-b72543f6e449.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/16e0d1ba-0c89-4bf4-9556-aa1647598a86.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/1aaf273b-494f-4e98-8ab0-a0d5e31c97b1.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/1c2079a8-174a-4197-88de-7094d6c7a35c.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/1db51bbe-8197-48db-a5b5-dae116bf6aac.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/247ad396-ffc7-48de-a2b6-bc9df1c368f9.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/248ef36b-1e67-4f37-98a7-f85636ed3539.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/2593ec47-4964-4d9f-a56c-9dfc408d60f2.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/26fa9c45-aa78-4bbf-80d3-09a997d95828.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/29962e31-8879-49ff-805b-3afd64019fb4.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/2ce3c7ec-2c8b-4708-9eee-43362eb99692.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/2d098270-3a2d-47ea-a1b4-66667ced823c.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/2e807dbf-25fb-430b-acab-38473ded5a2f.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/2f03808d-a702-4679-9fea-886c4e1bb688.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/2f0abcad-e010-48ef-8a9b-5de300dbc9a5.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/2ff00ec9-4e00-461b-84b0-19258a2c7699.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/31a3e04b-f4ea-47f2-bfb6-fefd093f25de.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/3472781c-d427-43f1-be85-30b62e7090fe.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/34ea389c-d145-4089-838e-7cb8b93cc774.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/3f4ce45d-6d3e-4f58-acd7-b49a417a44a2.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/4239b958-ef2a-4a9a-b4c9-60430b8a490a.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/4282e860-a1c1-48f9-a2f6-a3fabee29f1c.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/4424ccb2-bd99-4448-b516-f3570811f60b.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/4573429c-f3df-475b-a53d-db32e991a7c3.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/47c28563-83f1-4807-88cb-d422d29d4e66.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/53ea851f-696d-496c-9ff3-2f91f7eed80e.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/553c4e9c-d137-42e8-b66f-703f48fe8ddb.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/59545046-b2ad-41e7-ac67-b41f87eee1d3.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/59fbd3c5-bebd-40c9-bb38-d43634385ddd.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/5cde0f1d-3eb9-4bbe-b097-928105616c1a.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/5e773924-ecc5-4abf-9298-0a9e966ad29c.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/604f6997-c1d4-4e55-a408-395b6acd3291.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/64b9ee90-5cf7-4d3f-a61f-ef0ed56e7d25.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/6a697f5b-a242-4ff6-bf59-c7a8629e41a7.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/6b6511d2-91e9-41ed-aacc-a8b2d8b59b91.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/6e94010e-3dfc-47f7-9c1c-5f0fd399fffd.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/6f986b8b-2141-4b34-b292-edf822c97920.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/7190016e-7df0-4ac7-ab25-44bef87f5717.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/73b85669-717d-4584-9400-5ca73bec833a.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/75c86896-acc8-4fe6-9f91-9460983a398a.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/7a46083f-06e8-4dfd-b56c-cf24ecef92e4.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/7ce8a60f-731b-405f-8b18-45019d4417c7.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/7d306938-c4b7-45d2-9300-8a6ba351db73.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/82c03b8b-defe-4467-88ad-6a91fb9ef85c.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/8596643c-1e45-4abf-a8cf-31891e3dccda.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/85bca08b-e3d8-475f-924f-1bae53385a93.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/85e6acbf-8fc9-48f1-954f-1e8e54f86841.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/87f498cc-81f7-4050-9f30-b3de12e85e46.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/8eaab451-8365-4b44-9d0b-3610138c0bbe.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/92c5484b-83c9-4ab2-9aba-9372bd9bf5a0.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/9411add1-e9e5-44ce-bea3-6423cc1c4f9b.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/97103912-d3bf-495a-b097-045273a0d97f.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/9800e49f-88dd-49a7-af98-05088415f0b8.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/988d00fa-529c-4183-897f-4806e97181f8.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/98a25240-403d-4f70-9073-e1e6ea63c908.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/99199dc2-2717-4a84-9e4d-85b384df1f20.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/9922f38c-3a5a-47b8-a865-9b4117cbd9c2.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/9a58f7b8-99a9-48a0-a4e9-85be326022db.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/9bd6f9e3-321d-410f-8c5f-8dc7f07e51ba.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/9d534a8e-4707-4a25-be4f-fab9a839fb28.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/9f179719-f8d3-4a56-a0ff-21cc4b3d2ff3.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/9f5620ac-3582-4969-94aa-9c56ad7fd21b.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/a23570fe-3377-46a3-b811-a0187e79f7ab.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/a391b724-a98c-4001-bba6-f7198ca1d953.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/a3eabb73-a5c6-44eb-8396-7f724e97a9d2.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/a4823026-f230-491f-850b-867670eae254.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/aa37eaae-9684-4c92-8bd0-1a44b9d6c355.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/adeda38c-0c7e-498d-bd57-f8e40d499977.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/af824f7c-e92b-41e3-9733-74b0dcb07b1a.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/af933d1f-ea83-44d5-b74d-37545230fc55.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/b0f770b6-8387-4b96-9393-053d01d96faf.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/b15ae76e-817d-4867-bea4-add497529f9a.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/b4295409-ca9e-4db3-8992-6b7cdf6685f0.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/b7303c7f-580b-4848-aa5a-52d81604075e.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/bc348b61-87ff-40f2-8811-d9d2df6fbf7d.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/bf43ac47-ac82-4575-a35a-dbad36eef950.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/c357cba0-f938-4229-b87c-c929542a26a9.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/c4063666-ea90-4f57-8129-92244bf8aacc.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/d33c690d-6ac7-468a-b889-3ba42f376b75.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/d6f1bd68-fd25-4264-a36c-1ba8c61733df.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/dba66e05-e64e-4bad-9cd8-de2d3873589a.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/ddf741b7-1802-4e76-b31a-e4efd5f63b81.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/e349ab07-8e40-47d9-9d67-14d0eacb3b66.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/e8138c26-6eff-4e07-9c6b-588ebc8c6a26.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/ef5d2407-add2-4670-946b-76779e44f93a.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/f02a4c22-4cfb-4fb0-bbb5-5765347e64b7.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/f1eda156-40fc-41ec-8003-fb5bfa1ba8c4.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/f21b2171-7eb1-4c14-8735-b14e5c71e0f7.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/f29c2b21-6d15-4041-8468-c47f121b83ef.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/f3ac24fa-988f-4465-a146-15392742cc25.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/fbd9c246-71ca-431f-97f4-e0e308a57c47.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/fcce5d01-e403-4049-9c46-c2dbf62d91d8.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ip.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keys/user/admin_admin.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keys/user/test.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keys/user/test.pem.pub" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keys/user/test_admin.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170320/admin_192.168.2.125_163652.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170320/admin_192.168.2.125_163652.time" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170320/admin_192.168.2.125_164856.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170320/admin_192.168.2.125_164856.time" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170320/test_192.168.2.125_163546.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170320/test_192.168.2.125_163546.time" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170320/test_192.168.2.125_202232.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170320/test_192.168.2.125_202232.time" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170320/test_192.168.2.125_202914.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170320/test_192.168.2.125_202914.time" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170320/test_192.168.2.125_204205.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170320/test_192.168.2.125_204205.time" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_104618.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_104618.time" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_104930.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_104930.time" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_104941.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_104941.time" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_105426.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_105426.time" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_105555.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_105555.time" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_105643.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_105643.time" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_105725.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_105725.time" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_105910.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_105910.time" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_110912.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_110912.time" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_110919.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_110919.time" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_110922.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_110922.time" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_111014.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_111014.time" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_111018.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_111018.time" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_113543.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_113543.time" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_113551.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_113551.time" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_135344.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_135344.time" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_135959.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_135959.time" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_142658.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_142658.time" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_142733.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_142733.time" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_143551.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_143551.time" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_143711.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_143711.time" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_144601.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_144601.time" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_144928.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_144928.time" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_151506.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_151506.time" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_151614.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_151614.time" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_152142.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_152142.time" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_152233.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_152233.time" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_162847.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_162847.time" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_172248.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/tty/20170321/test_192.168.2.125_172248.time" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/jlog/mylog.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jumpserver/urls.py" afterPath="$PROJECT_DIR$/jumpserver/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jumpserver/views.py" afterPath="$PROJECT_DIR$/jumpserver/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/jumpserver.log" afterPath="$PROJECT_DIR$/logs/jumpserver.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_server.py" afterPath="$PROJECT_DIR$/run_server.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/jasset/asset_cu_list.html" afterPath="$PROJECT_DIR$/templates/jasset/asset_cu_list.html" />
     </list>
     <ignored path="jumpserver-master.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,28 +207,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ansible_api.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jperm/ansible_api.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="930">
-              <caret line="68" column="13" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
-              <folding>
-                <element signature="e#26#65#0" expanded="true" />
-                <element signature="e#2087#3413#0" expanded="false" />
-                <element signature="e#5048#6047#0" expanded="false" />
-                <element signature="e#13979#15181#0" expanded="false" />
-                <element signature="e#15219#16250#0" expanded="false" />
-                <element signature="e#16280#16440#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jumpserver/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="33" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="33" />
+            <state relative-caret-position="210">
+              <caret line="14" column="54" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -54,37 +220,40 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jumpserver/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="40" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="run_server.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/run_server.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="256" column="46" selection-start-line="256" selection-start-column="46" selection-end-line="256" selection-end-column="46" />
+            <state relative-caret-position="5235">
+              <caret line="368" column="44" selection-start-line="368" selection-start-column="44" selection-end-line="368" selection-end-column="44" />
               <folding>
-                <element signature="e#39#50#0" expanded="true" />
+                <element signature="e#18#49#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/jumpserver_env/lib/python2.6/site-packages/ansible/runner/__init__.py">
+      <file leaf-file-name="web_terminal.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/jlog/web_terminal.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1245">
-              <caret line="117" column="31" selection-start-line="117" selection-start-column="31" selection-end-line="117" selection-end-column="31" />
+            <state relative-caret-position="405">
+              <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sh.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/jumpserver_env/lib/python2.6/site-packages/ansible/runner/shell_plugins/sh.py">
+      <file leaf-file-name="mylog.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/jlog/mylog.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="term.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/term.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -93,26 +262,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="constants.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/jumpserver_env/lib/python2.6/site-packages/ansible/constants.py">
+      <file leaf-file-name="run_server.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/run_server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1560">
-              <caret line="104" column="108" selection-start-line="104" selection-start-column="101" selection-end-line="104" selection-end-column="108" />
+            <state relative-caret-position="90">
+              <caret line="468" column="0" selection-start-line="468" selection-start-column="0" selection-end-line="468" selection-end-column="0" />
               <folding>
-                <element signature="e#714#723#0" expanded="true" />
+                <element signature="e#39#50#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="asset_api.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jasset/asset_api.py">
+      <file leaf-file-name="webterminal.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/webterminal.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5235">
-              <caret line="359" column="79" selection-start-line="359" selection-start-column="79" selection-end-line="359" selection-end-column="79" />
-              <folding>
-                <element signature="e#16#47#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="225">
+              <caret line="15" column="87" selection-start-line="15" selection-start-column="75" selection-end-line="15" selection-end-column="87" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -120,18 +287,18 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jasset/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3932">
-              <caret line="469" column="28" selection-start-line="469" selection-start-column="8" selection-end-line="469" selection-end-column="28" />
+            <state relative-caret-position="5115">
+              <caret line="347" column="43" selection-start-line="347" selection-start-column="33" selection-end-line="347" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/juser/views.py">
+      <file leaf-file-name="asset_cu_list.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/jasset/asset_cu_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="224" column="0" selection-start-line="224" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
+            <state relative-caret-position="4095">
+              <caret line="273" column="94" selection-start-line="273" selection-start-column="94" selection-end-line="273" selection-end-column="94" />
               <folding />
             </state>
           </provider>
@@ -157,15 +324,22 @@
         <option value="$PROJECT_DIR$/templates/dbtool/dbtool.html" />
         <option value="$PROJECT_DIR$/jasset/asset_api.py" />
         <option value="$PROJECT_DIR$/jperm/ansible_api.py" />
-        <option value="$PROJECT_DIR$/run_server.py" />
         <option value="$PROJECT_DIR$/juser/views.py" />
+        <option value="$PROJECT_DIR$/jumpserver/urls.py" />
+        <option value="$PROJECT_DIR$/jumpserver/views.py" />
+        <option value="$PROJECT_DIR$/ip.txt" />
+        <option value="$PROJECT_DIR$/static/js/webterminal.js" />
+        <option value="$PROJECT_DIR$/templates/jasset/asset_cu_list.html" />
+        <option value="$PROJECT_DIR$/run_server.py" />
+        <option value="$PROJECT_DIR$/templates/jlog/mylog.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="-2" />
     <option name="y" value="25" />
-    <option name="width" value="1280" />
-    <option name="height" value="718" />
+    <option name="width" value="1370" />
+    <option name="height" value="722" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -242,7 +416,43 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="juser" />
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jumpserver-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jumpserver-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jasset" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jumpserver-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jumpserver-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dbtool" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -251,12 +461,13 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/jlog" />
       <recent name="$PROJECT_DIR$/templates/dbtool" />
     </key>
   </component>
@@ -475,26 +686,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1280" height="718" extended-state="0" />
-    <editor active="true" />
+    <frame x="-2" y="25" width="1370" height="722" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11912226" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19619326" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36363637" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7418831" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39935064" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14354838" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36363637" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39935064" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -521,83 +732,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/juser/group_add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1680">
-          <caret line="112" column="8" selection-start-line="112" selection-start-column="8" selection-end-line="112" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbtool/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/head_script.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/link_css.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="4" selection-end-line="20" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/dbtool/dbtool.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1740">
-          <caret line="116" column="75" selection-start-line="116" selection-start-column="72" selection-end-line="116" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbtool/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/data.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="14" selection-start-line="36" selection-start-column="0" selection-end-line="39" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jasset/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="59" column="6" selection-start-line="59" selection-start-column="6" selection-end-line="59" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbtool/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/juser/user_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1785">
-          <caret line="119" column="26" selection-start-line="119" selection-start-column="26" selection-end-line="119" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/jperm/perm_role_push.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="371">
@@ -623,13 +757,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="72" selection-start-line="10" selection-start-column="72" selection-end-line="10" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -661,24 +788,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/dbtool/dbtool.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/dbtool/dbtool_import.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1350">
           <caret line="90" column="61" selection-start-line="90" selection-start-column="48" selection-end-line="90" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/head_script.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -693,13 +806,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbtool/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="83" column="32" selection-start-line="83" selection-start-column="32" selection-end-line="83" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -763,7 +869,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="16" column="17" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -793,9 +898,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5235">
           <caret line="359" column="79" selection-start-line="359" selection-start-column="79" selection-end-line="359" selection-end-column="79" />
-          <folding>
-            <element signature="e#16#47#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -803,7 +905,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -811,17 +912,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1245">
           <caret line="117" column="31" selection-start-line="117" selection-start-column="31" selection-end-line="117" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/jumpserver_env/lib/python2.6/site-packages/ansible/constants.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1560">
+        <state relative-caret-position="1500">
           <caret line="104" column="108" selection-start-line="104" selection-start-column="101" selection-end-line="104" selection-end-column="108" />
-          <folding>
-            <element signature="e#714#723#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -878,32 +975,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jperm/ansible_api.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
+        <state relative-caret-position="780">
           <caret line="68" column="13" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
-          <folding>
-            <element signature="e#26#65#0" expanded="true" />
-            <element signature="e#2087#3413#0" expanded="false" />
-            <element signature="e#5048#6047#0" expanded="false" />
-            <element signature="e#13979#15181#0" expanded="false" />
-            <element signature="e#15219#16250#0" expanded="false" />
-            <element signature="e#16280#16440#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jumpserver/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jumpserver/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="40" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -911,33 +984,164 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run_server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="256" column="46" selection-start-line="256" selection-start-column="46" selection-end-line="256" selection-end-column="46" />
-          <folding>
-            <element signature="e#39#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jasset/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3932">
-          <caret line="469" column="28" selection-start-line="469" selection-start-column="8" selection-end-line="469" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/juser/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
+        <state relative-caret-position="3255">
           <caret line="224" column="0" selection-start-line="224" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connect.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/layer/layer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="53" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/head_script.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jasset/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="54" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/jasset/asset_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1620">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbtool/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="83" column="32" selection-start-line="83" selection-start-column="32" selection-end-line="83" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jumpserver/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="54" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ip.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="24" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jasset/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5115">
+          <caret line="347" column="43" selection-start-line="347" selection-start-column="33" selection-end-line="347" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/dbtool/dbtool.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-45">
+          <caret line="51" column="116" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/jumpserver_env/lib/python2.6/site-packages/tornado/websocket.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="196" column="8" selection-start-line="196" selection-start-column="8" selection-end-line="196" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jumpserver/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5235">
+          <caret line="368" column="44" selection-start-line="368" selection-start-column="44" selection-end-line="368" selection-end-column="44" />
+          <folding>
+            <element signature="e#18#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/term.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/webterminal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="87" selection-start-line="15" selection-start-column="75" selection-end-line="15" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/jlog/web_terminal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/jasset/asset_cu_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4095">
+          <caret line="273" column="94" selection-start-line="273" selection-start-column="94" selection-end-line="273" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/jlog/mylog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="468" column="0" selection-start-line="468" selection-start-column="0" selection-end-line="468" selection-end-column="0" />
+          <folding>
+            <element signature="e#39#50#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

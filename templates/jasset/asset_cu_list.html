@@ -128,6 +128,7 @@
                                     <td class="text-center"> {{ asset.disk|get_disk_info }}{% if asset.memory %}G{% endif %}</td>
                                     <td class="text-center" data-editable='false'>
                                         <a value="{{ asset.id }}" class="conn btn btn-xs btn-warning">连接</a>
+                                        <a value="{{ asset.id }}" class="mylog btn btn-xs btn-warning">mylog</a>
                                     </td>
                                 </tr>
                             {% endfor %}
@@ -212,6 +213,65 @@
             var url='{% url "role_get" %}?id=' + $(this).attr('value'); // 获取用户有权限的角色
             var href = $(this).attr('href');
             var new_url = '{% url "terminal" %}?id=' + $(this).attr('value') + '&role='; // webterminal socket url
+            var hostname = $(this).closest('tr').find('.hostname a')[0].innerHTML;
+            $.ajax({
+                type: 'GET',
+                url: url,
+                data: {},
+                success: function(data){
+                    var dataArray = data.split(',');
+                    if (data == 'error' || data == '' || data == null || data == undefined){
+                        layer.alert('没有授权系统用户')
+                    }
+                    else if (dataArray.length == 1 && data != 'error' && navigator.platform == 'Win32'){
+                        var title = 'Jumpserver Web Terminal' + '<span class="text-info"> '+ hostname +'</span>';
+                        /*
+                        layer.open({
+                            type: 2,
+                            title: title,
+                            maxmin: true,
+                            shade: false,
+                            area: ['628px', '420px'],
+                            content: new_url+data
+                        });
+                        */
+                        window.open(new_url+data, '', 'width=628px, height=380px');
+                    }  else if (dataArray.length == 1 && data != 'error'){
+                        /*
+                        layer.open({
+                            type: 2,
+                            title: title,
+                            maxmin: true,
+                            shade: false,
+                            area: ['628px', '452px'],
+                            content: new_url+data
+                        });
+                        */
+                        window.open(new_url+data, '', 'width=628px, height=410px')
+                    }
+                    else {
+                        aUrl = '';
+                        $.each(dataArray, function(index, value){
+                            aUrl += '<a onclick="windowOpen(this); return false" class="btn btn-xs btn-primary newa" href=' + new_url + value + ' value=' + hostname +  '>' + value  + '</a> '
+                        });
+                        console.log(aUrl);
+                        layer.alert(aUrl, {
+                            skin: 'layui-layer-molv',
+                            title: '授权多个系统用户，请选择一个连接',
+                            shade: false,
+                            closeBtn: 0
+                        })
+                    }
+                }
+            });
+            return false
+        });
+
+        $('.mylog').click(function(){
+            var url='{% url "role_get" %}?id=' + $(this).attr('value'); // 获取用户有权限的角色
+            var href = $(this).attr('href');
+            //var new_url = '{% url "mylog" %}?id=' + $(this).attr('value') + '&role='; // webterminal socket url
+            var new_url = '{% url "mylog" %}?id=' + $(this).attr('value') + '&role='; // mylog socket url
             var hostname = $(this).closest('tr').find('.hostname a')[0].innerHTML;
             $.ajax({
                 type: 'GET',

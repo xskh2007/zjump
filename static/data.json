@@ -1,0 +1,30 @@
+[{
+	"id":1,
+	"text":"Word",
+	"icon":"doc.png"
+},{
+	"id":2,
+	"text":"Excel",
+	"icon":"xls.png"
+},{
+	"id":3,
+	"text":"Zip",
+	"icon":"zip.png",
+	"selected":true
+},{
+	"id":4,
+	"text":"Html",
+	"icon":"html.png"
+},{
+	"id":5,
+	"text":"Css",
+	"icon":"css.png"
+},{
+	"id":6,
+	"text":"Text",
+	"icon":"txt.png"
+},{
+	"id":7,
+	"text":"PowerPoint",
+	"icon":"ppt.png"
+}]

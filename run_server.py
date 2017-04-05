@@ -441,6 +441,70 @@ class WebTerminalHandler(tornado.websocket.WebSocketHandler):
         except IndexError:
             pass
 
+class MyLogHandler(tornado.websocket.WebSocketHandler):
+
+    def __init__(self, *args, **kwargs):
+        self.id = 0
+        self.user = None
+        self.role = None
+        self.runner = None
+        self.assets = []
+        self.perm = {}
+        self.remote_ip = ''
+        super(MyLogHandler, self).__init__(*args, **kwargs)
+
+    @django_request_support
+    @require_auth('user')
+    def open(self, *args):
+        # logger.debug('Websocket: Open exec request')
+        role_name = self.get_argument('role', 'sb')
+        # logger.debug('Web执行命令: 请求系统用户 %s' % role_name)
+        self.role = get_object(PermRole, name=role_name)
+        # print self.role,111111111111111111
+        # self.perm = get_group_user_perm(self.user)
+        # roles = self.perm.get('role').keys()
+        # if self.role not in roles:
+        #     self.write_message('No perm that role %s' % role_name)
+        #     self.close()
+        # self.assets = self.perm.get('role').get(self.role).get('asset')
+        #
+        # res = gen_resource({'user': self.user, 'asset': self.assets, 'role': self.role})
+        # self.runner = MyRunner(res)
+        # message = '有权限的主机: ' + ', '.join([asset.hostname for asset in self.assets])
+        #
+        # self.write_message(message)
+
+
+    def on_message(self, message):
+        role_name = self.get_argument('role', 'sb')
+        asset_id = self.get_argument('id', 9999)
+        asset = get_object(Asset, id=asset_id)
+        self.role = get_object(PermRole, name=role_name)
+        self.perm = get_group_user_perm(self.user)
+        roles = self.perm.get('role').keys()
+        if self.role not in roles:
+            self.write_message('No perm that role %s' % role_name)
+            self.close()
+        self.assets = self.perm.get('role').get(self.role).get('asset')
+        res = gen_resource({'user': self.user, 'asset': self.assets, 'role': self.role})
+        self.runner = MyRunner(res)
+        pattern=asset.ip.encode("utf-8")
+        import time
+        from collections import deque
+        while True:
+            self.runner.run('shell', 'cat  /home/admin/log', pattern=pattern)
+            result = self.runner.results['ok']
+            # print result,99999999
+
+            self.write_message(result)
+            if result:
+                time.sleep(0.5)
+                continue
+
+
+    def on_close(self):
+        print "Connection closed"
+
 
 # class MonitorHandler(WebTerminalHandler):
 #     @django_request_support
@@ -466,7 +530,7 @@ class Application(tornado.web.Application):
             (r'/monitor', MonitorHandler),
             (r'/terminal', WebTerminalHandler),
             (r'/kill', WebTerminalKillHandler),
-            (r'/exec', ExecHandler),
+            (r'/l', ExecHandler),
         ]
 
         setting = {
@@ -494,6 +558,7 @@ def main():
         [
             (r'/ws/monitor', MonitorHandler),
             (r'/ws/terminal', WebTerminalHandler),
+            (r'/ws/mylog', MyLogHandler),
             (r'/ws/kill', WebTerminalKillHandler),
             (r'/ws/exec', ExecHandler),
             (r"/static/(.*)", tornado.web.StaticFileHandler,

@@ -222,8 +222,7 @@ def user_list(request):
         users_list = users_list.filter(Q(username__icontains=keyword) | Q(name__icontains=keyword)).order_by('username')
 
     users_list, p, users, page_range, current_page, show_first, show_end = pages(users_list, request)
-    s=users_list[2].name
-    print unicode(s,'utf-8')
+
 
 
     return my_render('juser/user_list.html', locals(), request)
@@ -280,11 +279,13 @@ def send_mail_retry(request):
     重设密码：%s/juser/password/forget/
     请登录web点击个人信息页面重新生成ssh密钥
     """ % (URL, user.username, URL)
-
+    print uuid_r,user,msg
     try:
         send_mail(u'邮件重发', msg, MAIL_FROM, [user.email], fail_silently=False)
+
     except IndexError:
         return Http404
+
     return HttpResponse('发送成功')
 
 

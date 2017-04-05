@@ -38,6 +38,9 @@
             <li id="jlog">
                <a href="{% url 'log_list' 'online' %}"><i class="fa fa-files-o"></i> <span class="nav-label">日志审计</span><span class="label label-info pull-right"></span></a>
             </li>
+            <li id="jsql">
+               <a href="{% url 'sql_list' 'online' %}"><i class="fa fa-files-o"></i> <span class="nav-label">sql审计</span><span class="label label-info pull-right"></span></a>
+            </li>
             <li id="file">
                 <a href="#"><i class="fa fa-download"></i> <span class="nav-label">上传下载</span><span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
@@ -78,8 +81,10 @@
             <li id="file">
                 <a href="#"><i class="fa fa-download"></i> <span class="nav-label">dbtool</span><span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
-                    <li class="upload"><a href="{% url 'dbtool' %}">sql执行</a></li>
-                    <li class="download"><a href="{% url 'file_download' %}">数据导入</a></li>
+                    <li class="upload"><a href="{% url 'dbtool_select' %}">sql查询</a></li>
+                    <li class="upload"><a href="{% url 'dbtool_check_sql' %}">sql检测</a></li>
+                    <li class="upload"><a href="{% url 'dbtool_submit_sql' %}">sql提交</a></li>
+                    <li class="download"><a href="{% url 'dbtool_select' %}">数据导出</a></li>
                 </ul>
             </li>
 

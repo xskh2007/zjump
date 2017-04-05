@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ajax</title>
+    <style>
+    *{margin:0;padding:0px;font-size: 12px;}
+    a{text-decoration: none;}
+    ul{list-style: none;}
+    #box{width:500px;margin:20px auto;}
+    .btn{display:block;width:50px;height:50px;margin:20px auto;line-height: 50px;text-align: center;border:1px #000 solid;color:#000;transition:.3s linear;}
+    .btn:hover{background: #000;color:#fff;font-weight: bold;}
+    #con{margin-top:20px;}
+    #con li{line-height: 30px;text-align: center;}
+    </style>
+    <script src="http://192.168.1.110:8000/static/js/jquery-2.1.1.js"></script>
+    <script>
+       $.ajax({
+        type: 'post',
+        url: "/dbtool/field_name/",
+        cache: false,
+        data: {"db":"zzjr_server","cmd":"select * from member limit 10"},
+        dataType: 'json',
+        success: function(data){
+        	var computer_price = new Array();
+            for (var i = data.length - 1; i >= 0; i--) {
+              // 把 data 的每一项显示在网页上
+              var field_name= data[i]
+              //console.log(field_name['field'])
+
+			  //computer_price[field_name] = field_name;
+              //$('#list_result').append(' ' + data[i])
+            };
+            //console.log(field_name)
+        },
+        //console.log(data),
+        error: function(){
+            return;
+        }
+    });
+    //console.log(data)
+
+
+
+
+    $.post('/dbtool/field_name/',{'db':'zzjr_server','cmd':'select * from member limit 10'}).done(function(data) {
+            //console.log(data)
+		});
+		console.log(data)
+    </script>
+</head>
+<body>
+<div id="list">Ajax 加载列表</div>
+<p id="list_result"></p>
+
+</body>
+</html>

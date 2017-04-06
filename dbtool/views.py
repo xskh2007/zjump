@@ -12,6 +12,8 @@ import MySQLdb as mdb
 import datetime
 import chardet
 from django.db.models import Q
+# from operator import attrgetter
+import dbtool_api
 
 db_host="192.168.1.175"
 db_user="zzjr"
@@ -257,7 +259,8 @@ def sql_list(request, offset):
 
     if cmd:
         log_id_list = set([log.log_id for log in TtyLog.objects.filter(cmd__contains=cmd)])
-        posts = posts.filter(id__in=log_id_list)
+        posts = posts.filter(id__in=log_id_list).order_by('-create_time')
+        # posts=sorted(posts, key=attrgetter('create_time'),reverse=False)
 
     if not date_seven_day:
         date_now = datetime.datetime.now()
@@ -297,9 +300,24 @@ def sql_exec(request):
     """ sql_exec """
     sql_id = request.GET.get('id', 0)
     # sqllog = Sqllog.objects.filter(id=sql_id)
+    mysqllog = get_object(Sqllog, id=sql_id)
+
     user_name=request.user.username
     print sql_id,user_name
-    return HttpResponse('无sql记录!')
+    if mysqllog:
+        if mysqllog.status==1:
+            db = mysqllog.db_name.encode("utf-8")
+            cmd = mysqllog.sqllog.encode("utf-8")
+            print db,cmd
+            mod_rows=dbtool_api.exec_db(db,cmd)
+            mysqllog.status=0
+            mysqllog.save()
+            # print mod_rows
+            return HttpResponse(mod_rows)
+        else:
+            return HttpResponse("sql已执行")
+    else:
+        return HttpResponse('无sql记录!')
 
 
 

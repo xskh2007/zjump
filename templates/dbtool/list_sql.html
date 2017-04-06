@@ -117,7 +117,7 @@
                                     <td class="text-center username"> {{ post.user_name }} </td>
                                     <td class="text-center db_name"> {{ post.db_name }} </td>
                                     <td class="text-center remote_ip"> {{ post.create_time }} </td>
-                                    <td class="text-center"> <a href="{% url 'sql_detail' %}?id={{ post.id }}" class="sql_detail"> {{ post.sqllog }} </a></td>
+                                    <td class="text-center"> <a href="{% url 'sql_detail' %}?id={{ post.id }}" class="sql_detail"> {{ post.sqllog|truncatewords:"3" }} </a></td>
                                     {% ifnotequal session_role_id 0 %}
                                         <td class="text-center">影响行数 </td>
                                         <td class="text-center">{{post.status}} </td>
@@ -125,7 +125,7 @@
                                     <td class="text-center"> {{post.type}} </td>
                                      <td class="text-center">
                                          <a href="{% url 'sql_exec' %}?id={{ post.id }}" class="sql_exec btn btn-danger btn-xs">作废</a>
-                                         <a href="{% url 'sql_exec' %}?id={{ post.id }}" class="sql_exec btn btn-danger btn-xs">执行</a>
+                                         <a value="{{ post.id }}"  class="sql_exec btn btn-danger btn-xs">执行</a>
                                      </td>
 
                                 </tr>

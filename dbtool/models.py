@@ -13,7 +13,7 @@ class Sqllog(models.Model):
     db_name = models.CharField(max_length=50, blank=True, null=True, verbose_name=u"db_name")
     sqllog = models.TextField(max_length=2000, blank = True, null = True, verbose_name = u"sqllog")
     create_time=models.DateTimeField(default=datetime.now,blank = True)
-    status = models.IntegerField(max_length=20, blank=True, null=True, verbose_name=u"status")
+    status = models.IntegerField(max_length=2, blank=True, null=True, verbose_name=u"status")
     comments = models.CharField(max_length=20, blank=True, null=True, verbose_name=u"comments")
     type = models.IntegerField(max_length=20, blank=True, null=True, verbose_name=u"type")
 

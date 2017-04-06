@@ -8,6 +8,7 @@ class SqllogForm(forms.ModelForm):
 
     class Meta:
         model = Sqllog
+        ordering = ['-create_time']
 
         fields = [
             "user_id","user_name","db_name","sqllog","create_time","status","comments","type"

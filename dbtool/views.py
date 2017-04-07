@@ -259,8 +259,7 @@ def sql_list(request):
         posts = posts.filter(db_name__in=dbname_list)
 
     if cmd:
-        log_id_list = set([log.log_id for log in TtyLog.objects.filter(cmd__contains=cmd)])
-        posts = posts.filter(id__in=log_id_list).order_by('-create_time')
+        posts = posts.filter(sqllog__contains=cmd)
         # posts=sorted(posts, key=attrgetter('create_time'),reverse=False)
 
     if not date_seven_day:

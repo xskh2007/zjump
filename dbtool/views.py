@@ -220,6 +220,7 @@ def sql_list(request):
     username_list = request.GET.getlist('username', [])
     dbname_list = request.GET.getlist('dbname', [])
     cmd = request.GET.get('cmd', '')
+    status_list = request.GET.get('status', '')
 
     # if offset == 'online':
     #     keyword = request.GET.get('keyword', '')
@@ -245,6 +246,7 @@ def sql_list(request):
     username_all = set([sqllog.user_name for sqllog in Sqllog.objects.all()])
     db_all = set([sqllog.db_name for sqllog in Sqllog.objects.all()])
     cmd = request.GET.get('cmd', '')
+    status_all = set([sqllog.status for sqllog in Sqllog.objects.all()])
 
 
     if date_seven_day and date_now_str:
@@ -261,6 +263,8 @@ def sql_list(request):
     if cmd:
         posts = posts.filter(sqllog__contains=cmd)
         # posts=sorted(posts, key=attrgetter('create_time'),reverse=False)
+    if status_list:
+        posts = posts.filter(status__in=status_list)
 
     if not date_seven_day:
         date_now = datetime.datetime.now()

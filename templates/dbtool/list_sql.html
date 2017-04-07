@@ -66,7 +66,7 @@
                         </div>
                         <div class="form-group">
                             <div class="input-group">
-                                <select name="username" data-placeholder="用户名" class="chosen-select" multiple style="width:200px;" tabindex="2">
+                                <select name="username" data-placeholder="用户名" class="chosen-select" multiple style="width:100px;" tabindex="2">
                                     {% for user_name in username_all %}
                                         <option value="{{ user_name }}"{% if username in username_list %}selected{% endif %}>{{ user_name }}</option>
                                     {% endfor %}
@@ -75,7 +75,7 @@
                         </div>
                         <div class="form-group">
                             <div class="input-group">
-                                <select name="dbname" data-placeholder="数据库" class="chosen-select" multiple style="width:200px;" tabindex="4">
+                                <select name="dbname" data-placeholder="数据库" class="chosen-select" multiple style="width:100px;" tabindex="4">
                                     {% for db in db_all %}
                                     <option value="{{ db }}" {% if ip in host_list %}selected{% endif %}>{{ db }}</option>
                                     {% endfor %}
@@ -84,6 +84,15 @@
                         </div>
                         <div class="form-group">
                             <input id="cmd" name="cmd" placeholder="命令" type="text" class="form-control" value="{{ cmd }}" style="width: 200px;">
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <select name="status" data-placeholder="状态" class="chosen-select" multiple style="width:100px;" tabindex="4">
+                                    {% for status in status_all %}
+                                    <option value="{{ status }}" {% if ip in host_list %}selected{% endif %}>{{ status }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
                         </div>
                         <button id='search_btn' type="submit" class="btn btn-sm btn-primary">
                                   - 搜索 -

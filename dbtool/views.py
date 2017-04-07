@@ -246,6 +246,7 @@ def sql_list(request, offset):
     db_all = set([sqllog.db_name for sqllog in Sqllog.objects.all()])
     cmd = request.GET.get('cmd', '')
 
+
     if date_seven_day and date_now_str:
         datetime_start = datetime.datetime.strptime(date_seven_day + ' 00:00:01', '%m/%d/%Y %H:%M:%S')
         datetime_end = datetime.datetime.strptime(date_now_str + ' 23:59:59', '%m/%d/%Y %H:%M:%S')

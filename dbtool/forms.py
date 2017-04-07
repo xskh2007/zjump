@@ -11,7 +11,7 @@ class SqllogForm(forms.ModelForm):
         ordering = ['-create_time']
 
         fields = [
-            "user_id","user_name","db_name","sqllog","create_time","status","comments","type"
+            "user_id","user_name","db_name","sqllog","check_mod_rows","real_mod_rows","create_time","status","comments","type"
         ]
 
 class DblistForm(forms.ModelForm):

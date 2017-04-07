@@ -21,6 +21,8 @@ class Sqllog(models.Model):
     db_name = models.CharField(max_length=50, blank=True, null=True, verbose_name=u"db_name")
     sqllog = models.TextField(max_length=2000, blank = True, null = True, verbose_name = u"sqllog")
     create_time=models.DateTimeField(default=datetime.now,blank = True)
+    check_mod_rows = models.IntegerField(max_length=20, blank=True, null=True, verbose_name=u"check_mod_rows")
+    real_mod_rows = models.IntegerField(max_length=20, blank=True, null=True, verbose_name=u"real_mod_rows")
     status = models.IntegerField(max_length=2, blank=True, null=True, verbose_name=u"status",choices=STATUS)
     comments = models.CharField(max_length=20, blank=True, null=True, verbose_name=u"comments")
     type = models.IntegerField(max_length=20, blank=True, null=True, verbose_name=u"type")

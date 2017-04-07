@@ -100,7 +100,8 @@
                                     <th class="text-center"> 提交时间 </th>
                                     <th class="text-center"> sql语句 </th>
                                     {% ifnotequal session_role_id 0 %}
-                                        <th class="text-center"> 影响行数 </th>
+                                        <th class="text-center"> 检测影响行数 </th>
+                                        <th class="text-center"> 实际影响行数 </th>
                                     {% endifnotequal %}
                                     <th class="text-center"> 状态 </th>
                                     <th class="text-center"> 类型 </th>
@@ -119,8 +120,8 @@
                                     <td class="text-center remote_ip"> {{ post.create_time }} </td>
                                     <td class="text-center"> <a href="{% url 'sql_detail' %}?id={{ post.id }}" class="sql_detail"> {{ post.sqllog|truncatewords:"3" }} </a></td>
 
-                                        <td class="text-center">影响行数 </td>
-
+                                        <td class="text-center">{{post.check_mod_rows}} </td>
+                                        <td class="text-center">{{post.real_mod_rows}} </td>
                         				{% if post.status == 0 %}
                                             <td class="text-center">已执行 </td>
                                         {% elif  post.status == 1 %}

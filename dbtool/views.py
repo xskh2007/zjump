@@ -212,13 +212,13 @@ def dbtool_submit_sql(request):
 
 
 @require_role('admin')
-def sql_list(request, offset):
+def sql_list(request):
     """ 显示日志 """
     header_title, path1 = u'审计', u'操作审计'
     date_seven_day = request.GET.get('start', '')
     date_now_str = request.GET.get('end', '')
     username_list = request.GET.getlist('username', [])
-    host_list = request.GET.getlist('host', [])
+    dbname_list = request.GET.getlist('dbname', [])
     cmd = request.GET.get('cmd', '')
 
     # if offset == 'online':
@@ -253,10 +253,10 @@ def sql_list(request, offset):
         # posts = posts.filter(start_time__gte=datetime_start).filter(start_time__lte=datetime_end)
 
     if username_list:
-        posts = posts.filter(user__in=username_list)
+        posts = posts.filter(user_name__in=username_list)
 
-    if host_list:
-        posts = posts.filter(host__in=host_list)
+    if dbname_list:
+        posts = posts.filter(db_name__in=dbname_list)
 
     if cmd:
         log_id_list = set([log.log_id for log in TtyLog.objects.filter(cmd__contains=cmd)])

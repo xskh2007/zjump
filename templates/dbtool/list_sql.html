@@ -117,7 +117,7 @@
                                     <td class="text-center"> {{ post.id }} </td>
                                     <td class="text-center username"> {{ post.user_name }} </td>
                                     <td class="text-center db_name"> {{ post.db_name }} </td>
-                                    <td class="text-center remote_ip"> {{ post.create_time }} </td>
+                                    <td class="text-center remote_ip"> {{ post.create_time|date:"Y-m-d H:i:s"  }} </td>
                                     <td class="text-center"> <a href="{% url 'sql_detail' %}?id={{ post.id }}" class="sql_detail"> {{ post.sqllog|truncatewords:"3" }} </a></td>
 
                                         <td class="text-center">{{post.check_mod_rows}} </td>

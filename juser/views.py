@@ -11,7 +11,7 @@ from django.db.models import Q
 from juser.user_api import *
 from jperm.perm_api import get_group_user_perm
 import re
-import chardet
+# import chardet
 MAIL_FROM = EMAIL_HOST_USER
 
 

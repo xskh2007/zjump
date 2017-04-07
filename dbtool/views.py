@@ -250,7 +250,7 @@ def sql_list(request):
     if date_seven_day and date_now_str:
         datetime_start = datetime.datetime.strptime(date_seven_day + ' 00:00:01', '%m/%d/%Y %H:%M:%S')
         datetime_end = datetime.datetime.strptime(date_now_str + ' 23:59:59', '%m/%d/%Y %H:%M:%S')
-        # posts = posts.filter(start_time__gte=datetime_start).filter(start_time__lte=datetime_end)
+        posts = posts.filter(create_time__gte=datetime_start).filter(create_time__lte=datetime_end)
 
     if username_list:
         posts = posts.filter(user_name__in=username_list)

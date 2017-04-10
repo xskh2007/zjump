@@ -6,10 +6,11 @@
 
 # from django.db import connection
 import MySQLdb as mdb
+from dbtool.models import Dblist
 
 db_host="192.168.1.175"
 db_user="zzjr"
-db_password="zzjr#2015"
+db_password='zzjr#2015'
 dbname='zzjr_server'
 
 
@@ -29,4 +30,11 @@ def exec_db(db_name,cmd):
     con.commit()
     return mod_rows
 
-exec_db('zzjr_bank',cmd)
+# exec_db('zzjr_bank',cmd)
+
+
+
+def db_list(db_role):
+    dblist=Dblist.objects.filter(db_role=db_role)
+
+    return dblist

@@ -39,6 +39,7 @@ class Dblist(models.Model):
         create_time = models.DateTime(default=datetime.now)
     """
     dbname=models.CharField(max_length=20, blank=True, null=True, verbose_name=u"DB_IP")
+    db_role = models.CharField(max_length=20, blank=True, null=True, verbose_name=u"db_role")
 
 
     def __unicode__(self):

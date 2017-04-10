@@ -81,8 +81,24 @@ def dbtool_myjson(request):
 
 @require_role(role='user')
 def dbtool_dblistjson(request):
+    db_list=[{"id": '请选择数据库', "text": "请选择数据库", "icon": "database.ico", "selected": "true"}]
     defend_attack(request)
-    db_list = [{"id": 'zzjr_server', "text": "zzjr_server", "icon": "database.ico"}, {"id": 'zentao', "text": "zentao", "icon": "database.ico"},{"id": 'zzjr_bank', "text": "zzjr_bank", "icon": "database.ico", "selected": "true"}]
+    mylist=dbtool_api.db_list("slave")
+    for i in mylist:
+        i=i.dbname.encode("utf-8")
+        db_list.append({"id": i, "text": i, "icon": "database.ico"})
+    # db_list = [{"id": 'zzjr_server', "text": "zzjr_server", "icon": "database.ico"}, {"id": 'zentao', "text": "zentao", "icon": "database.ico"},{"id": 'zzjr_bank', "text": "zzjr_bank", "icon": "database.ico", "selected": "true"}]
+    return HttpResponse(json.dumps(db_list), content_type="application/json")
+
+@require_role(role='user')
+def dbtool_master_db_list(request):
+    db_list=[{"id": '请选择数据库', "text": "请选择数据库", "icon": "database.ico", "selected": "true"}]
+    defend_attack(request)
+    mylist=dbtool_api.db_list("master")
+    for i in mylist:
+        i=i.dbname.encode("utf-8")
+        db_list.append({"id": i, "text": i, "icon": "database.ico"})
+    # db_list = [{"id": 'zzjr_server', "text": "zzjr_server", "icon": "database.ico"}, {"id": 'zentao', "text": "zentao", "icon": "database.ico"},{"id": 'zzjr_bank', "text": "zzjr_bank", "icon": "database.ico", "selected": "true"}]
     return HttpResponse(json.dumps(db_list), content_type="application/json")
 
 @require_role(role='user')

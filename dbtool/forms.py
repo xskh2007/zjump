@@ -20,7 +20,7 @@ class DblistForm(forms.ModelForm):
         model = Dblist
 
         fields = [
-            "dbname"
+            "dbname","db_role"
         ]
 
 

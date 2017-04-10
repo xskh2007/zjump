@@ -16,6 +16,8 @@ urlpatterns = patterns('',
     url(r'^list/$', sql_list, name='sql_list'),
     url(r'^sql_detail/$', sql_detail, name='sql_detail'),
     url(r'^sql_exec/$', sql_exec, name='sql_exec'),
+    url(r'^sql_cancel/$', sql_cancel, name='sql_cancel'),
+
 
 
 

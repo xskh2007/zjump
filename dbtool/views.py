@@ -315,6 +315,28 @@ def sql_detail(request):
     return HttpResponse('无sql记录!')
 
 
+
+@require_role('admin')
+def sql_cancel(request):
+    """ sql_cancel """
+    sql_id = request.GET.get('id', 0)
+    # sqllog = Sqllog.objects.filter(id=sql_id)
+    mysqllog = get_object(Sqllog, id=sql_id)
+
+    user_name=request.user.username
+    print sql_id,user_name
+    if mysqllog:
+        if mysqllog.status!=0:
+            mysqllog.status=3
+            mysqllog.save()
+            return HttpResponse("sql已作废")
+        else:
+            return HttpResponse("sql状态不符合")
+    else:
+        return HttpResponse('无sql记录!')
+
+
+
 @require_role('admin')
 def sql_exec(request):
     """ sql_exec """
@@ -338,6 +360,8 @@ def sql_exec(request):
             return HttpResponse("sql已执行")
     else:
         return HttpResponse('无sql记录!')
+
+
 
 
 

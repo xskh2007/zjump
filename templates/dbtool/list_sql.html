@@ -146,7 +146,7 @@
 
                                     <td class="text-center"> {{post.type}} </td>
                                      <td class="text-center">
-                                         <a href="{% url 'sql_exec' %}?id={{ post.id }}" class="sql_exec btn btn-danger btn-xs">作废</a>
+                                         <a value="{{ post.id }}"  class="sql_cancel btn btn-danger btn-xs">作废</a>
                                          <a value="{{ post.id }}"  class="sql_exec btn btn-danger btn-xs">执行</a>
                                      </td>
 
@@ -206,6 +206,14 @@
        return false;
     });
 
+    $('.sql_cancel').click(function(){
+        $.get('{% url "sql_cancel" %}?id=' + $(this).attr('value'),
+                {},
+                function(data){
+                    alert(data)
+                }
+        )
+    });
 
 
     $('.sql_exec').click(function(){

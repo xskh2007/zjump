@@ -65,7 +65,6 @@ def dbtool_myjson(request):
         cur.execute(cmd)
         rows = cur.fetchall()
         desc = cur.description
-        #print len(rows)
     mylist=[]
     for i in rows:
         mydisc={}

@@ -40,7 +40,7 @@
         <div class="col-sm-12">
             <div class="ibox float-e-margins">
                 <div id="ibox-content" class="ibox-title">
-                    <h5> 用户日志详细信息列表 </h5>
+                    <h5> 用户sql详细信息列表 </h5>
                     <div class="ibox-tools">
                         <a class="collapse-link">
                             <i class="fa fa-chevron-up"></i>
@@ -66,7 +66,7 @@
                         </div>
                         <div class="form-group">
                             <div class="input-group">
-                                <select name="username" data-placeholder="用户名" class="chosen-select" multiple style="width:200px;" tabindex="2">
+                                <select name="username" data-placeholder="用户名" class="chosen-select" multiple style="width:100px;" tabindex="2">
                                     {% for user_name in username_all %}
                                         <option value="{{ user_name }}"{% if username in username_list %}selected{% endif %}>{{ user_name }}</option>
                                     {% endfor %}
@@ -75,7 +75,7 @@
                         </div>
                         <div class="form-group">
                             <div class="input-group">
-                                <select name="host" data-placeholder="数据库" class="chosen-select" multiple style="width:200px;" tabindex="4">
+                                <select name="dbname" data-placeholder="数据库" class="chosen-select" multiple style="width:100px;" tabindex="4">
                                     {% for db in db_all %}
                                     <option value="{{ db }}" {% if ip in host_list %}selected{% endif %}>{{ db }}</option>
                                     {% endfor %}
@@ -84,6 +84,15 @@
                         </div>
                         <div class="form-group">
                             <input id="cmd" name="cmd" placeholder="命令" type="text" class="form-control" value="{{ cmd }}" style="width: 200px;">
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <select name="status" data-placeholder="状态" class="chosen-select" multiple style="width:100px;" tabindex="4">
+                                    {% for status in status_all %}
+                                    <option value="{{ status }}" {% if ip in host_list %}selected{% endif %}>{{ status }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
                         </div>
                         <button id='search_btn' type="submit" class="btn btn-sm btn-primary">
                                   - 搜索 -
@@ -100,7 +109,8 @@
                                     <th class="text-center"> 提交时间 </th>
                                     <th class="text-center"> sql语句 </th>
                                     {% ifnotequal session_role_id 0 %}
-                                        <th class="text-center"> 影响行数 </th>
+                                        <th class="text-center"> 检测影响行数 </th>
+                                        <th class="text-center"> 实际影响行数 </th>
                                     {% endifnotequal %}
                                     <th class="text-center"> 状态 </th>
                                     <th class="text-center"> 类型 </th>
@@ -116,16 +126,28 @@
                                     <td class="text-center"> {{ post.id }} </td>
                                     <td class="text-center username"> {{ post.user_name }} </td>
                                     <td class="text-center db_name"> {{ post.db_name }} </td>
-                                    <td class="text-center remote_ip"> {{ post.create_time }} </td>
-                                    <td class="text-center"> <a href="{% url 'sql_detail' %}?id={{ post.id }}" class="sql_detail"> {{ post.sqllog }} </a></td>
-                                    {% ifnotequal session_role_id 0 %}
-                                        <td class="text-center">影响行数 </td>
-                                        <td class="text-center">{{post.status}} </td>
-                                    {% endifnotequal %}
+                                    <td class="text-center remote_ip"> {{ post.create_time|date:"Y-m-d H:i:s"  }} </td>
+                                    <td class="text-center"> <a href="{% url 'sql_detail' %}?id={{ post.id }}" class="sql_detail"> {{ post.sqllog|truncatewords:"3" }} </a></td>
+
+                                        <td class="text-center">{{post.check_mod_rows}} </td>
+                                        <td class="text-center">{{post.real_mod_rows}} </td>
+                        				{% if post.status == 0 %}
+                                            <td class="text-center">已执行 </td>
+                                        {% elif  post.status == 1 %}
+                                            <td class="text-center">待执行 </td>
+                                        {% elif  post.status == 2 %}
+                                            <td class="text-center">待审核 </td>
+                                        {% elif  post.status == 3 %}
+                                            <td class="text-center">已作废 </td>
+                                        {% else %}
+                                            <td class="text-center">{{post.status}} </td>
+                                        {% endif %}
+
+
                                     <td class="text-center"> {{post.type}} </td>
                                      <td class="text-center">
-                                         <a href="{% url 'sql_exec' %}?id={{ post.id }}" class="sql_exec btn btn-danger btn-xs">作废</a>
-                                         <a href="{% url 'sql_exec' %}?id={{ post.id }}" class="sql_exec btn btn-danger btn-xs">执行</a>
+                                         <a value="{{ post.id }}"  class="sql_cancel btn btn-danger btn-xs">作废</a>
+                                         <a value="{{ post.id }}"  class="sql_exec btn btn-danger btn-xs">执行</a>
                                      </td>
 
                                 </tr>
@@ -184,6 +206,14 @@
        return false;
     });
 
+    $('.sql_cancel').click(function(){
+        $.get('{% url "sql_cancel" %}?id=' + $(this).attr('value'),
+                {},
+                function(data){
+                    alert(data)
+                }
+        )
+    });
 
 
     $('.sql_exec').click(function(){

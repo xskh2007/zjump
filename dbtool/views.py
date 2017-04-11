@@ -12,11 +12,17 @@ import MySQLdb as mdb
 import datetime
 import chardet
 from django.db.models import Q
+# from operator import attrgetter
+import dbtool_api
 
-db_host="192.168.1.175"
-db_user="zzjr"
-db_password="zzjr#2015"
-dbname='zzjr_server'
+
+
+readonly_db_host="192.168.1.175"
+readonly_db_user="zzjr"
+readonly_db_password="zzjr#2015"
+readonly_dbname='zzjr_server'
+
+
 
 @require_role(role='user')
 def index(request):
@@ -31,7 +37,7 @@ def dbtool_execute(request):
         cmd = request.POST.get('cmd', '')
         # str_url = "http://127.0.0.1:8000/dbtool/myjson/?cmd=%s&db=%s" %(cmd,db)
         # url = str_url.replace("\r\n"," ")
-        con = mdb.connect(db_host, db_user, db_password, db,charset='utf8')
+        con = mdb.connect(readonly_db_host, readonly_db_user, readonly_db_password, db,charset='utf8')
         with con:
             # 获取普通的查询cursor
             cur = con.cursor()
@@ -46,21 +52,19 @@ def dbtool_execute(request):
     #return my_render('dbtool/dbtool.html', {"a":"aaa"}, request)
 
 
-#######return data
+#######返回查询数据结果的json
 @require_role(role='user')
 def dbtool_myjson(request):
     defend_attack(request)
     db  = request.POST.get('db')
     cmd = request.POST.get('cmd')
     cmd=cmd.replace("\r\n", " ")
-    print cmd,db,123456789
-    con = mdb.connect(db_host, db_user, db_password, db,charset='utf8')
+    con = mdb.connect(readonly_db_host, readonly_db_user, readonly_db_password, db,charset='utf8')
     with con:
         cur = con.cursor()
         cur.execute(cmd)
         rows = cur.fetchall()
         desc = cur.description
-        #print len(rows)
     mylist=[]
     for i in rows:
         mydisc={}
@@ -79,8 +83,24 @@ def dbtool_myjson(request):
 
 @require_role(role='user')
 def dbtool_dblistjson(request):
+    db_list=[{"id": '请选择数据库', "text": "请选择数据库", "icon": "database.ico", "selected": "true"}]
     defend_attack(request)
-    db_list = [{"id": 'zzjr_server', "text": "zzjr_server", "icon": "database.ico"}, {"id": 'zentao', "text": "zentao", "icon": "database.ico"},{"id": 'zzjr_bank', "text": "zzjr_bank", "icon": "database.ico", "selected": "true"}]
+    mylist=dbtool_api.db_list("slave")
+    for i in mylist:
+        i=i.dbname.encode("utf-8")
+        db_list.append({"id": i, "text": i, "icon": "database.ico"})
+    # db_list = [{"id": 'zzjr_server', "text": "zzjr_server", "icon": "database.ico"}, {"id": 'zentao', "text": "zentao", "icon": "database.ico"},{"id": 'zzjr_bank', "text": "zzjr_bank", "icon": "database.ico", "selected": "true"}]
+    return HttpResponse(json.dumps(db_list), content_type="application/json")
+
+@require_role(role='user')
+def dbtool_master_db_list(request):
+    db_list=[{"id": '请选择数据库', "text": "请选择数据库", "icon": "database.ico", "selected": "true"}]
+    defend_attack(request)
+    mylist=dbtool_api.db_list("master")
+    for i in mylist:
+        i=i.dbname.encode("utf-8")
+        db_list.append({"id": i, "text": i, "icon": "database.ico"})
+    # db_list = [{"id": 'zzjr_server', "text": "zzjr_server", "icon": "database.ico"}, {"id": 'zentao', "text": "zentao", "icon": "database.ico"},{"id": 'zzjr_bank', "text": "zzjr_bank", "icon": "database.ico", "selected": "true"}]
     return HttpResponse(json.dumps(db_list), content_type="application/json")
 
 @require_role(role='user')
@@ -89,7 +109,7 @@ def dbtool_field_name(request):
     db  = request.POST.get('db')
     cmd = request.POST.get('cmd')
     cmd=cmd.replace("\r\n", " ")
-    con = mdb.connect(db_host, db_user, db_password, db,charset='utf8')
+    con = mdb.connect(readonly_db_host, readonly_db_user, readonly_db_password, db,charset='utf8')
     with con:
         cur = con.cursor()
         cur.execute(cmd)
@@ -127,7 +147,7 @@ def dbtool_check_sql(request):
 
         try:
 
-            con = mdb.connect(db_host, db_user, db_password, db, charset='utf8')
+            con = mdb.connect(readonly_db_host, readonly_db_user, readonly_db_password, db, charset='utf8')
             cur = con.cursor()
             cur.execute(cmd)
             cur.close()
@@ -210,14 +230,15 @@ def dbtool_submit_sql(request):
 
 
 @require_role('admin')
-def sql_list(request, offset):
+def sql_list(request):
     """ 显示日志 """
     header_title, path1 = u'审计', u'操作审计'
     date_seven_day = request.GET.get('start', '')
     date_now_str = request.GET.get('end', '')
     username_list = request.GET.getlist('username', [])
-    host_list = request.GET.getlist('host', [])
+    dbname_list = request.GET.getlist('dbname', [])
     cmd = request.GET.get('cmd', '')
+    status_list = request.GET.get('status', '')
 
     # if offset == 'online':
     #     keyword = request.GET.get('keyword', '')
@@ -243,21 +264,25 @@ def sql_list(request, offset):
     username_all = set([sqllog.user_name for sqllog in Sqllog.objects.all()])
     db_all = set([sqllog.db_name for sqllog in Sqllog.objects.all()])
     cmd = request.GET.get('cmd', '')
+    status_all = set([sqllog.status for sqllog in Sqllog.objects.all()])
+
 
     if date_seven_day and date_now_str:
         datetime_start = datetime.datetime.strptime(date_seven_day + ' 00:00:01', '%m/%d/%Y %H:%M:%S')
         datetime_end = datetime.datetime.strptime(date_now_str + ' 23:59:59', '%m/%d/%Y %H:%M:%S')
-        # posts = posts.filter(start_time__gte=datetime_start).filter(start_time__lte=datetime_end)
+        posts = posts.filter(create_time__gte=datetime_start).filter(create_time__lte=datetime_end)
 
     if username_list:
-        posts = posts.filter(user__in=username_list)
+        posts = posts.filter(user_name__in=username_list)
 
-    if host_list:
-        posts = posts.filter(host__in=host_list)
+    if dbname_list:
+        posts = posts.filter(db_name__in=dbname_list)
 
     if cmd:
-        log_id_list = set([log.log_id for log in TtyLog.objects.filter(cmd__contains=cmd)])
-        posts = posts.filter(id__in=log_id_list)
+        posts = posts.filter(sqllog__contains=cmd)
+        # posts=sorted(posts, key=attrgetter('create_time'),reverse=False)
+    if status_list:
+        posts = posts.filter(status__in=status_list)
 
     if not date_seven_day:
         date_now = datetime.datetime.now()
@@ -292,14 +317,53 @@ def sql_detail(request):
     return HttpResponse('无sql记录!')
 
 
+
+@require_role('admin')
+def sql_cancel(request):
+    """ sql_cancel """
+    sql_id = request.GET.get('id', 0)
+    # sqllog = Sqllog.objects.filter(id=sql_id)
+    mysqllog = get_object(Sqllog, id=sql_id)
+
+    user_name=request.user.username
+    print sql_id,user_name
+    if mysqllog:
+        if mysqllog.status!=0:
+            mysqllog.status=3
+            mysqllog.save()
+            return HttpResponse("sql已作废")
+        else:
+            return HttpResponse("sql状态不符合")
+    else:
+        return HttpResponse('无sql记录!')
+
+
+
 @require_role('admin')
 def sql_exec(request):
     """ sql_exec """
     sql_id = request.GET.get('id', 0)
     # sqllog = Sqllog.objects.filter(id=sql_id)
+    mysqllog = get_object(Sqllog, id=sql_id)
+
     user_name=request.user.username
     print sql_id,user_name
-    return HttpResponse('无sql记录!')
+    if mysqllog:
+        if mysqllog.status==1:
+            db = mysqllog.db_name.encode("utf-8")
+            cmd = mysqllog.sqllog.encode("utf-8")
+            print db,cmd
+            mod_rows=dbtool_api.exec_db(db,cmd)
+            mysqllog.status=0
+            mysqllog.save()
+            # print mod_rows
+            return HttpResponse(mod_rows)
+        else:
+            return HttpResponse("sql已执行")
+    else:
+        return HttpResponse('无sql记录!')
+
+
 
 
 

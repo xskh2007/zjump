@@ -15,10 +15,14 @@ from django.db.models import Q
 # from operator import attrgetter
 import dbtool_api
 
-db_host="192.168.1.175"
-db_user="zzjr"
-db_password="zzjr#2015"
-dbname='zzjr_server'
+
+
+readonly_db_host="192.168.1.175"
+readonly_db_user="zzjr"
+readonly_db_password="zzjr#2015"
+readonly_dbname='zzjr_server'
+
+
 
 @require_role(role='user')
 def index(request):
@@ -33,7 +37,7 @@ def dbtool_execute(request):
         cmd = request.POST.get('cmd', '')
         # str_url = "http://127.0.0.1:8000/dbtool/myjson/?cmd=%s&db=%s" %(cmd,db)
         # url = str_url.replace("\r\n"," ")
-        con = mdb.connect(db_host, db_user, db_password, db,charset='utf8')
+        con = mdb.connect(readonly_db_host, readonly_db_user, readonly_db_password, db,charset='utf8')
         with con:
             # 获取普通的查询cursor
             cur = con.cursor()
@@ -48,15 +52,14 @@ def dbtool_execute(request):
     #return my_render('dbtool/dbtool.html', {"a":"aaa"}, request)
 
 
-#######return data
+#######返回查询数据结果的json
 @require_role(role='user')
 def dbtool_myjson(request):
     defend_attack(request)
     db  = request.POST.get('db')
     cmd = request.POST.get('cmd')
     cmd=cmd.replace("\r\n", " ")
-    print cmd,db,123456789
-    con = mdb.connect(db_host, db_user, db_password, db,charset='utf8')
+    con = mdb.connect(readonly_db_host, readonly_db_user, readonly_db_password, db,charset='utf8')
     with con:
         cur = con.cursor()
         cur.execute(cmd)
@@ -107,7 +110,7 @@ def dbtool_field_name(request):
     db  = request.POST.get('db')
     cmd = request.POST.get('cmd')
     cmd=cmd.replace("\r\n", " ")
-    con = mdb.connect(db_host, db_user, db_password, db,charset='utf8')
+    con = mdb.connect(readonly_db_host, readonly_db_user, readonly_db_password, db,charset='utf8')
     with con:
         cur = con.cursor()
         cur.execute(cmd)
@@ -145,7 +148,7 @@ def dbtool_check_sql(request):
 
         try:
 
-            con = mdb.connect(db_host, db_user, db_password, db, charset='utf8')
+            con = mdb.connect(readonly_db_host, readonly_db_user, readonly_db_password, db, charset='utf8')
             cur = con.cursor()
             cur.execute(cmd)
             cur.close()

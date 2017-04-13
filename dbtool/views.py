@@ -22,7 +22,10 @@ readonly_db_user="zzjr"
 readonly_db_password="zzjr#2015"
 readonly_dbname='zzjr_server'
 
-
+check_db_host="192.168.1.175"
+check_db_user="zzjr"
+check_db_password="zzjr#2015"
+check_dbname='zzjr_server'
 
 @require_role(role='user')
 def index(request):
@@ -147,7 +150,8 @@ def dbtool_check_sql(request):
 
         try:
 
-            con = mdb.connect(readonly_db_host, readonly_db_user, readonly_db_password, db, charset='utf8')
+            con = mdb.connect(check_db_host, check_db_user, check_db_password, db, charset='utf8')
+            con.autocommit(0)
             cur = con.cursor()
             cur.execute(cmd)
             cur.close()
@@ -260,7 +264,7 @@ def sql_list(request):
     #             Q(user__icontains=keyword) | Q(host__icontains=keyword) | Q(filename__icontains=keyword))
     # else:
     # posts = Sqllog.objects.filter(status=0).order_by('create_time')
-    posts = Sqllog.objects.order_by('create_time')
+    posts = Sqllog.objects.order_by('-create_time')
     username_all = set([sqllog.user_name for sqllog in Sqllog.objects.all()])
     db_all = set([sqllog.db_name for sqllog in Sqllog.objects.all()])
     cmd = request.GET.get('cmd', '')
@@ -270,19 +274,19 @@ def sql_list(request):
     if date_seven_day and date_now_str:
         datetime_start = datetime.datetime.strptime(date_seven_day + ' 00:00:01', '%m/%d/%Y %H:%M:%S')
         datetime_end = datetime.datetime.strptime(date_now_str + ' 23:59:59', '%m/%d/%Y %H:%M:%S')
-        posts = posts.filter(create_time__gte=datetime_start).filter(create_time__lte=datetime_end)
+        posts = posts.filter(create_time__gte=datetime_start).filter(create_time__lte=datetime_end).order_by('-create_time')
 
     if username_list:
-        posts = posts.filter(user_name__in=username_list)
+        posts = posts.filter(user_name__in=username_list).order_by('-create_time')
 
     if dbname_list:
-        posts = posts.filter(db_name__in=dbname_list)
+        posts = posts.filter(db_name__in=dbname_list).order_by('-create_time')
 
     if cmd:
-        posts = posts.filter(sqllog__contains=cmd)
+        posts = posts.filter(sqllog__contains=cmd).order_by('-create_time')
         # posts=sorted(posts, key=attrgetter('create_time'),reverse=False)
     if status_list:
-        posts = posts.filter(status__in=status_list)
+        posts = posts.filter(status__in=status_list).order_by('-create_time')
 
     if not date_seven_day:
         date_now = datetime.datetime.now()

@@ -128,6 +128,7 @@ document.cookie="cmd="+document.getElementById('cmd').value.replace(/(\n)+|(\r\n
 				<li>2、支持sql注释 -- </li>
 				<li>3、该功能用于补单，修改线上数据前的sql检测，sql是在线上备库执行，保证数据实时性。</li>
 				<li>4、但最后所有操作都会rollback，不会影响备库数据。</li>
+                <li>5、被检测sql表引擎必须为inodb。</li>
 
 			</ul>
 		</div>

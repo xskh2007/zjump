@@ -8,20 +8,30 @@
 import MySQLdb as mdb
 from dbtool.models import Dblist
 
-db_host="192.168.1.175"
-db_user="zzjr"
-db_password='zzjr#2015'
-dbname='zzjr_server'
+exec_db_host="192.168.1.175"
+exec_db_user="zzjr"
+exec_db_password='zzjr#2015'
+exec_db_name='zzjr_server'
 
 
-cmd='''INSERT INTO `zzjr_server`.`dbtool_dblist`
-            (
-             `dbname`)
-VALUES (
-        'zzjr_pms2');'''
+cmd='''
+  update
+zzjr_server.member_money_record m,
+zzjr_server.trade_order t
+SET
+m.stream_sn = concat( 'UN', m.stream_sn )
+where
+m.stream_sn = t.order_sn
+and t.trade_type = 3
+and t.status = 1
+and t.bank_sync_status = 4
+and t.gmt_create BETWEEN '2017-04-13 13:00:11' AND '2017-04-14 09:00:25';
+            
+
+'''
 
 def exec_db(db_name,cmd):
-    con = mdb.connect(db_host, db_user, db_password, db_name, charset='utf8')
+    con = mdb.connect(exec_db_host, exec_db_user, exec_db_password, exec_db_name, charset='utf8')
     cur = con.cursor()
     cur.execute(cmd)
     cur.close()
@@ -30,7 +40,7 @@ def exec_db(db_name,cmd):
     con.commit()
     return mod_rows
 
-# exec_db('zzjr_bank',cmd)
+exec_db('zzjr_bank',cmd)
 
 
 

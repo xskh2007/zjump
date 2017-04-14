@@ -12,11 +12,24 @@ readonly_dbname='zzjr_server'
 
 db='zzjr_server'
 
-cmd='''INSERT INTO `zzjr_server`.`dbtool_dblist`
-            (
-             `dbname`)
-VALUES (
-        'aaaaaaaaa');'''
+cmd='''
+
+  update
+zzjr_server.member_money_record m,
+zzjr_server.trade_order t
+SET
+m.stream_sn = concat( 'UN', m.stream_sn )
+where
+m.stream_sn = t.order_sn
+and t.trade_type = 3
+and t.status = 1
+and t.bank_sync_status = 4
+and t.gmt_create BETWEEN '2017-04-13 13:00:11' AND '2017-04-14 09:00:25';
+            
+
+
+
+'''
 
 con = mdb.connect(readonly_db_host, readonly_db_user, readonly_db_password, db, charset='utf8')
 con.autocommit(0)

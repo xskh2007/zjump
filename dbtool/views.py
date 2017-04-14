@@ -10,7 +10,6 @@ from django.http import HttpResponse
 from django.db import connection
 import MySQLdb as mdb
 import datetime
-import chardet
 from django.db.models import Q
 # from operator import attrgetter
 import dbtool_api
@@ -356,7 +355,22 @@ def sql_exec(request):
         if mysqllog.status==1:
             db = mysqllog.db_name.encode("utf-8")
             cmd = mysqllog.sqllog.encode("utf-8")
-            print db,cmd
+            # print db
+            cmd='''
+            update
+zzjr_server.member_money_record m,
+zzjr_server.trade_order t
+SET
+m.stream_sn = concat( 'UN', m.stream_sn )
+where
+m.stream_sn = t.order_sn
+and t.trade_type = 3
+and t.status = 1
+and t.bank_sync_status = 4
+and t.gmt_create BETWEEN '2017-04-13 13:00:11' AND '2017-04-14 09:00:25';
+            
+            '''
+            print cmd
             mod_rows=dbtool_api.exec_db(db,cmd)
             mysqllog.status=0
             mysqllog.save()

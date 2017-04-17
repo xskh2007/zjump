@@ -33,6 +33,7 @@ master_db_name=config.get("master_db","master_db_name")
 
 
 def exec_db(db_name,cmd):
+    res={'status':None,'mod_rows':None}
     try:
         con = mdb.connect(master_db_host, master_db_user, master_db_password, master_db_name, charset='utf8')
         cur = con.cursor()
@@ -40,10 +41,12 @@ def exec_db(db_name,cmd):
         cur.close()
         mod_rows = cur.rowcount
         print mod_rows
+        res.update({'status':'ok','mod_rows':mod_rows})
         con.commit()
-        return mod_rows
-    except mdb.Warning as e:
-        return e
+        return res
+    except mdb.IntegrityError,e:
+        res.update({'status': e})
+        return res
 
 # exec_db('zzjr_bank',cmd)
 

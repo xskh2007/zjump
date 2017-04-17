@@ -355,7 +355,8 @@ def sql_exec(request):
         if mysqllog.status==1:
             db = mysqllog.db_name.encode("utf-8")
             cmd = mysqllog.sqllog.encode("utf-8")
-            mod_rows=dbtool_api.exec_db(db,cmd)
+            mod_rows=dbtool_api.exec_db(db,cmd)["mod_rows"]
+            status=dbtool_api.exec_db(db,cmd)["status"]
             if mod_rows:
                 mysqllog.real_mod_rows=str(mod_rows)
                 mysqllog.status=0
@@ -363,7 +364,7 @@ def sql_exec(request):
                 # print mod_rows
                 return HttpResponse(str(mod_rows)+"行被影响")
             else:
-                return HttpResponse("无任何操作")
+                return HttpResponse(status)
         else:
             return HttpResponse("无任何操作")
     else:

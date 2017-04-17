@@ -356,12 +356,16 @@ def sql_exec(request):
             db = mysqllog.db_name.encode("utf-8")
             cmd = mysqllog.sqllog.encode("utf-8")
             mod_rows=dbtool_api.exec_db(db,cmd)
-            mysqllog.status=0
-            mysqllog.save()
-            # print mod_rows
-            return HttpResponse(mod_rows)
+            if mod_rows:
+                mysqllog.real_mod_rows=str(mod_rows)
+                mysqllog.status=0
+                mysqllog.save()
+                # print mod_rows
+                return HttpResponse(str(mod_rows)+"行被影响")
+            else:
+                return HttpResponse("无任何操作")
         else:
-            return HttpResponse("sql已执行")
+            return HttpResponse("无任何操作")
     else:
         return HttpResponse('无sql记录!')
 

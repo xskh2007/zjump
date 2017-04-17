@@ -10,17 +10,31 @@ from dbtool.models import Dblist
 from warnings import filterwarnings
 filterwarnings('ignore', category = mdb.Warning)
 
-exec_db_host="192.168.1.175"
-exec_db_user="zzjr"
-exec_db_password='zzjr#2015'
-exec_db_name='zzjr_server'
+
+
+import os
+import ConfigParser
+
+BASE_DIR = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
+config = ConfigParser.ConfigParser()
+config.readfp(open(os.path.join(BASE_DIR, 'jumpserver.conf')), "rb")
+
+master_db_host=config.get("master_db","master_db_host")
+master_db_user=config.get("master_db","master_db_user")
+master_db_password=config.get("master_db","master_db_password")
+master_db_name=config.get("master_db","master_db_name")
+
+# master_db_host="192.168.1.175"
+# master_db_user="zzjr"
+# master_db_password='zzjr#2015'
+# master_db_name='zzjr_server'
 
 
 
 
 def exec_db(db_name,cmd):
     try:
-        con = mdb.connect(exec_db_host, exec_db_user, exec_db_password, exec_db_name, charset='utf8')
+        con = mdb.connect(master_db_host, master_db_user, master_db_password, master_db_name, charset='utf8')
         cur = con.cursor()
         cur.execute(cmd)
         cur.close()

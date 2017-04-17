@@ -7,6 +7,8 @@
 # from django.db import connection
 import MySQLdb as mdb
 from dbtool.models import Dblist
+from warnings import filterwarnings
+filterwarnings('ignore', category = mdb.Warning)
 
 exec_db_host="192.168.1.175"
 exec_db_user="zzjr"
@@ -27,9 +29,9 @@ def exec_db(db_name,cmd):
         con.commit()
         return mod_rows
     except mdb.Warning as e:
-        return e,mod_rows
+        return e
 
-exec_db('zzjr_bank',cmd)
+# exec_db('zzjr_bank',cmd)
 
 
 

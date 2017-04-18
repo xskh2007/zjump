@@ -14,7 +14,22 @@ from django.db.models import Q
 # from operator import attrgetter
 import dbtool_api
 
+from warnings import filterwarnings
+filterwarnings('ignore', category = mdb.Warning)
 
+
+
+import os
+import ConfigParser
+
+BASE_DIR = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
+config = ConfigParser.ConfigParser()
+config.readfp(open(os.path.join(BASE_DIR, 'jumpserver.conf')), "rb")
+
+master_db_host=config.get("master_db","master_db_host")
+master_db_user=config.get("master_db","master_db_user")
+master_db_password=config.get("master_db","master_db_password")
+master_db_name=config.get("master_db","master_db_name")
 
 readonly_db_host="192.168.1.175"
 readonly_db_user="zzjr"
@@ -310,13 +325,6 @@ def sql_detail(request):
     if mysqllog:
         mycontent=mysqllog.sqllog.encode("utf-8")
         return HttpResponse(mycontent)
-
-        # if tty_logs:
-        #     content = ''
-        #     for tty_log in tty_logs:
-        #         content += '%s: %s\n' % (tty_log.datetime.strftime('%Y-%m-%d %H:%M:%S'), tty_log.cmd)
-        #     return HttpResponse(content)
-
     return HttpResponse('无sql记录!')
 
 
@@ -349,22 +357,33 @@ def sql_exec(request):
     # sqllog = Sqllog.objects.filter(id=sql_id)
     mysqllog = get_object(Sqllog, id=sql_id)
 
+    res = {}
     user_name=request.user.username
     print sql_id,user_name
     if mysqllog:
         if mysqllog.status==1:
-            db = mysqllog.db_name.encode("utf-8")
+            master_db_name = mysqllog.db_name.encode("utf-8")
             cmd = mysqllog.sqllog.encode("utf-8")
-            mod_rows=dbtool_api.exec_db(db,cmd)["mod_rows"]
-            status=dbtool_api.exec_db(db,cmd)["status"]
-            if mod_rows:
-                mysqllog.real_mod_rows=str(mod_rows)
-                mysqllog.status=0
-                mysqllog.save()
-                # print mod_rows
-                return HttpResponse(str(mod_rows)+"行被影响")
-            else:
-                return HttpResponse(status)
+            # mod_rows=dbtool_api.exec_db(db,cmd)["mod_rows"]
+            # status=dbtool_api.exec_db(db,cmd)["status"]
+            try:
+                con = mdb.connect(master_db_host, master_db_user, master_db_password, master_db_name, charset='utf8')
+                cur = con.cursor()
+                cur.execute(cmd)
+                cur.close()
+                mod_rows = cur.rowcount
+                if mod_rows:
+                    mysqllog.real_mod_rows = str(mod_rows)
+                    mysqllog.status = 0
+                    mysqllog.save()
+                    return HttpResponse(str(mod_rows) + "行被影响")
+                con.commit()
+
+            except mdb.Error, e:
+                res["err_code"] = e.args[0]
+                res["err_text"] = e.args[1]
+                str= "Mysql Error %d: %s" % (e.args[0], e.args[1])
+                return HttpResponse(str)
         else:
             return HttpResponse("无任何操作")
     else:

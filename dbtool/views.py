@@ -11,6 +11,7 @@ from django.db import connection
 import MySQLdb as mdb
 import datetime
 from django.db.models import Q
+import re
 # from operator import attrgetter
 import dbtool_api
 
@@ -364,26 +365,35 @@ def sql_exec(request):
         if mysqllog.status==1:
             master_db_name = mysqllog.db_name.encode("utf-8")
             cmd = mysqllog.sqllog.encode("utf-8")
-            # mod_rows=dbtool_api.exec_db(db,cmd)["mod_rows"]
-            # status=dbtool_api.exec_db(db,cmd)["status"]
+            mod_rows=0
             try:
                 con = mdb.connect(master_db_host, master_db_user, master_db_password, master_db_name, charset='utf8')
                 cur = con.cursor()
-                cur.execute(cmd)
+                PATTERN = re.compile(r'''((?:[^;"']|"[^"]*"|'[^']*')+)''')
+                cmdlist = PATTERN.split(cmd)[1::2]
+                print cmdlist
+                for i in cmdlist:
+                    print i
+                    cur.execute(i)
+                    mod_rows = mod_rows+cur.rowcount
+                    print mod_rows
                 cur.close()
-                mod_rows = cur.rowcount
-                if mod_rows:
-                    mysqllog.real_mod_rows = str(mod_rows)
-                    mysqllog.status = 0
-                    mysqllog.save()
-                    return HttpResponse(str(mod_rows) + "行被影响")
+                mysqllog.real_mod_rows = mod_rows
+                mysqllog.status = 0
+                mysqllog.save()
                 con.commit()
+                res=chr(mod_rows)+"行被影响"
+                return HttpResponse(res)
+
+
+
 
             except mdb.Error, e:
                 res["err_code"] = e.args[0]
                 res["err_text"] = e.args[1]
                 str= "Mysql Error %d: %s" % (e.args[0], e.args[1])
                 return HttpResponse(str)
+
         else:
             return HttpResponse("无任何操作")
     else:

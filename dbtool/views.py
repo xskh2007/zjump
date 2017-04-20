@@ -32,15 +32,15 @@ master_db_user=config.get("master_db","master_db_user")
 master_db_password=config.get("master_db","master_db_password")
 master_db_name=config.get("master_db","master_db_name")
 
-readonly_db_host="192.168.1.175"
-readonly_db_user="zzjr"
-readonly_db_password="zzjr#2015"
-readonly_dbname='zzjr_server'
+readonly_db_host=config.get("readonly_db","readonly_db_host")
+readonly_db_user=config.get("readonly_db","readonly_db_user")
+readonly_db_password=config.get("readonly_db","readonly_db_password")
+readonly_db_name=config.get("readonly_db","readonly_db_name")
 
-check_db_host="192.168.1.175"
-check_db_user="zzjr"
-check_db_password="zzjr#2015"
-check_dbname='zzjr_server'
+check_db_host=config.get("check_db","check_db_host")
+check_db_user=config.get("check_db","check_db_user")
+check_db_password=config.get("check_db","check_db_password")
+check_db_name=config.get("check_db","check_db_name")
 
 @require_role(role='user')
 def index(request):
@@ -248,7 +248,7 @@ def dbtool_submit_sql(request):
 
 
 
-@require_role('admin')
+@require_role('user')
 def sql_list(request):
     """ 显示日志 """
     header_title, path1 = u'审计', u'操作审计'
@@ -317,7 +317,7 @@ def sql_list(request):
 
 
 
-@require_role('admin')
+@require_role('user')
 def sql_detail(request):
     """ sql_detail """
     sql_id = request.GET.get('id', 0)
@@ -330,7 +330,7 @@ def sql_detail(request):
 
 
 
-@require_role('admin')
+@require_role('user')
 def sql_cancel(request):
     """ sql_cancel """
     sql_id = request.GET.get('id', 0)

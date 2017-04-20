@@ -81,10 +81,11 @@
             <li id="file">
                 <a href="#"><i class="fa fa-download"></i> <span class="nav-label">dbtool</span><span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
-                    <li class="upload"><a href="{% url 'dbtool_select' %}">sql查询</a></li>
-                    <li class="upload"><a href="{% url 'dbtool_check_sql' %}">sql检测</a></li>
-                    <li class="upload"><a href="{% url 'dbtool_submit_sql' %}">sql提交</a></li>
-                    <li class="download"><a href="{% url 'dbtool_select' %}">数据导出</a></li>
+                    <li class="sql_select"><a href="{% url 'dbtool_select' %}">sql查询</a></li>
+                    <li class="sql_check"><a href="{% url 'dbtool_check_sql' %}">sql检测</a></li>
+                    <li class="sql_submit"><a href="{% url 'dbtool_submit_sql' %}">sql提交</a></li>
+                    <li class="sql_list"><a href="{% url 'sql_list' %}">sql审计</a></li>
+                    <li class="sql_output"><a href="{% url 'dbtool_select' %}">数据导出</a></li>
                 </ul>
             </li>
 

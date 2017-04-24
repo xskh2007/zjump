@@ -382,8 +382,7 @@ def sql_exec(request):
                 mysqllog.status = 0
                 mysqllog.save()
                 con.commit()
-                res=chr(mod_rows)+"行被影响"
-                return HttpResponse(res)
+                return HttpResponse("执行成功")
 
 
 

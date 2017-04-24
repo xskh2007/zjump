@@ -108,10 +108,15 @@
                                     <th class="text-center"> 数据库 </th>
                                     <th class="text-center"> 提交时间 </th>
                                     <th class="text-center"> sql语句 </th>
+<<<<<<< HEAD
                                     {% ifnotequal session_role_id 0 %}
                                         <th class="text-center"> 检测影响行数 </th>
                                         <th class="text-center"> 实际影响行数 </th>
                                     {% endifnotequal %}
+=======
+                                    <th class="text-center"> 检测影响行数 </th>
+                                    <th class="text-center"> 实际影响行数 </th>
+>>>>>>> remotes/origin/test
                                     <th class="text-center"> 状态 </th>
                                     <th class="text-center"> 类型 </th>
                                     <th class="text-center"> 操作 </th>
@@ -146,8 +151,16 @@
 
                                     <td class="text-center"> {{post.type}} </td>
                                      <td class="text-center">
+<<<<<<< HEAD
                                          <a value="{{ post.id }}"  class="sql_cancel btn btn-danger btn-xs">作废</a>
                                          <a value="{{ post.id }}"  class="sql_exec btn btn-danger btn-xs">执行</a>
+=======
+
+                                         <a value="{{ post.id }}"  class="sql_cancel btn btn-danger btn-xs">作废</a>
+                                         {% ifnotequal session_role_id 0 %}
+                                         <a value="{{ post.id }}"  class="sql_exec btn btn-danger btn-xs">执行</a>
+                                         {% endifnotequal %}
+>>>>>>> remotes/origin/test
                                      </td>
 
                                 </tr>

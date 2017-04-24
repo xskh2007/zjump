@@ -10,21 +10,6 @@ from django.http import HttpResponse
 from django.db import connection
 import MySQLdb as mdb
 import datetime
-<<<<<<< HEAD
-import chardet
-from django.db.models import Q
-# from operator import attrgetter
-import dbtool_api
-
-
-
-readonly_db_host="192.168.1.175"
-readonly_db_user="zzjr"
-readonly_db_password="zzjr#2015"
-readonly_dbname='zzjr_server'
-
-
-=======
 from django.db.models import Q
 import re
 # from operator import attrgetter
@@ -56,7 +41,6 @@ check_db_host=config.get("check_db","check_db_host")
 check_db_user=config.get("check_db","check_db_user")
 check_db_password=config.get("check_db","check_db_password")
 check_db_name=config.get("check_db","check_db_name")
->>>>>>> remotes/origin/test
 
 @require_role(role='user')
 def index(request):
@@ -181,12 +165,8 @@ def dbtool_check_sql(request):
 
         try:
 
-<<<<<<< HEAD
-            con = mdb.connect(readonly_db_host, readonly_db_user, readonly_db_password, db, charset='utf8')
-=======
             con = mdb.connect(check_db_host, check_db_user, check_db_password, db, charset='utf8')
             con.autocommit(0)
->>>>>>> remotes/origin/test
             cur = con.cursor()
             cur.execute(cmd)
             cur.close()
@@ -268,11 +248,7 @@ def dbtool_submit_sql(request):
 
 
 
-<<<<<<< HEAD
-@require_role('admin')
-=======
 @require_role('user')
->>>>>>> remotes/origin/test
 def sql_list(request):
     """ 显示日志 """
     header_title, path1 = u'审计', u'操作审计'
@@ -303,11 +279,7 @@ def sql_list(request):
     #             Q(user__icontains=keyword) | Q(host__icontains=keyword) | Q(filename__icontains=keyword))
     # else:
     # posts = Sqllog.objects.filter(status=0).order_by('create_time')
-<<<<<<< HEAD
-    posts = Sqllog.objects.order_by('create_time')
-=======
     posts = Sqllog.objects.order_by('-create_time')
->>>>>>> remotes/origin/test
     username_all = set([sqllog.user_name for sqllog in Sqllog.objects.all()])
     db_all = set([sqllog.db_name for sqllog in Sqllog.objects.all()])
     cmd = request.GET.get('cmd', '')
@@ -317,21 +289,6 @@ def sql_list(request):
     if date_seven_day and date_now_str:
         datetime_start = datetime.datetime.strptime(date_seven_day + ' 00:00:01', '%m/%d/%Y %H:%M:%S')
         datetime_end = datetime.datetime.strptime(date_now_str + ' 23:59:59', '%m/%d/%Y %H:%M:%S')
-<<<<<<< HEAD
-        posts = posts.filter(create_time__gte=datetime_start).filter(create_time__lte=datetime_end)
-
-    if username_list:
-        posts = posts.filter(user_name__in=username_list)
-
-    if dbname_list:
-        posts = posts.filter(db_name__in=dbname_list)
-
-    if cmd:
-        posts = posts.filter(sqllog__contains=cmd)
-        # posts=sorted(posts, key=attrgetter('create_time'),reverse=False)
-    if status_list:
-        posts = posts.filter(status__in=status_list)
-=======
         posts = posts.filter(create_time__gte=datetime_start).filter(create_time__lte=datetime_end).order_by('-create_time')
 
     if username_list:
@@ -345,7 +302,6 @@ def sql_list(request):
         # posts=sorted(posts, key=attrgetter('create_time'),reverse=False)
     if status_list:
         posts = posts.filter(status__in=status_list).order_by('-create_time')
->>>>>>> remotes/origin/test
 
     if not date_seven_day:
         date_now = datetime.datetime.now()
@@ -361,11 +317,7 @@ def sql_list(request):
 
 
 
-<<<<<<< HEAD
-@require_role('admin')
-=======
 @require_role('user')
->>>>>>> remotes/origin/test
 def sql_detail(request):
     """ sql_detail """
     sql_id = request.GET.get('id', 0)
@@ -374,25 +326,11 @@ def sql_detail(request):
     if mysqllog:
         mycontent=mysqllog.sqllog.encode("utf-8")
         return HttpResponse(mycontent)
-<<<<<<< HEAD
-
-        # if tty_logs:
-        #     content = ''
-        #     for tty_log in tty_logs:
-        #         content += '%s: %s\n' % (tty_log.datetime.strftime('%Y-%m-%d %H:%M:%S'), tty_log.cmd)
-        #     return HttpResponse(content)
-
-=======
->>>>>>> remotes/origin/test
     return HttpResponse('无sql记录!')
 
 
 
-<<<<<<< HEAD
-@require_role('admin')
-=======
 @require_role('user')
->>>>>>> remotes/origin/test
 def sql_cancel(request):
     """ sql_cancel """
     sql_id = request.GET.get('id', 0)
@@ -420,26 +358,11 @@ def sql_exec(request):
     # sqllog = Sqllog.objects.filter(id=sql_id)
     mysqllog = get_object(Sqllog, id=sql_id)
 
-<<<<<<< HEAD
-=======
     res = {}
->>>>>>> remotes/origin/test
     user_name=request.user.username
     print sql_id,user_name
     if mysqllog:
         if mysqllog.status==1:
-<<<<<<< HEAD
-            db = mysqllog.db_name.encode("utf-8")
-            cmd = mysqllog.sqllog.encode("utf-8")
-            print db,cmd
-            mod_rows=dbtool_api.exec_db(db,cmd)
-            mysqllog.status=0
-            mysqllog.save()
-            # print mod_rows
-            return HttpResponse(mod_rows)
-        else:
-            return HttpResponse("sql已执行")
-=======
             master_db_name = mysqllog.db_name.encode("utf-8")
             cmd = mysqllog.sqllog.encode("utf-8")
             mod_rows=0
@@ -472,7 +395,6 @@ def sql_exec(request):
 
         else:
             return HttpResponse("无任何操作")
->>>>>>> remotes/origin/test
     else:
         return HttpResponse('无sql记录!')
 

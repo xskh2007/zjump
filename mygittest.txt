@@ -1,5 +1,1 @@
 test
-<<<<<<< HEAD
-add by qiantu
-=======
->>>>>>> remotes/origin/test

@@ -1,8 +1,4 @@
 from django.test import TestCase
-<<<<<<< HEAD
-
-# Create your tests here.
-=======
 import MySQLdb as mdb
 # Create your tests here.
 
@@ -46,4 +42,3 @@ mod_rows = cur.rowcount
 # res["mod_rows"] = mod_rows
 # con.rollback()
 con.close()
->>>>>>> remotes/origin/test

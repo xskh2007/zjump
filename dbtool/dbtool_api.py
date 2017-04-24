@@ -7,30 +7,6 @@
 # from django.db import connection
 import MySQLdb as mdb
 from dbtool.models import Dblist
-<<<<<<< HEAD
-
-db_host="192.168.1.175"
-db_user="zzjr"
-db_password='zzjr#2015'
-dbname='zzjr_server'
-
-
-cmd='''INSERT INTO `zzjr_server`.`dbtool_dblist`
-            (
-             `dbname`)
-VALUES (
-        'zzjr_pms2');'''
-
-def exec_db(db_name,cmd):
-    con = mdb.connect(db_host, db_user, db_password, db_name, charset='utf8')
-    cur = con.cursor()
-    cur.execute(cmd)
-    cur.close()
-    mod_rows = cur.rowcount
-    print mod_rows
-    con.commit()
-    return mod_rows
-=======
 from warnings import filterwarnings
 filterwarnings('ignore', category = mdb.Warning)
 
@@ -71,7 +47,6 @@ master_db_name=config.get("master_db","master_db_name")
 #     except mdb.IntegrityError,e:
 #         res.update({'status': e})
 #         return res
->>>>>>> remotes/origin/test
 
 # exec_db('zzjr_bank',cmd)
 

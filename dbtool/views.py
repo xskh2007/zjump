@@ -364,7 +364,7 @@ def sql_exec(request):
     if mysqllog:
         if mysqllog.status==1:
             master_db_name = mysqllog.db_name.encode("utf-8")
-            cmd = mysqllog.sqllog.encode("utf-8")
+            cmd = mysqllog.sqllog.encode("utf-8").strip()
             mod_rows=0
             try:
                 con = mdb.connect(master_db_host, master_db_user, master_db_password, master_db_name, charset='utf8')

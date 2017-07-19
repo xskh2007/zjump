@@ -80,6 +80,9 @@ INSTALLED_APPS = (
     'jperm',
     'jlog',
     'dbtool',
+    'envmanage',
+    'djcelery',
+
 )
 
 MIDDLEWARE_CLASSES = (
@@ -175,3 +178,15 @@ CRONJOBS = [
     ('0 1 * * *', 'jasset.asset_api.asset_ansible_update_all'),
     ('*/10 * * * *', 'jlog.log_api.kill_invalid_connection'),
 ]
+
+
+#  BROKER_URL = 'django://localhost:8000//'
+
+
+
+
+import djcelery
+djcelery.setup_loader()
+BROKER_URL= 'amqp://guest@localhost//'
+CELERY_RESULT_BACKEND = 'amqp://guest@localhost//'
+

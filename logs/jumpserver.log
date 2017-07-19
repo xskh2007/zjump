@@ -12,3 +12,16 @@
 2017-01-06 17:00:29,644 - run_server.py - DEBUG - 关闭web_exec请求
 2017-01-09 10:46:05,825 - views.py - DEBUG - 获取授权系统用户: 
 2017-01-11 09:38:21,143 - user_api.py - DEBUG - 生成ssh key， 并设置authorized_keys
+2017-04-27 16:07:18,912 - user_api.py - DEBUG - 生成ssh key， 并设置authorized_keys
+2017-05-05 09:38:45,021 - perm_api.py - DEBUG - 生成res: [{'username': u'root', 'ip': u'192.168.1.189', 'password': "\x1c%\xd0K'[l\x7f2`\xc7_\x8db^0Y\x9d\xc4y8W\xd9 \x958n\xc0\xefV\xe7\x92", 'hostname': u'192.168.1.189', 'port': 22}, {'username': u'root', 'ip': u'192.168.2.125', 'password': "\x1c%\xd0K'[l\x7f2`\xc7_\x8db^0Y\x9d\xc4y8W\xd9 \x958n\xc0\xefV\xe7\x92", 'hostname': u'192.168.2.125', 'port': 22}, {'username': u'root', 'ip': u'192.168.1.53', 'password': 'zzjr#2015', 'hostname': u'192.168.1.53', 'port': 22}]
+2017-05-05 09:38:55,360 - ansible_api.py - DEBUG - {'dark': {u'192.168.1.189': {'msg': 'FAILED: timed out', 'failed': True}, u'192.168.2.125': {'msg': 'FAILED: Authentication failed.', 'failed': True}, u'192.168.1.53': {'msg': 'FAILED: timed out', 'failed': True}}, 'contacted': {}}
+2017-05-05 09:38:55,361 - asset_api.py - DEBUG - 获取硬件信息: {'dark': {u'192.168.1.189': {'msg': 'FAILED: timed out', 'failed': True}, u'192.168.2.125': {'msg': 'FAILED: Authentication failed.', 'failed': True}, u'192.168.1.53': {'msg': 'FAILED: timed out', 'failed': True}}, 'contacted': {}}
+2017-05-05 09:38:55,361 - asset_api.py - ERROR - 获取setup_info失败: u'192.168.1.189'
+2017-05-05 09:38:55,361 - asset_api.py - ERROR - 获取setup_info失败: u'192.168.2.125'
+2017-05-05 09:38:55,361 - asset_api.py - ERROR - 获取setup_info失败: u'192.168.1.53'
+2017-05-05 09:39:00,256 - perm_api.py - DEBUG - 生成res: [{'username': u'root', 'ip': u'192.168.1.189', 'password': "\x1c%\xd0K'[l\x7f2`\xc7_\x8db^0Y\x9d\xc4y8W\xd9 \x958n\xc0\xefV\xe7\x92", 'hostname': u'192.168.1.189', 'port': 22}, {'username': u'root', 'ip': u'192.168.2.125', 'password': "\x1c%\xd0K'[l\x7f2`\xc7_\x8db^0Y\x9d\xc4y8W\xd9 \x958n\xc0\xefV\xe7\x92", 'hostname': u'192.168.2.125', 'port': 22}, {'username': u'root', 'ip': u'192.168.1.53', 'password': 'zzjr#2015', 'hostname': u'192.168.1.53', 'port': 22}]
+2017-05-05 09:39:10,359 - ansible_api.py - DEBUG - {'dark': {u'192.168.1.189': {'msg': 'FAILED: timed out', 'failed': True}, u'192.168.2.125': {'msg': 'FAILED: Authentication failed.', 'failed': True}, u'192.168.1.53': {'msg': 'FAILED: timed out', 'failed': True}}, 'contacted': {}}
+2017-05-05 09:39:10,360 - asset_api.py - DEBUG - 获取硬件信息: {'dark': {u'192.168.1.189': {'msg': 'FAILED: timed out', 'failed': True}, u'192.168.2.125': {'msg': 'FAILED: Authentication failed.', 'failed': True}, u'192.168.1.53': {'msg': 'FAILED: timed out', 'failed': True}}, 'contacted': {}}
+2017-05-05 09:39:10,360 - asset_api.py - ERROR - 获取setup_info失败: u'192.168.1.189'
+2017-05-05 09:39:10,360 - asset_api.py - ERROR - 获取setup_info失败: u'192.168.2.125'
+2017-05-05 09:39:10,360 - asset_api.py - ERROR - 获取setup_info失败: u'192.168.1.53'

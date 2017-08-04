@@ -20,4 +20,5 @@ urlpatterns = patterns('jumpserver.views',
     url(r'^jperm/', include('jperm.urls')),
     url(r'^dbtool/', include('dbtool.urls')),
     url(r'^envmanage/', include('envmanage.urls')),
+    url(r'^deploy/', include('deploy.urls')),
 )

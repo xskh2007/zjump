@@ -1,0 +1,188 @@
+{% extends 'base.html' %}
+{% load mytags %}
+{% load bootstrap %}
+{% block content %}
+{% include 'nav_cat_bar.html' %}
+<link rel="stylesheet" href="/static/AdminLTE.min.css">
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div id="ibox-content" class="ibox-title">
+                    <h5> 增量发布 </h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="ibox-content">
+                    <div class="panel blank-panel">
+
+                        <div class="panel-body">
+                            <div class="tab-content">
+                                <div id="tab-1" class="ibox float-e-margins tab-pane active">
+                                    {% if error %}
+                                        <div class="alert alert-warning text-center">{{ error }}</div>
+                                    {% endif %}
+                                    {% if msg %}
+                                        <div class="alert alert-success text-center">{{ msg }}</div>
+                                    {% endif %}
+
+                                    <form id="deploy_all" method="post" class="form-horizontal">
+                                        <div>
+                                            <table id="rowTable">
+                                                <tr>
+
+                                                    <td><input name="qiantu"type="text" class="form-control" id="usr"></td>
+                                                    <td><div style="cursor: pointer" onclick="addRow();">＋</div></td>
+                                                    <td style="cursor: pointer" onclick="delRow(this);">一</td>
+
+                                                </tr>
+                                            </table>
+
+
+
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <div class="col-sm-4 col-sm-offset-6">
+                                                <button class="btn btn-primary" type="submit" > 批量发布 </button>
+                                            </div>
+                                        </div>
+
+
+
+
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block self_footer_js %}
+<script>
+
+    function clone_env() {
+
+        $.post("/envmanage/envmanage_clone/",
+          {
+            oldenv:$('#oldenv').val(),
+            newenv:$('#newenv').val()
+          },
+          function(mystatus){
+            alert(mystatus);
+          });
+
+		}
+
+
+
+    $('document').ready(function(){
+        var check_default = "{{ default_setting.name }}";
+        console.log(check_default);
+        if (check_default != 'default'){
+            $('#id_use_default_auth').attr('disabled', true);
+            $('#id_use_default_auth').attr('checked', false);
+            $('#admin_account').css('display', 'block');
+        } else {
+            $('#id_use_default_auth').click(function(){
+                if ($(this).is(':checked')){
+                    $('#admin_account').css('display', 'none');
+                }
+                else {
+                    $('#admin_account').css('display', 'block');
+                }
+            })
+        }
+
+    });
+
+    var required_fields = ["id_hostname", "id_port"];
+    required_fields.forEach(function(field) {
+        $('label[for="' + field + '"]').parent().addClass("required");
+    });
+
+    $('#envmanage_clone').validator({
+        timely: 2,
+        theme: "yellow_right_effect",
+        rules: {
+            check_ip: [/^(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])(\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])){3}$/, 'ip地址不正确'],
+            check_port: [/^\d{1,5}$/, '端口号不正确'],
+            use_default_auth: function() {
+                var str1 = $("#id_use_default_auth").is(":checked");
+                if (str1 == true){
+                    var decide = false;
+                } else {
+                    var decide = true;
+                }
+                return decide}
+        },
+        fields: {
+            "ip": {
+                rule: "check_ip;",
+                tip: "输入IP",
+                ok: "",
+                msg: {required: "必须填写!"}
+            },
+            "hostname": {
+                rule: "required;length[0~53]",
+                tip: "填写主机名",
+                ok: "",
+                msg: {required: "必须填写!"}
+            },
+            "port": {
+                rule: "required",
+                tip: "输入端口号",
+                ok: "",
+                msg: {required: "必须填写!"}
+            },
+            "oldenv": {
+                rule: "required(use_default_auth)",
+                tip: "被克隆的环境",
+                ok: "",
+                msg: {required: "必须填写!"}
+            },
+            "newenv": {
+                rule: "required(use_default_auth);length[0~64]",
+                tip: "新环境名",
+                ok: "",
+                msg: {required: "必须填写!"}
+            }
+        },
+        valid: function(form) {
+            form.submit();
+        }
+    });
+
+
+
+
+
+function addRow() {
+    $("#rowTable").append("<tr><td><input type=\"text\" name=\"qiantu\" class=\"form-control\"/></td><td><div style=\"cursor: pointer\" onclick=\"addRow();\">＋</div></td><td style=\"cursor: pointer\" onclick=\"delRow(this);\">一</td></tr>");
+}
+
+function delRow(entity) {
+    $(entity).parent().remove();
+}
+
+
+</script>
+
+{% endblock %}

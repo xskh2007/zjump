@@ -2,15 +2,13 @@
 from __future__ import absolute_import
 from celery import task
 
-
+from jenkinsapi.jenkins import Jenkins as Jenkins2
+import jenkins
 
 # pro_name="dsd"
 
 @task
 def mycl_deploy(env):
-    from jenkinsapi.jenkins import Jenkins as Jenkins2
-
-    import jenkins
     giturl = "git@gitlab.lark.wiki:nbgold/"
     template_xml = "/root/jumpserver-master/tmp/jenkins_job.xml"
     view_name = env

@@ -52,7 +52,7 @@
             <div class="icon">
               <i class="ion ion-bag"></i>
             </div>
-            <a href="javascript:void(0);" onclick="deploy_all()" class="small-box-footer">blue <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="javascript:void(0);" onclick="deploy_all_AAA()" class="small-box-footer">blue <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -67,7 +67,7 @@
             <div class="icon">
               <i class="ion ion-stats-bars"></i>
             </div>
-            <a href="#" class="small-box-footer">green <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="javascript:void(0);" onclick="deploy_all_BBB()" class="small-box-footer">green <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -231,8 +231,14 @@ function delRow(entity) {
     $(entity).parent().remove();
 }
 
-function deploy_all() {
+function deploy_all_AAA() {
     $.post("/deploy/deploy_all/",{env:"xiasha_AAA_"},function(result){
+    alert(result);
+  });
+}
+
+function deploy_all_BBB() {
+    $.post("/deploy/deploy_all/",{env:"xiasha_BBB_"},function(result){
     alert(result);
   });
 }

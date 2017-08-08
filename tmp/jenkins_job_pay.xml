@@ -1,0 +1,133 @@
+<maven2-moduleset plugin="maven-plugin@2.17">
+  <actions />
+  <description />
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>model</name>
+          <description />
+          <defaultValue updated="up">pay</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <net.uaznia.lukanus.hudson.plugins.gitparameter.GitParameterDefinition plugin="git-parameter@0.8.0">
+          <name>branch</name>
+          <description />
+          <uuid>b34d5995-1c66-4e12-8525-adb30c0e3e87</uuid>
+          <type>PT_BRANCH_TAG</type>
+          <branch />
+          <tagFilter>*</tagFilter>
+          <branchFilter>.*</branchFilter>
+          <sortMode>NONE</sortMode>
+          <defaultValue />
+          <selectedValue>NONE</selectedValue>
+          <quickFilterEnabled>false</quickFilterEnabled>
+        </net.uaznia.lukanus.hudson.plugins.gitparameter.GitParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@2.5.3">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <url updated="up">git@gitlab.lark.wiki:nbgold/pay.git</url>
+        <credentialsId>e646bdce-28d6-4a65-a169-f1a916517b24</credentialsId>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>$branch</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <submoduleCfg class="list" />
+    <extensions />
+  </scm>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <jdk>(System)</jdk>
+  <triggers />
+  <concurrentBuild>false</concurrentBuild>
+  <rootModule>
+    <groupId>com.zzjr</groupId>
+    <artifactId>cms</artifactId>
+  </rootModule>
+  <goals>clean install -Dmaven.test.skip=true</goals>
+  <aggregatorStyleBuild>true</aggregatorStyleBuild>
+  <incrementalBuild>false</incrementalBuild>
+  <ignoreUpstremChanges>false</ignoreUpstremChanges>
+  <ignoreUnsuccessfulUpstreams>false</ignoreUnsuccessfulUpstreams>
+  <archivingDisabled>false</archivingDisabled>
+  <siteArchivingDisabled>false</siteArchivingDisabled>
+  <fingerprintingDisabled>false</fingerprintingDisabled>
+  <resolveDependencies>false</resolveDependencies>
+  <processPlugins>false</processPlugins>
+  <mavenValidationLevel>-1</mavenValidationLevel>
+  <runHeadless>false</runHeadless>
+  <disableTriggerDownstreamProjects>false</disableTriggerDownstreamProjects>
+  <blockTriggerWhenBuilding>true</blockTriggerWhenBuilding>
+  <settings class="jenkins.mvn.DefaultSettingsProvider" />
+  <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider" />
+  <reporters />
+  <publishers />
+  <buildWrappers />
+  <prebuilders />
+  <postbuilders>
+    <jenkins.plugins.publish__over__ssh.BapSshBuilderPlugin plugin="publish-over-ssh@1.14">
+      <delegate>
+        <consolePrefix>SSH: </consolePrefix>
+        <delegate>
+          <publishers>
+            <jenkins.plugins.publish__over__ssh.BapSshPublisher>
+              <configName>ansible</configName>
+              <verbose>false</verbose>
+              <transfers>
+                <jenkins.plugins.publish__over__ssh.BapSshTransfer>
+                  <remoteDirectory />
+                  <sourceFiles>${model}-webapp/target/*.war</sourceFiles>
+                  <excludes />
+                  <removePrefix />
+                  <remoteDirectorySDF>false</remoteDirectorySDF>
+                  <flatten>true</flatten>
+                  <cleanRemote>false</cleanRemote>
+                  <noDefaultExcludes>false</noDefaultExcludes>
+                  <makeEmptyDirs>false</makeEmptyDirs>
+                  <patternSeparator>[, ]+</patternSeparator>
+                  <execCommand>ansible ${model}_xsy_01 -m shell -a "mkdir -p /data/webapps/" --sudo
+ansible ${model}_xsy_01 -m shell -a "echo 'zkserver=xxl01.niubangold.com:2181,xxl02.niubangold.com:2181,xxl03.niubangold.com:2181'&gt;/data/webapps/xxl-conf.properties" --sudo
+
+ansible ${model}_xsy_01 -m shell -a 'sh /usr/local/larks/bin/ci/deployment' --sudo
+ansible ${model}_xsy_01 -m shell -a 'sh /usr/local/larks/bin/ci/check_tomcat' --sudo
+
+
+#ansible ${model}_xsy_01 -m shell -a "service tomcat stop" --sudo
+#ansible ${model}_xsy_01 -m shell -a "rm -rf /usr/local/tomcat/webapps/*" --sudo
+
+#ansible ${model}_xsy_01 -m copy -a "src=/usr/local/war/${model}.war dest=/usr/local/tomcat/webapps/ROOT.war" --sudo
+
+#ansible ${model}_xsy_01 -m shell -a "service tomcat start" --sudo</execCommand>
+                  <execTimeout>120000</execTimeout>
+                  <usePty>false</usePty>
+                </jenkins.plugins.publish__over__ssh.BapSshTransfer>
+              </transfers>
+              <useWorkspaceInPromotion>false</useWorkspaceInPromotion>
+              <usePromotionTimestamp>false</usePromotionTimestamp>
+            </jenkins.plugins.publish__over__ssh.BapSshPublisher>
+          </publishers>
+          <continueOnError>false</continueOnError>
+          <failOnError>false</failOnError>
+          <alwaysPublishFromMaster>false</alwaysPublishFromMaster>
+          <hostConfigurationAccess class="jenkins.plugins.publish_over_ssh.BapSshPublisherPlugin" reference="../.." />
+        </delegate>
+      </delegate>
+    </jenkins.plugins.publish__over__ssh.BapSshBuilderPlugin>
+  </postbuilders>
+  <runPostStepsIfResult>
+    <name>FAILURE</name>
+    <ordinal>2</ordinal>
+    <color>RED</color>
+    <completeBuild>true</completeBuild>
+  </runPostStepsIfResult>
+</maven2-moduleset>

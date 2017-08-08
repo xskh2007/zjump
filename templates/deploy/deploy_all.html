@@ -52,7 +52,7 @@
             <div class="icon">
               <i class="ion ion-bag"></i>
             </div>
-            <a href="#" class="small-box-footer">blue <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="javascript:void(0);" onclick="deploy_all()" class="small-box-footer">blue <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -231,6 +231,11 @@ function delRow(entity) {
     $(entity).parent().remove();
 }
 
+function deploy_all() {
+    $.post("/deploy/deploy_all/",{env:"xiasha_AAA_"},function(result){
+    alert(result);
+  });
+}
 
 </script>
 

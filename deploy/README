@@ -1,0 +1,6 @@
+jenkinsapi_for python2.6.6 bug
+
+vim /usr/lib/python2.6/site-packages/jenkinsapi/build.py
+
+109             #return {pair['name']: pair['value'] for pair in parameters}
+110             return dict((pair['name'],pair['value']) for pair in parameters)

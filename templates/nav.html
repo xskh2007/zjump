@@ -22,11 +22,19 @@
                 </ul>
             </li>
             <li id="envmanage">
-                <a><i class="fa fa-inbox"></i> <span class="nav-label">环境管理</span><span class="fa arrow"></span></a>
+                <a><i class="fa fa-cloud"></i> <span class="nav-label">环境管理</span><span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li class="group"><a href="{% url 'envmanage_clone_index' %}">克隆环境</a></li>
                     <li class="asset"> <a href="{% url 'asset_list' %}">查看环境<span class="label label-info pull-right">{{ host_active_num }}/{{ host_total_num}}</span></a></li>
                     <li class="idc"> <a href="{% url 'idc_list' %}">一键启动</a></li>
+                </ul>
+            </li>
+
+            <li id="deploy">
+                <a><i class="fa fa-arrow-up"></i> <span class="nav-label">发布管理</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li class="group"><a href="{% url 'deploy_all' %}">批量发布</a></li>
+                    <li class="group"><a href="{% url 'deploy_increment' %}">增量发布</a></li>
                 </ul>
             </li>
             <li id="jperm">
@@ -47,7 +55,7 @@
                <a href="{% url 'log_list' 'online' %}"><i class="fa fa-files-o"></i> <span class="nav-label">日志审计</span><span class="label label-info pull-right"></span></a>
             </li>
             <li id="jsql">
-               <a href="{% url 'sql_list' %}"><i class="fa fa-files-o"></i> <span class="nav-label">sql审计</span><span class="label label-info pull-right"></span></a>
+               <a href="{% url 'sql_list' %}"><i class="fa fa-database"></i> <span class="nav-label">sql审计</span><span class="label label-info pull-right"></span></a>
             </li>
             <li id="file">
                 <a href="#"><i class="fa fa-download"></i> <span class="nav-label">上传下载</span><span class="fa arrow"></span></a>
@@ -87,7 +95,7 @@
                 </ul>
             </li>
             <li id="file">
-                <a href="#"><i class="fa fa-download"></i> <span class="nav-label">dbtool</span><span class="fa arrow"></span></a>
+                <a href="#"><i class="fa fa-database"></i> <span class="nav-label">dbtool</span><span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li class="sql_select"><a href="{% url 'dbtool_select' %}">sql查询</a></li>
                     <li class="sql_check"><a href="{% url 'dbtool_check_sql' %}">sql检测</a></li>
@@ -98,13 +106,6 @@
             </li>
 
 
-            <li id="deploy">
-                <a><i class="fa fa-inbox"></i> <span class="nav-label">发布管理</span><span class="fa arrow"></span></a>
-                <ul class="nav nav-second-level">
-                    <li class="group"><a href="{% url 'deploy_all' %}">批量发布</a></li>
-                    <li class="group"><a href="{% url 'deploy_increment' %}">增量发布</a></li>
-                </ul>
-            </li>
 
             <li class="special_link">
                 <a href="http://www.jumpserver.org" target="_blank"><i class="fa fa-database"></i> <span class="nav-label">访问官网</span></a>

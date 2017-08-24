@@ -17,6 +17,7 @@ argparse==1.4.0
 django-crontab==0.6.0
 django-smtp-ssl==1.0
 pyte==0.5.2
+
 #chardet==2.3.0
 python-jenkins==0.4.4
 jenkinsapi==0.3.4

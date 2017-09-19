@@ -1,0 +1,47 @@
+#framecontentTop
+{
+position: absolute;
+top: 0;
+left: 0;
+height: 100px;
+width: 100%;
+overflow: hidden;
+vertical-align: middle;
+background-color: #D2E6FA;
+}
+#framecontentLeft
+{
+position: fixed;
+top: 100px;
+left: 0;
+height: 100%;
+width: 150px;
+overflow: hidden;
+vertical-align: top;
+background-color: #D2E6FA;
+}
+#maincontent
+{
+position: fixed;
+left: 150px;
+top: 100px;
+right: 0;
+bottom: 0;
+overflow: auto;
+background: #fff;
+border-top: solid 2px #70cbea;
+border-left: solid 2px #70cbea;
+}
+* html body
+{
+padding: 100px 0 0 150px;
+}
+* html #maincontent
+{
+height: 100%;
+width: 100%;
+}
+* html #framecontentTop
+{
+width: 100%;
+}

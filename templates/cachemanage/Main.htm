@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>后台管理系统</title>
+<link href="Styles/frame.css" rel="Stylesheet" type="text/css" />
+<link href="Styles/menu.css" rel="Stylesheet" type="text/css" />
+<style type="text/css">
+body
+{
+margin: 0;
+padding: 0;
+border: 0;
+overflow: hidden;
+height: 100%;
+max-height: 100%;
+}
+</style>
+<script language="javascript" type="text/javascript">
+function SetWinHeight(obj)
+{
+var win=obj;
+if (document.getElementByIdx_x)
+{
+if (win && !window.opera)
+{
+if (win.contentDocument && win.contentDocument.body.offsetHeight)
+win.height = win.contentDocument.body.offsetHeight;
+else if(win.Document && win.Document.body.scrollHeight)
+win.height = win.Document.body.scrollHeight;
+}
+}
+}
+</script>
+</head>
+<body>
+<form id="form1" runat="server">
+<div id="framecontentLeft">
+<div class="menu">
+<ul>
+<li><a href="CategoryList.htm" target="content">产品类别</a></li>
+<li><a href="ProductList.htm" target="content">产品明细</a></li>
+</ul>
+</div>
+</div>
+
+<div id="maincontent">
+<iframe id="content" name="content" onload="Javascript:SetWinHeight(this)" frameborder="0"
+scrolling="no" width="100%"></iframe>
+</div>
+</form>
+</body>
+</html>

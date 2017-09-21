@@ -19,4 +19,5 @@ urlpatterns = patterns('jumpserver.views',
     url(r'^jlog/', include('jlog.urls')),
     url(r'^jperm/', include('jperm.urls')),
     url(r'^dbtool/', include('dbtool.urls')),
+    url(r'^cachemanage/', include('cachemanage.urls')),
 )

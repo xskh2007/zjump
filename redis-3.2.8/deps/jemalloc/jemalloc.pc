@@ -1,0 +1,12 @@
+prefix=/usr/local
+exec_prefix=/usr/local
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+install_suffix=
+
+Name: jemalloc
+Description: A general purpose malloc(3) implementation that emphasizes fragmentation avoidance and scalable concurrency support.
+URL: http://www.canonware.com/jemalloc
+Version: 4.0.3-0-ge9192eacf8935e29fc62fddc2701f7942b1cc02c
+Cflags: -I${includedir}
+Libs: -L${libdir} -ljemalloc${install_suffix}

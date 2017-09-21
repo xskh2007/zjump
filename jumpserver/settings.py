@@ -80,6 +80,7 @@ INSTALLED_APPS = (
     'jperm',
     'jlog',
     'dbtool',
+    'cachemanage',
 )
 
 MIDDLEWARE_CLASSES = (

@@ -218,8 +218,8 @@ def dbtool_submit_sql(request):
                 print 2222
                 error = u'sql重复提交!'
                 return HttpResponse(error, content_type="application/json")
-            if len(sqllog) > 10000:
-                error = u"sql长度不能超过10000!"
+            if len(sqllog) > 100000:
+                error = u"sql长度不能超过100000!"
                 return HttpResponse(error, content_type="application/json")
         except ServerError:
             pass

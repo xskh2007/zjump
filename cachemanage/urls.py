@@ -1,22 +1,11 @@
 # coding:utf-8
 from django.conf.urls import patterns, include, url
-from dbtool.views import *
+from cachemanage.views import *
 
 
 urlpatterns = patterns('',
-    url(r'^$', index, name='dbtool_select'),
-    url(r'^execute/$', dbtool_execute, name='dbtool_execute'),
-    url(r'^myjson/$', dbtool_myjson, name='dbtool_myjson'),
-    url(r'^dblistjson/$', dbtool_dblistjson, name='dbtool_dblistjson'),
-    url(r'^dbtool_master_db_list/$', dbtool_master_db_list, name='dbtool_master_db_list'),
-    url(r'^dbimport/$', dbtool_dbimport, name='dbtool_dbimport'),
-    url(r'^field_name/$', dbtool_field_name, name='dbtool_field_name'),
-    url(r'^check_sql/$', dbtool_check_sql, name='dbtool_check_sql'),
-    url(r'^submit_sql/$', dbtool_submit_sql, name='dbtool_submit_sql'),
-    url(r'^list/$', sql_list, name='sql_list'),
-    url(r'^sql_detail/$', sql_detail, name='sql_detail'),
-    url(r'^sql_exec/$', sql_exec, name='sql_exec'),
-    url(r'^sql_cancel/$', sql_cancel, name='sql_cancel'),
+    url(r'^cachemanage_select/$', cachemanage_select, name='cachemanage_select'),
+    url(r'^cachemanage_redislistjson/$', cachemanage_redislistjson, name='cachemanage_redislistjson'),
 
 
 

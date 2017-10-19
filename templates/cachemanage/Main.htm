@@ -1,52 +1,379 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<title>��̨����ϵͳ</title>
-<link href="Styles/frame.css" rel="Stylesheet" type="text/css" />
-<link href="Styles/menu.css" rel="Stylesheet" type="text/css" />
-<style type="text/css">
-body
+{% extends 'base.html' %}
+{% load mytags %}
+{% block content %}
+{% include 'nav_cat_bar.html' %}
+
+
+
+
+
+<div id="content" class="row-fluid">
+		<div id="left" >
+			<iframe id="server_view" name="server_view" src="/cachemanage/server_tree" style="overflow:visible;"
+				scrolling="yes" frameborder="no" width="100%"></iframe>
+		</div>
+		<div id="openClose" class="close">&nbsp;</div>
+		<div id="right">
+			<iframe id="db_view" name="db_view" src="/cachemanage/overview" style="overflow:visible;"
+				scrolling="yes" frameborder="no" width="100%"></iframe>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var leftWidth = "160"; // 左侧窗口大小
+		function wSize(){
+			var strs=getWindowSize().toString().split(",");
+			$("#server_view, #db_view, #openClose").height(strs[0]-5);
+			$("#right").width($("body").width()-$("#left").width()-$("#openClose").width()-25);
+		}
+	</script>
+	<script src="/static/js/wsize.js" type="text/javascript"></script>
+
+
+
+<script>
+
+
+
+if(typeof(getCookie("cmd")) == 'undefined')
 {
-margin: 0;
-padding: 0;
-border: 0;
-overflow: hidden;
-height: 100%;
-max-height: 100%;
+document.getElementById('cmd').value="sql默认limit 50"
 }
-</style>
-<script language="javascript" type="text/javascript">
-function SetWinHeight(obj)
+
+
+
+
+
+
+function getCookie(cookie_name)
 {
-var win=obj;
-if (document.getElementByIdx_x)
-{
-if (win && !window.opera)
-{
-if (win.contentDocument && win.contentDocument.body.offsetHeight)
-win.height = win.contentDocument.body.offsetHeight;
-else if(win.Document && win.Document.body.scrollHeight)
-win.height = win.Document.body.scrollHeight;
+    var allcookies = document.cookie;
+    var cookie_pos = allcookies.indexOf(cookie_name);   //索引的长度
+
+    // 如果找到了索引，就代表cookie存在，
+    // 反之，就说明不存在。
+    if (cookie_pos != -1)
+    {
+        // 把cookie_pos放在值的开始，只要给值加1即可。
+        cookie_pos += cookie_name.length + 1;      //这里容易出问题，所以请大家参考的时候自己好好研究一下
+        var cookie_end = allcookies.indexOf(";", cookie_pos);
+
+        if (cookie_end == -1)
+        {
+            cookie_end = allcookies.length;
+        }
+
+        var value = unescape(allcookies.substring(cookie_pos, cookie_end));         //这里就可以得到你想要的cookie的值了。。。
+    }
+    return value;
 }
-}
+
+
+var cmd = getCookie("cmd");
+document.getElementById('cmd').value=cmd;
+
+
+function check(cmd){
+alert(document.getElementById('cmd').value)
+document.cookie="cmd="+document.getElementById('cmd').value.replace(/(\n)+|(\r\n)+/g, "");
+
 }
 </script>
-</head>
-<body>
-<form id="form1" runat="server">
-<div id="framecontentLeft">
-<div class="menu">
-<ul>
-<li><a href="CategoryList.htm" target="content">��Ʒ���</a></li>
-<li><a href="ProductList.htm" target="content">��Ʒ��ϸ</a></li>
-</ul>
-</div>
-</div>
 
-<div id="maincontent">
-<iframe id="content" name="content" onload="Javascript:SetWinHeight(this)" frameborder="0"
-scrolling="no" width="100%"></iframe>
-</div>
-</form>
-</body>
-</html>
+
+
+
+
+
+
+	<script type="text/javascript" >
+
+	function mypanel() {
+
+		$("#p").load("/cachemanage/cachemanage_select/",{
+				rediscmd: $('#cmd').val(),
+				redis_host: $('#database').combobox('getValue')
+			});
+
+
+
+  	}
+	</script>
+
+
+
+
+{% endblock %}
+
+{% block self_footer_js %}
+<script>
+    $(document).ready(function(){
+        $('.asset_del').click(function(){
+            var row = $(this).closest('tr');
+            if (confirm("确定删除?")) {
+                $.get(
+                        $(this).attr('value'),
+                        {},
+                        function (data) {
+                            row.remove()
+                        }
+                )
+            }
+        });
+
+        $('#exec_cmd').click(function(){
+            var url = '{% url "role_get" %}';
+            var new_url = '{% url "exec_cmd" %}?role=';
+            var check_array = [];
+            $(".gradeX input:checked").closest('tr').find('.hostname a').each(function() {
+                check_array.push($(this).text())
+            });
+            check_assets = check_array.join(':');
+            $.ajax({
+                type: 'GET',
+                url: url,
+                data: {},
+                success: function(data){
+                    var dataArray = data.split(',');
+                    if (dataArray.length == 1 && data != 'error'){
+                        var title = 'Jumpserver Exec Terminal';
+                        layer.open({
+                            type: 2,
+                            title: title,
+                            maxmin: true,
+                            shade: false,
+                            area: ['725px', '600px'],
+                            content: new_url+data+'&check_assets='+check_assets
+                        });
+                        //window.open(new_url + data, '', 'location=no, resizeable=no, height=410, width=625, top=89px, left=99px,toolbar=no,menubar=no,scrollbars=auto,status=no');
+                    } else if (dataArray.length == '1' && data == 'error'){
+                        layer.alert('没有授权系统用户')
+                    } else {
+                        aUrl = '';
+                        $.each(dataArray, function(index, value){
+                            aUrl += '<a onclick="windowOpenExec(this); return false" class="btn btn-xs btn-primary newa" href=' + new_url + value  + '&check_assets=' + check_assets + '>' + value  + '</a> '
+                        });
+                        layer.alert(aUrl, {
+                            skin: 'layui-layer-molv',
+                            title: '授权多个系统用户，请选择一个连接',
+                            shade: false,
+                            closeBtn: 0
+                        })
+                    }
+                }
+            });
+            return false
+
+        });
+
+        $('.conn').click(function(){
+            var url='{% url "role_get" %}?id=' + $(this).attr('value'); // 获取用户有权限的角色
+            var href = $(this).attr('href');
+            var new_url = '{% url "terminal" %}?id=' + $(this).attr('value') + '&role='; // webterminal socket url
+            var hostname = $(this).closest('tr').find('.hostname a')[0].innerHTML;
+            $.ajax({
+                type: 'GET',
+                url: url,
+                data: {},
+                success: function(data){
+                    var dataArray = data.split(',');
+                    if (data == 'error' || data == '' || data == null || data == undefined){
+                        layer.alert('没有授权系统用户')
+                    }
+                    else if (dataArray.length == 1 && data != 'error' && navigator.platform == 'Win32'){
+                        /*
+                        var title = 'Jumpserver Web Terminal' + '<span class="text-info"> '+ hostname +'</span>';
+                        layer.open({
+                            type: 2,
+                            title: title,
+                            maxmin: true,
+                            shade: false,
+                            area: ['628px', '420px'],
+                            content: new_url+data
+                        });
+                        window.open(new_url+data, '_blank', 'toolbar=yes, location=yes, scrollbars=yes, resizable=yes, copyhistory=yes, width=628, height=400')
+                        */
+                         window.open(new_url+data, "_blank");
+                    }  else if (dataArray.length == 1 && data != 'error'){
+                       /*layer.open({
+                            type: 2,
+                            title: title,
+                            maxmin: true,
+                            shade: false,
+                            area: ['628px', '452px'],
+                            content: new_url+data
+                        });
+                        */
+                        window.open(new_url+data, '_blank');
+                    }
+                    else {
+                        aUrl = '';
+                        $.each(dataArray, function(index, value){
+                            aUrl += '<a onclick="windowOpen(this); return false" class="btn btn-xs btn-primary newa" href=' + new_url + value + ' value=' + hostname +  '>' + value  + '</a> '
+                        });
+                        console.log(aUrl);
+                        layer.alert(aUrl, {
+                            skin: 'layui-layer-molv',
+                            title: '授权多个系统用户，请选择一个连接',
+                            shade: false,
+                            closeBtn: 0
+                        })
+                    }
+                }
+            });
+            return false
+        });
+    });
+
+    function windowOpen(a){
+        var new_url = $(a).attr('href');
+        var hostname = $(a).attr('value');
+        var title = 'Jumpserver Web Terminal - ' + '<span class="text-info"> '+ hostname +'</span>';
+        if (navigator.platform == 'Win32'){
+            /*
+            layer.open({
+            type: 2,
+            title: title,
+            maxmin: true,
+            area: ['628px', '420px'],
+            shade: false,
+            content: new_url
+            });
+            */
+            window.open(new_url, '_blank')
+
+        } else {
+            /*
+            layer.open({
+            type: 2,
+            title: title,
+            maxmin: true,
+            area: ['628px', '452px'],
+            shade: false,
+            content: new_url
+            });
+            */
+            window.open(new_url, '_blank');
+        }
+
+        return false
+    }
+
+     function windowOpenExec(a){
+         var new_url = $(a).attr('href');
+         var title = 'Jumpserver Exec Terminal';
+         layer.open({
+             type: 2,
+             title: title,
+             maxmin: true,
+             area: ['725px', '600px'],
+             shade: false,
+             content: new_url
+        });
+        return false
+    }
+
+    $(".iframe").on('click', function(){
+        var asset_id_all = getIDall();
+        if (asset_id_all == ''){
+            alert("请至少选择一行!");
+            return false;
+        }
+        var url= $(this).attr("value") + '?asset_id_all=' + asset_id_all;
+        parent.layer.open({
+            type: 2,
+            title: 'JumpServer - 批量修改主机',
+            maxmin: true,
+            shift: 'top',
+            border: [2, 0.3, '#1AB394'],
+            shade: [0.5, '#000000'],
+            area: ['800px', '600px'],
+            shadeClose: true,
+            content: url,
+            cancel: function(){
+                location.replace(location.href);
+            }
+        });
+    });
+
+    $('.search-btn-excel').unbind('click').bind('click',function(){
+        var url= $(this).attr("href");
+        $.ajax({
+            type: "GET",
+            url: url,
+            data: $("#asset_form").serialize(),
+            success: function (data) {
+                $("#export").html(data);
+            }
+        });
+    });
+
+
+    $('#asset_del').click(function () {
+        var asset_id_all = getIDall();
+        if (asset_id_all == ''){
+            alert("请至少选择一行!");
+            return false;
+        }
+        if (confirm("确定删除?")) {
+            $.ajax({
+                type: "post",
+                data: {asset_id_all: asset_id_all},
+                url: "{% url 'asset_del' %}?arg=batch",
+                success: function () {
+                    parent.location.reload();
+                }
+            });
+        }
+    });
+
+    $('#asset_update').click(function () {
+        var asset_id_all = getIDall();
+        if (asset_id_all == ''){
+            if (confirm("更新全部资产信息?")) {
+                layer.msg('玩命更新中...', {time: 200000});
+                $.ajax({
+                    type: "post",
+                    url: "{% url 'asset_update_batch' %}?arg=all",
+                    success: function () {
+                        parent.location.reload();
+                    }
+                });
+            }
+        }
+        else {
+            layer.msg('玩命更新中...', {time: 200000});
+            $.ajax({
+                type: "post",
+                data: {asset_id_all: asset_id_all},
+                url: "{% url 'asset_update_batch' %}",
+                success: function () {
+                    parent.location.reload();
+                }
+            });
+        }
+    });
+
+{#    $('#asset_update_all').click(function () {#}
+{#        layer.msg('玩命更新中...', {time: 200000});#}
+{#        $.ajax({#}
+{#            type: "post",#}
+{#            url: "/jasset/asset_update_batch/?arg=all",#}
+{#            success: function () {#}
+{#                parent.location.reload();#}
+{#            }#}
+{#        });#}
+{#    });#}
+
+    function change_info(){
+        var args = $("#asset_form").serialize();
+        window.location = "{% url 'asset_list' %}?" + args
+    }
+
+    $("#search_input").keydown(function(e){
+        if(e.keyCode==13){
+            change_info()
+            }
+    });
+</script>
+
+{% endblock %}
